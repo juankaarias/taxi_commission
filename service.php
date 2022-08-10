@@ -155,7 +155,34 @@
                     </button>
                 </section>
                 
+                <section class="contenedor__title">
+                    <i class="title__icon fa-solid fa-user-tie"></i>
+                    <h2 class="title__service">Servicios de Conductor Elegido</h2>
+                </section>
+                <hr class="contenedor__linea">
+                <section class="general__conductor">
+                    
+                    <section class="conductor__container">
 
+                        <section class="container__elegido">
+                            <img class="elegido__imagen" src="images/elegido.png" alt="llaves" loading="lazy">
+                            <p class="elegido__detalle">
+                                Nuestros Conductores Elegidos llegarán
+                                para ayudarte a llegar seguro a casa, no arriesgues tu seguridad ni 
+                                la seguridad de terceros. 
+                            </p>
+                        </section>
+
+                        <section class="container__elegido container__elegido--auto">
+                            
+                            <p class="elegido__detalle">
+                                Contrata a uno de nuestros Conductores Elegidos todos estan 
+                                altamente capacitados para que te lleve seguro a tu lugar de destino.
+                            </p>
+                            <img class="elegido__imagen" src="images/conductor_e.png" alt="llaves" loading="lazy">
+                        </section>
+                    </section> 
+                </section>
                 <section class="contenedor__title">
                     <i class="title__icon fa-solid fa-building"></i>
                     <h2 class="title__service">Servicios de Movilidad Empresarial</h2>
@@ -167,7 +194,7 @@
                     <section class="empresarial__txt">
                         <p class="txt__detalle">
                             Siempre contanmos con un alto estándar de calidad, con profesionales al volante, 
-                            los mejores vehiculos para un servicio superior, algunos de nuestros clientes.
+                            los mejores vehiculos para un servicio superior, algunos de nuestros clientes empresariales.
                         </p>
                     </section>
                     <section class="empresarial__logos">
@@ -194,57 +221,11 @@
                         y muchos mas comunicate para saber las informacion.
                     </p>
                 </section>
-                
-
-
                 <section class="general__contacto">
                     <button class="contacto__boton">
                         <a href="contact_us.php" class="boton__contact">Escribenos</a>
                     </button>
                 </section>
-
-
-
-
-
-
-
-                <section class="contenedor__title">
-                    <i class="title__icon fa-solid fa-user-tie"></i>
-                    <h2 class="title__service">Servicios de Conductor Elegido</h2>
-                </section>
-                <hr class="contenedor__linea">
-
-                <section class="general__conductor">
-                    
-                    <section class="conductor__container">
-
-                        <section class="container__elegido">
-                            <img class="elegido__imagen" src="images/elegido.png" alt="llaves" loading="lazy">
-                            <p class="elegido__detalle">
-                                Nuestros Conductores Elegidos llegarán
-                                para ayudarte a llegar seguro a casa, no arriesgues tu seguridad ni 
-                                la seguridad de terceros. 
-                            </p>
-                        </section>
-
-                        <section class="container__elegido container__elegido--auto">
-                            
-                            <p class="elegido__detalle">
-                                Contrata a uno de nuestros Conductores Elegidos todos estan 
-                                altamente capacitados para que te lleve seguro a tu lugar de destino.
-                            </p>
-                            <img class="elegido__imagen" src="images/conductor_e.png" alt="llaves" loading="lazy">
-                        </section>
-                     
-                            
-                        
-                        
-                        
-                    </section>
-                    
-                </section>
-                
 
 
             </section>

@@ -32,9 +32,21 @@
                 </section>
                 <section class="social__icons">
                     <ul class="icons__ul">
-                        <li class="ul__redes"><a href="https://www.instagram.com/taxirodaderobello/?hl=es" target="_blank" class="redes__link"><i class="link__redes fa-brands fa-instagram-square"></i></a></li>
-                        <li class="ul__redes"><a href="https://www.facebook.com/pages/category/Taxi-Service/Taxi-Rodadero-Bello-Horizonte-122260542504000/" target="_blank" class="redes__link"><i class="link__redes fa-brands fa-facebook-square"></i></a></li>
-                        <li class="ul__redes"><a href="https://api.whatsapp.com/send?phone=573017656646" target="_blank" class="redes__link"><i class="link__redes fa-brands fa-whatsapp-square"></i></a></li>
+                        <li class="ul__redes">
+                            <a href="https://www.instagram.com/taxirodaderobello/?hl=es" target="_blank" class="redes__link">
+                                <img src="images/instagram_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="ul__redes">
+                            <a href="https://www.facebook.com/pages/category/Taxi-Service/Taxi-Rodadero-Bello-Horizonte-122260542504000/" target="_blank" class="redes__link">
+                                <img src="images/facebook_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="ul__redes">
+                            <a href="https://api.whatsapp.com/send?phone=573017656646" target="_blank" class="redes__link">
+                                <img src="images/whatsapp_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                            </a>
+                        </li>
                     </ul>
                 </section>
             </section>
