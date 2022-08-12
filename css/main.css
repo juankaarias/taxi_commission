@@ -1854,15 +1854,15 @@
   font-style: italic;
 }
 
-.swiper-navBtn{
+.swiper-nav-btn{
   color: var(--amarillo);
   transition: color 0.3s ease;
 }
-.swiper-navBtn:hover{
+.swiper-nav-btn:hover{
   color: var(--amarillo);
 }
-.swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-nav-btn::before,
+.swiper-nav-btn::after{
   font-size: 35px;
 }
 .swiper-button-next{
@@ -1911,7 +1911,7 @@
     .slide-content{
       margin: 0 20px;
     }
-    .swiper-navBtn{
+    .swiper-nav-btn{
       display: none;
     }
     .titulo__experience {

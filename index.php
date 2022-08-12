@@ -430,8 +430,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-button-next swiper-nav-btn"></div>
+                <div class="swiper-button-prev swiper-nav-btn"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
