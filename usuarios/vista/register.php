@@ -1,4 +1,4 @@
-<?php include_once("../../layout/header-user.inc.php");?>
+<?php include_once("../../layout/header-usuarios.inc.php");?>
 
 <main class="main__register">
     <section class="register__indicador">
@@ -101,4 +101,4 @@
 
 
 
-<?php include_once("../../layout/footer-user.inc.php");?>
+<?php include_once("../../layout/footer-usuarios.inc.php");?>

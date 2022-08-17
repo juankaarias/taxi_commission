@@ -1,0 +1,478 @@
+@import url("main.css");
+
+/* INICIO DE SESION */
+.main__login, .main__recover{
+    background-color: var(--blanco);
+    width: 100%;
+}
+.login__header, .recover__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px #ccc; 
+}
+.header__navegacion{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #f3f3f3;
+}
+.navegacion__opcion{
+    cursor: pointer;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.596);
+}
+.opcion__texto{
+    margin-right: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.opcion__icono{
+    color: black;
+}
+.opcion__icono--salir{
+    color: #e40000;
+}
+.opcion__texto:hover{
+    color: black;
+    text-decoration: underline;
+}
+.header__logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+.logo__trbh{
+    margin-right: 15px;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+.trbh__logo{
+    border-radius: 30%;
+    width: 110px;
+}
+.logo__titulo{
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;;
+    color: var(--negro);
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.titulo__h1{
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.titulo__h3{
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 10px;
+}
+.login__formulario{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/imagen_frontal.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario__login{
+    background-color: var(--blanco_medio);
+    width: 350px;
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--negro);
+    box-shadow: 0px 0px 2px rgb(155, 155, 155);
+}
+.login__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__icono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.icono__login{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+.icono__user{
+    width: 75px;
+    height: 90px;
+    padding-bottom: 10px;
+}
+.icono__text{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+
+}
+.form__group{
+    width: 100%;
+    padding: 20px 20px 0 20px;
+}
+.group__label, .recover__label{
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+.group__input, .recover__input{
+    position: relative;
+    outline:none;
+    height: 35px;
+    padding: 0 10px 0 40px;
+}
+.input__icono{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: 15px;
+}
+.input__usuario, .input__password, .input__correo{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    outline:none;
+    padding: 0 20px 0 40px;
+    border: 2px solid var(--gris_medio);
+    border-radius: 10px;
+    transition: .3s ease-in-out all;
+}
+.input__usuario:focus, .input__password:focus{
+    border: 2px solid transparent;
+    border-radius: 0;
+    border-bottom: 2px solid var(--azul);
+}
+.group__error{
+    display: none;
+}
+.group__error.activo{
+    display: block;
+    font-size: 12px;
+    color: #a10101;
+}
+.form__preguntas{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    padding: 5px 20px 30px 20px;
+    justify-content: space-between;
+}
+.preguntas__checkbox{
+    display: flex;
+}
+.checkbox__recordar{
+    width: 15px;
+    height: 15px;
+    background-color: initial;
+    cursor: pointer;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+.olvido__password{
+    font-style: italic;
+    font-size: 14px;
+}
+.olvido__password:hover{
+    text-decoration: underline;
+    color: var(--azul);
+}
+.form__submit, .form__recover{
+    margin-bottom: 20px;
+}
+.btn__general{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.btn__general:hover{
+    background-color: #383737;;
+}
+.login__registro{ 
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 50px 0;
+}
+.registro__login{
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: bold;
+}
+.login__link{
+    color: rgb(99, 99, 99);
+    font-size: 18px;
+}
+.login__link--clic{
+    color: var(--azul);  
+}
+.login__link--clic:hover{
+    text-decoration: underline;
+    color: #107d91;
+}
+.login__footer, .recover__footer{
+    width: 100%;
+    min-height: 30px;
+    background-color: #2A2A2A;
+}
+.footer__login, .footer__recover{
+    color: white;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+/* LOGIN BREAKPOINT 480px */
+@media screen and (max-width: 480px){
+    .header__logo{
+        align-items: flex-start;
+    }
+    .trbh__logo{
+        width: 85px;
+    }
+    .logo__titulo{
+        letter-spacing: 0px;
+    }
+    .titulo__h1{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .titulo__h3{
+        font-size: 13px;
+        line-height: 13px;
+        padding-top: 5px;
+    }
+    .formulario__login{
+        width: 280px
+    }
+    .form__group{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .form__preguntas{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .form__icono{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .icono__login {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .preguntas__checkbox{
+        padding-bottom: 10px;
+    }
+    .icono__text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+/* LOGIN BREAKPOINT 320px */
+@media screen and (max-width: 320px){
+    .header__logo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+    }
+    .titulo__h1{
+        padding: 0;
+    }
+    .logo__trbh{
+        margin: 0;
+    }
+    .formulario__login{
+        border-radius: 0;
+        width: 100%;
+        padding: 10px 30px;
+    }
+    .login__link{
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .registro__login{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .login__registro{
+        padding: 15px 0 30px 0;
+    }
+}
+/* FIN INICIO DE SESION */
+
+/* INICIO RECUPERAR PASSWORD */
+.recover__formulario{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.formulario__recover{
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.recover__titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    padding-bottom: 40px;
+}
+.titulo__recover{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+}
+.titulo__recover--subtitulo{
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px; 
+    padding-top: 10px;
+}
+.recover__form{
+    width: 350px;
+    border-radius: 20px;
+}
+.form__recover{
+    color: var(--negro);
+}
+.recover__label{
+    padding-bottom: 10px;
+}
+.input__correo{
+    border-color: var(--gris);
+}
+.input__correo:focus{
+    border-color: var(--negro);
+}
+/* RECUPERAR PASSWORD  BREAKPOINT 1024px */
+@media screen and (max-width: 1024px){
+    .formulario__recover{
+        width: 70%;
+    }
+}
+/* RECUPERAR PASSWORD  BREAKPOINT 768px */
+@media screen and (max-width: 768px){
+    .formulario__recover{
+        width: 80%;
+    }
+    .titulo__recover{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .titulo__recover--subtitulo{
+        font-size: 20px;
+        line-height: 20px; 
+    }
+    .input__correo{
+        width: 380px;
+    }
+}
+/* RECUPERAR PASSWORD  BREAKPOINT 480px */
+@media screen and (max-width: 480px){
+    .formulario__recover{
+        width: 100%;
+    }
+    .titulo__recover{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .titulo__recover--subtitulo{
+        font-size: 18px;
+        line-height: 18px; 
+    }
+    .recover__formulario {
+        height: 500px;
+    }
+    .input__correo{
+        width: 260px;
+        font-size: 12px;
+    }
+    .recover__form{
+        width: 100%;
+    }
+}
+/* RECUPERAR PASSWORD  BREAKPOINT 320px */
+@media screen and (max-width: 320px){
+    .recover__formulario{
+        background-position-x: -440px;
+    }
+    .titulo__recover{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .titulo__recover--subtitulo{
+        font-size: 15px;
+        line-height: 15px; 
+    }
+    .input__correo{
+        width: 220px;
+        font-size: 11px;
+        padding: 0 5px 0 30px;
+    }
+    .input__icono {
+        left: 10px;
+        bottom: 10px;
+    }
+    .formulario__recover{
+        padding: 20px;
+    }
+}
+/* FIN RECUPERAR PASSWORD */
+
+/* INICIO DE REGISTRO */
+.inicio__register{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/register_3.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.inicio__register{
+    height: 500px; 
+}
+.fomulario__barra--register{
+    margin-bottom: 15px;
+}
+.formulario__condicion{
+    padding: 0px 20px 40px 20px ;
+    text-align: left;
+}
+/* FIN DE REGISTRO */

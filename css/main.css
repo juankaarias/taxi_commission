@@ -127,7 +127,6 @@
     transform: scale(1.2);
 }
 /* HEADER BREAKPOINT 768px */
-    
 @media(max-width:768px){
     .header__section{
         width: 100%;
@@ -148,11 +147,8 @@
         font-size: 40px;
     }
 }
-
 /* HEADER BREAKPOINT 480px */
-
 @media(max-width:480px){
-
     .section__container{
         flex-direction: column;
     }
@@ -171,10 +167,8 @@
     .section__social{
         padding-top: 0px;
     }
-}
-    
+} 
 /* NAV */
-
 .nav{
     background-color: var(--amarillo);
     box-shadow: 8px 0px 12px rgba(149, 157, 165, 0.2);
@@ -238,9 +232,7 @@
     margin: 5px auto;
     border-radius: 2px;
 }
-
 /* NAV BREAKPOINT 768px */
-
 @media(max-width:768px){
     .nav__menu{
         position: relative;
@@ -311,15 +303,12 @@
         transform: rotate(43deg) translate(-5px, -7px);
     }
 }
-    
 /* NAV BREAKPOINT 480px */
-
 @media(max-width:480px){
     .menu__ham{
         top: 10px;
     }
 }
-
 .main__arriba{
     position: fixed;
     bottom: 39px;
@@ -350,7 +339,6 @@
     color: var(--blanco);
     transition: .2s;
 }
-
 .show{
     z-index: 2;
 }
@@ -376,9 +364,7 @@
         width: 50px;
         height: 50px;
     }
-    
 }
-
 /* whatsapp */
 .main__ayuda{
     position: fixed;
@@ -387,7 +373,6 @@
     width: 50px;
     height: 50px;
     z-index: 2;
-   
 }
 .ayuda__contenedor{
     border-radius: 50%;
@@ -398,18 +383,13 @@
     left: 50%;
     z-index: 2;
 }
-
 .contenedor__app{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
 }
-
-
-
 /* FOOTER */
-
 .footer{
     display: flex;
     flex-direction: column;
@@ -444,7 +424,6 @@
     letter-spacing: 2px;
     word-spacing: 4px;
 }
-
 .footer__contenedor{
     display: flex;
     flex-direction: row;
@@ -460,8 +439,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-
-
 .direccion__icons{
     text-align: center;
     padding-bottom: 10px;
@@ -516,19 +493,14 @@
     font-size: 17px;
     color: 	var(--blanco);
     box-shadow: 2px 2px 5px var(--sombra);
-    
 }
-
 /* FOOTER BREAKPOINT 768px */
-
 @media(max-width:768px){
     .copy__autor{
         padding: 20px 65px;
     }
 }
-
 /* >>>>>>>>>>>> PAGINA PRICIPAL >>>>>>>>>>>> */
-
 .main{
     overflow: hidden;
     width: 100%;
@@ -594,7 +566,7 @@
     margin: 20px;
     margin-left: 50px;
 }
-.btn__llamanos{
+.btn__general{
     cursor: pointer;
     color: var(--negro);
     padding: 9px 35px;
@@ -606,7 +578,6 @@
     border: none;
     box-shadow: 2px 2px 2px #0000008c;
 }
-
 .main__anuncio{
     width: 100%;
     min-height: 80px;
@@ -653,7 +624,6 @@
 .icono__tel, .icono__cel{
     animation: shake .1s ease-in-out .1s infinite alternate;
 }
-
 @keyframes shake{
     from{
         -webkit-transform: rotate(5deg);
@@ -809,7 +779,6 @@
     bottom: 0;
     right: 30%;
 }
-
 @keyframes mover{
     from{
         right: -400px;
@@ -941,11 +910,7 @@
         }
     }
 }
-
-
 /* MAIN REGULADORES */
-
-
 .main__reguladores{
     color: var(--negro);
     background-color: #f3f3f3;
@@ -975,7 +940,6 @@
     font-family: 'bebas_neueregular';
     padding: 30px 20px;
 }
-
 .contenedor__razones{
     width: 100%;
     display: flex;
@@ -996,7 +960,6 @@
     align-items: center;
     padding: 0 30px;
 }
-
 .contenedor__contacto{
     position: relative;
     overflow: hidden;
@@ -1128,11 +1091,9 @@
         border-radius: 0;
         box-shadow: none;
     }
-    
 }
 /* MAIN REGULADORES BREAKPOINT 768px */
 @media(max-width:768px){
-    
     .razones__texto{
         width: 100%;
         padding: 10px 20px;
@@ -1151,11 +1112,9 @@
         font-size: 20px;
         line-height: 20px;
     }
-    
     .contenedor__razones{
         flex-direction: column;
         align-items: center;
-
     }
     .imagen__description {
         width: 95%;
@@ -1240,7 +1199,6 @@
         margin: 20px;
     }
 }
-
 /* MAIN APP */
 .main__app{
     width: 100%;
@@ -1521,7 +1479,6 @@
     }
 }
 /* MAIN CONTENEDOR */
-
 .main__contenedor{
     width: 100%;
     background-color: #f3f3f3;
@@ -1643,7 +1600,6 @@
 .boton__registrate{
     color: var(--blanco);
 }
-
 /* MAIN CONTENEDOR BREAKPOINT 1024px */
 @media(max-width:1024px){
     .main__contenedor{
@@ -1665,7 +1621,6 @@
         padding: 30px;
     }
 }
-
 /* MAIN CONTENEDOR BREAKPOINT 768px */
 @media(max-width:768px){
     .contenedor__elementos{
@@ -1702,7 +1657,6 @@
         background-image: url(../images/paven.png);
     }
 }
-
 /* MAIN CONTENEDOR BREAKPOINT 480px */
 @media(max-width:480px){
     .titulo__registro{
@@ -1759,7 +1713,6 @@
     font-family: 'bebas_neueregular';
     color: var(--negro);
 }
-
 .experience__cards{
     padding-top: 30px;
     display: flex;
@@ -1770,14 +1723,12 @@
    max-width: 900px; 
    width: 100%;
 }
-
 .slide-content{
     margin: 0 40px;
     overflow: hidden;
     border-radius: 25px;
     padding: 10px 20px 40px 20px;
 }
-
 .card{
     border-radius: 25px;
     background-color:var(--blanco_medio);
@@ -1885,7 +1836,6 @@
     flex-flow: row wrap;
     align-items: center;
     padding: 20px 0;
-
 }
 .add__write, .view__more{
     margin: 15px;
@@ -1895,7 +1845,6 @@
 .write__p{
     border-bottom: 2px solid var(--negro);
 }
-
 .p__mas, .p__comentario{
     padding: 0;
     padding-right: 5px;
@@ -1919,7 +1868,6 @@
         font-size: 30px;
         line-height: 30px;
     }
-    
 }
 /* MAIN EXPERIENCE BREAKPOINT 480px */
 @media screen and (max-width: 480px){
@@ -1936,15 +1884,8 @@
         line-height: 25px;
     }
 }
-
 /* FIN PAGINA PRICIPAL */
-
-
-
-
-
 /* QUIENES SOMOS */
-
 .main__about{
     width: 100%;
     background-image: url(../images/paven.png);
@@ -1955,7 +1896,6 @@
     display: flex;
     justify-content: center;
 }
-
 .principal__somos, .mision__contenedor, .vision__somos{
     width: 95%;
     display: flex;
@@ -2040,7 +1980,6 @@
     padding: 5px 10px;
     font-style: italic;
 }
-
 /* QUIENES SOMOS BREAKPOINT 1024px */
 @media screen and (max-width: 1024px){
     .somos__contenedor{
@@ -2053,7 +1992,6 @@
         font-size: 16px;
     }
 }
-
 /* QUIENES SOMOS BREAKPOINT 768px */
 @media screen and (max-width: 768px){
     .principal__somos, .vision__somos{
@@ -2076,20 +2014,14 @@
         flex-direction: column-reverse;
     }
 }
-
 /* QUIENES SOMOS BREAKPOINT 480px */
 @media screen and (max-width: 480px){
     .descripcion__somos, .descripcion__mision, .descripcion__vision, .principios__texto {
         text-align: center;
     }
 }
-
 /* FIN QUIENES SOMOS */
-
-
-
 /* SERVICIOS */
-
 .service__barra{
     border-bottom: 2px solid #efefef;
     width: 85%;
@@ -2240,7 +2172,6 @@
     font-size: 21px;
     line-height: 21px;
 }
-
 .general__conductor{
     width: 100%;
     display: flex;
@@ -2263,7 +2194,6 @@
     background: linear-gradient(320deg, rgba(249,249,249,0) 54%, rgb(241 241 241) 100%);
     border-radius: 194px;
 }
-
 .elegido__imagen{
     width: 250px;
 }
@@ -2292,7 +2222,6 @@
     background-color: var(--azul);
     border: none;
     box-shadow: 2px 2px 2px var(--gris);
-
 }
 .boton__contact{
     text-align: center;
@@ -2301,7 +2230,6 @@
     color: var(--blanco);
     text-shadow: none;
 }
-
 .contenedor__turismo{
     width: 100%;
     overflow: hidden;
@@ -2399,12 +2327,10 @@
 .logos__contenedor{
     width: 200px;
     height: 150px;
-   
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .contenedor__img{
     width: 100%;
@@ -2412,7 +2338,6 @@
 .container__elegido--auto{
     background: none;
 }
-
 /* SERVICE BREAKPOINT 1024px */
 @media screen and (max-width: 1024px){
     .tipo__titulo{
@@ -2472,8 +2397,6 @@
     }
     .container__elegido{
         background: transparent
-       
-    
     }
 }
 /* SERVICE BREAKPOINT 480px */
@@ -2511,13 +2434,8 @@
         line-height: 18px;
     }
 }
-
 /* FIN SERVICIOS */
-
-
-
 /* CONTACTANOS */
-
 .main__contacto, .main__about, .main__service, .main__register{
     display: flex;
     flex-direction: column; 
@@ -2553,7 +2471,7 @@
 .link__home:hover{
     text-decoration: underline;
 }
-.contacto__inicio, .register__inicio{
+.contacto__inicio{
     width: 100%;
     height: 400px;
     background-image: url(../images/servicios.jpg);
@@ -2822,163 +2740,4 @@
         padding: 5px 0px;
     }
 }
-
-
 /* FIN DE CONTACTANOS */
-
-
-
-/* INICIO DE REGISTRO */
-
-.register__inicio{
-    background-image: url(../images/register_3.jpg);
-    background-position: bottom;
-}
-.fomulario__barra--register{
-    margin-bottom: 15px;
-}
-.formulario__condicion{
-    padding: 0px 20px 40px 20px ;
-    text-align: left;
-}
-
-
-
-
-
-
-/* FIN DE REGISTRO */
-
-
-
-/* INICIO DE SESION */
-
-.header__section--exit{
-    width: auto;
-    display: flex;
-    padding: 20px 20px 0px 10px;
-    color: var(--negro);
-    justify-content: flex-end;
-    font-weight: bold;
-    font-size: 20px;
-}
-.header__a--text{
-    font-size: 25px;
-}
-.header__icon--exit{
-    color: #e40000;
-    cursor: pointer;
-}
-.header__icon--exit:hover{
-    color: var(--negro);
-    font-size: 26px;
-}
-.section__login--logo{
-    display: flex;
-    justify-content: center;
-    height: 125px;
-}
-.section__section--contenedorimg{
-    padding: 10px;
-}
-.section__img--login{   
-    border-radius: 50%;
-    width: 140px;
-}  
-.section__section--containertitlelogo{
-    font-family: 'robotoregular', Arial, Helvetica, sans-serif;;
-    color: var(--negro);
-    padding-top: 50px ;
-    letter-spacing: 4px;
-    font-weight: bold;
-}
-.section__h1--titulologin{
-    font-size: 40px;
-}
-.section__h3--subtitulologin{
-    font-size: 20px;
-    padding-top: 15px;
-}
-.main__login{
-    background-color: var(--amarillo);
-    padding-top: 40px;
-}
-.main__login--contenedor{
-    background-color: var(--blanco);
-    width: 350px;
-    border-radius: 50px;
-    margin: 0 auto;
-    padding: 25px 40px 25px 40px;
-    color: var(--negro);
-}
-.main__login--contenedoricono{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-}
-.main__login--icono{
-    font-size: 50px; 
-}
-.main__label{
-    display: block;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
-}
-.main__contenedorinput{
-    position: relative;
-}
-.main__input--form{
-    width: 100%;
-    background-color: var(--blanco);
-    outline:none;
-    border-bottom: 2px solid var(--gris_medio);
-    height: 45px;
-    padding: 0 10px 0 40px;
-    transition: .3s ease all;
-}
-
-.main__error{
-    font-size: 12px;
-    display: none;
-    margin-bottom: 0;
-}
-.main__error-activo{
-    display: block;
-}
-.main__loginicono {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    font-size: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer__login{
-    background-color: #2A2A2A;
-}
-
-
-
-
-
-
-
-/************** FIN INICIO DE SESION **************/

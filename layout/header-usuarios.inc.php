@@ -8,7 +8,7 @@
     <meta name="description" content="Estación Taxi Rodadero Bello Horizonte conductores profesionales al volante cra 4 #11a-119, 057 Santa Marta, Magdalena, Colombia.">
     <meta name="keywords" content="taxi, taxi rodadero, comisiones, Taxis en Santa Marta">
     <link rel="icon" type="image/x-icon" href="../../images/taxi-icon.png">
-    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="stylesheet" href="../../css/usuarios.css">
     <link rel="stylesheet" href="../../css/all.min.css">
     <link rel="stylesheet" href="../../css/swiper.min.css">
     <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
@@ -34,17 +34,17 @@
                     <ul class="icons__ul">
                     <li class="ul__redes">
                             <a href="https://www.instagram.com/taxirodaderobello/?hl=es" target="_blank" class="redes__link">
-                                <img src="images/instagram_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="../../images/instagram_icon.png" alt="icono red social" class="link__redes" loading="lazy">
                             </a>
                         </li>
                         <li class="ul__redes">
                             <a href="https://www.facebook.com/pages/category/Taxi-Service/Taxi-Rodadero-Bello-Horizonte-122260542504000/" target="_blank" class="redes__link">
-                                <img src="images/facebook_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="../../images/facebook_icon.png" alt="icono red social" class="link__redes" loading="lazy">
                             </a>
                         </li>
                         <li class="ul__redes">
                             <a href="https://api.whatsapp.com/send?phone=573017656646" target="_blank" class="redes__link">
-                                <img src="images/whatsapp_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="../../images/whatsapp_icon.png" alt="icono red social" class="link__redes" loading="lazy">
                             </a>
                         </li>
                     </ul>

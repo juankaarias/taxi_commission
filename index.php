@@ -9,7 +9,7 @@
                 <section class="slider__difuminado">
                     <p class="difuminado__texto">¡Bienvenidos a Taxi Rodadero Bello Horizonte!</p>
                     <section class="difuminado__btn">
-                        <a href="tel:+573106350312" class="btn__llamanos">Llamanos</a>
+                        <a href="tel:+573106350312" class="btn__general">Llamanos</a>
                     </section>
                 </section>
             </li>
@@ -18,7 +18,7 @@
                 <section class="slider__difuminado">
                     <p class="difuminado__texto">¡Taxi Rodadero te acompaña a tu proximo destino!</p>
                     <section class="difuminado__btn">
-                        <a href="tel:+573178493636" class="btn__llamanos">Llamanos</a>
+                        <a href="tel:+573178493636" class="btn__general">Llamanos</a>
                     </section>
                 </section>
             </li>
@@ -27,7 +27,7 @@
                 <section class="slider__difuminado">
                     <p class="difuminado__texto">¡Servicio Disponible 24/7!</p>
                     <section class="difuminado__btn">
-                        <a href="contact_us.php" class="btn__llamanos">Contactanos</a>
+                        <a href="contact_us.php" class="btn__general">Contactanos</a>
                     </section>
                 </section>
             </li>
@@ -36,7 +36,7 @@
                 <section class="slider__difuminado">
                     <p class="difuminado__texto">¡Para todos tus planes, somos tu mejor aliado!</p>
                     <section class="difuminado__btn">
-                        <a href="contact_us.php" class="btn__llamanos">Contactanos</a>
+                        <a href="contact_us.php" class="btn__general">Contactanos</a>
                     </section>
                 </section>
             </li>
