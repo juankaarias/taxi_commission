@@ -1,0 +1,495 @@
+@import url("main.css");
+
+
+/* Cabecera */
+.main__commission{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/paven.png);
+}
+.commission__cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--amarillo);
+    box-shadow: 0 2px 2px #ccc;
+}
+.cabecera__navegacion{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion__logotipo{
+    display: flex;
+}
+.logotipo__contenedor{
+    padding: 5px;
+}
+.contenedor__logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.logotipo__titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    letter-spacing: 1px;
+}
+.titulos__empresa{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+}
+.titulos__sucursal{
+    font-size: 9px;
+    line-height: 9px;
+    margin-top: 3px;
+}
+.navegacion__menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__unordered{
+    display: flex;
+    height: 100%;
+}
+.unordered__lista{
+    margin: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.unordered__lista:hover{
+    color: var(--blanco);
+    background-color: var(--negro);
+    
+}
+.unordered__lista:hover .lista__submenu{
+    display: block;
+    box-shadow: 0px 2px 2px rgb(92, 92, 92);
+}
+.lista__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link__icono{
+    font-size: 15px;
+    line-height: 15px;
+    padding: 0 5px;
+}
+.link__icono--notificacion::after{
+    content: "15";
+    font-size: 9px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+} 
+.lista__submenu{
+    display: none;
+    min-width: 180px;
+    background-color: var(--negro);
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    right: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+.submenu__link{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 20px;
+    text-align: end;
+    color: var(--blanco);
+    font-weight: bold;
+}
+.submenu__link:hover{
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.submenu__link:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+.link__ayuda{
+    display: block;
+}
+.link__texto{
+    padding: 0 5px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    display: block;
+}
+.commission__menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__contenedor{
+    width: 97%;
+    margin: 7px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__indicativo{
+    display: flex;
+    justify-content: space-between;
+}
+.indicativo__titulo{
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 0px 2px var(--sombra);
+}
+.titulo__modulo{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+}
+.indicativo__fecha{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+.fecha__ingreso{
+    padding: 0 10px;
+}
+.contenedor__menu{
+    width: 100%;
+    height: 40px;
+    background-color: var(--sombra);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+.menu__navegacion{
+    height: 100%;
+    padding: 0 30px;
+}
+.navegacion__item{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100%;
+}
+.item__lista{
+    margin: 0 10px;
+    height: 100%;
+    position: relative;
+}
+.lista__opcion{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--blanco_medio);
+    padding: 0 10px;
+    cursor: pointer;
+}
+.item__lista:hover{
+    background-color: var(--amarillo);
+}
+.item__lista:hover .lista__opcion{
+    color: var(--negro);
+}
+.item__lista:hover .lista__subopcion{
+    display: block;
+}
+.opcion__icono{
+    padding: 5px;
+}
+.opcion__texto{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.lista__subopcion{
+    display: none;
+    position: absolute;
+    background-color: var(--amarillo);
+    top: 40px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+    width: 180px;
+    box-shadow: 0px 1px 2px var(--sombra)
+}
+.subopcion__item{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc4a;
+}
+.subopcion__item:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.subopcion__item:last-child:hover{
+    border-radius: 0px 0px 10px 10px;
+}
+.item__submenu{
+    color: var(--negro);
+}
+/* Fin Cabecera */
+
+/* Inicio Footer */
+.recover__footer{
+    width: 100%;
+    min-height: 30px;
+    background-color: var(--sombra);
+}
+.footer__recover{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+/* Fin Footer */
+
+/* Pagina Inicial */
+.commission__body, .commission__add{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body__contenedor, .add__contenedor{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.contenedor__tablas{
+    width: 48%;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--blanco_medio);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+}
+.tablas__titulo{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--sombra);
+    border-radius: 10px 10px 0 0;
+    padding: 0 10px;
+}
+.titulo__icono{
+    color: var(--blanco);
+    font-size: 15px;
+    padding: 10px;
+}
+.titulo__tabla{
+    color: var(--blanco);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}
+.tablas__datos{
+    padding: 0 10px;
+    text-align: center;
+    height: 100%;
+}
+.tablas__entrar{
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.entrar__mas{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px;
+}
+.entrar__icono{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 2px;
+}
+.display{
+    width: 100%;
+    font-size: 12px;
+    line-height: 12px;
+}
+/* Fin Pagina Inicial */
+
+/* Inicio agregar comision */
+
+.contenedor__add{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--sombra);
+    color: var(--blanco);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 20px;
+    margin: 0 20px;
+    border-radius: 10px 10px 0 0;
+}
+.add__icono{
+    padding: 5px;
+}
+.add__titulo{
+    padding: 5px;
+    font-weight: bold;
+}
+.contenedor__comision{
+    background-color: var(--blanco_medio);
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comision__contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contenedor__comisionista{
+    display: flex;
+    flex-direction: column;
+}
+.comisionista__cabecera{
+    display: flex;
+}
+.cebecera__titulo{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+.cabecera__linea{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left: 20px;
+}
+.linea__cabecera{
+    width: 100%;
+    border-bottom: 1px solid var(--gris_medio);
+}
+.comisionista__inputs{
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+.inputs__group{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.inputs__group--destino{
+    width: 100%;
+}
+.group__label{
+    width: 30%;
+    font-size: 14px;
+    line-height: 14px;
+    padding-right: 10px;
+    color: var(--negro);
+}
+.group__input{
+    width: 60%;
+    border: 1px solid #d1d3d4;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: var(--blanco);
+    color: var(--negro);
+    outline: none;
+    border-radius: 10px;
+}
+.group__label--destino{
+    width: 9%;
+}
+.group__input--destino{
+   width: 49.3%;
+}
+.contenedor__submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.submit__linea{
+    width: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.linea__submit{
+    width: 100%;
+    border-bottom: 1px solid var(--gris_medio);
+}
+.submit__agregar{
+    padding: 12px 20px ;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3ecc34;
+    color: var(--blanco_medio);
+    text-shadow: 0px 0px 1px var(--sombra);
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px var(--sombra);
+}
+.comision__espera{
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(--gris_medio);
+}
+.espera__titulo{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--sombra);
+    color: var(--blanco_medio);
+}
+.titulo__espera{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+                    
+
+
+/* Fin agregar comision */
