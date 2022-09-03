@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <title>Taxi Rodadero</title>
+    <title><?php echo $titulo;?></title>
 </head>
 <body>
     <header class="header">
@@ -28,7 +28,7 @@
             </section>
             <section class="section__social">
                 <section class="social__texto">
-                    <p class="texto__siguenos">Siguenos en</p>
+                    <p class="texto__siguenos">Síguenos en</p>
                 </section>
                 <section class="social__icons">
                     <ul class="icons__ul">
@@ -64,7 +64,7 @@
             </section>
             <section class="menu__login">
                 <button class="login__btn" type="button"> 
-                    <a href="usuarios/vista/index.php" class="btn__link">INICIAR SESION</a>
+                    <a href="usuarios/vista/index.php" class="btn__link">INICIAR SESIÓN</a>
                 </button>
             </section>
             <button class="menu__ham" type="button">

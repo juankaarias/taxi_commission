@@ -1,4 +1,7 @@
-<?php include_once("layout/header.inc.php");?>
+<?php 
+    $titulo="Quienes Somos";
+    include_once("layout/header.inc.php");
+?>
 
 
 <section class="main__about">
@@ -14,7 +17,7 @@
         <section class="principal__somos" >
             <section class="somos__contenedor" >
                 <section class="contenedor__quienes" >
-                    <h1 class="quienes__titulo" >¿Quiénes Somos?</h1>
+                    <h1 class="quienes__titulo" >¿Quienes Somos?</h1>
                     <hr class="quienes__barra">
                 </section>
                 <section class="contenedor__descripcion" >
@@ -23,7 +26,7 @@
                         servicios de transportes terrestre de calidad tipo taxi para 
                         la satisfacción de los usuarios tantos 
                         externos como internos, mejorando el desplazamiento dentro 
-                        del territorio y fuera de el.
+                        del territorio y fuera de él.
                     </p>
                 </section>
             </section>
@@ -40,7 +43,7 @@
             </section>
             <section class="contenedor__mision" >
                 <section class="mision__titulo" >
-                    <h1 class="titulo__mision" >Mision</h1>
+                    <h1 class="titulo__mision" >Misión</h1>
                     <hr class="quienes__barra">
                 </section>
                 <section class="mision__descripcion" >
@@ -49,9 +52,9 @@
                         espacio radiales y de transporte terrestre de calidad tipo TAXI ofreciendo
                         a nuestra distinguida clientela el mejor servicio, al mejor precio con alto
                         índice de seguridad, con taxis en las mejores condiciones mecánicas, 
-                        de higiene, seguridad y limpieza, manejados por personal idóneo con el 
+                        de higiene, seguridad y limpieza, manejados por personal idóneo con él 
                         máximo compromiso con el cumplimiento de su labor, mejorando la calidad 
-                        de vida de  nuestros usuarios.  
+                        de vida de nuestros usuarios.  
                     </p>
                 </section>
             </section>
@@ -62,7 +65,7 @@
         <section class="vision__somos" >
             <section class="somos__contenedor" >
                 <section class="contenedor__vision" >
-                    <h1 class="vision__titulo" >Vision</h1>
+                    <h1 class="vision__titulo" >Visión</h1>
                     <hr class="quienes__barra">
                 </section>
                 <section class="contenedor__descripcion" >
@@ -70,7 +73,7 @@
                         Ser reconocida como la empresa líder en la prestación 
                         de servicio de 
                         transporte terrestre de calidad, tipo TAXI en 
-                        Santa Marta D.T.C.H, a través del 
+                        Santa Marta D.T.C.H., a través del 
                         profesionalismo de recursos humanos y la constante 
                         capacitación técnica e innovación tecnológica para 
                         la total satisfacción de los requerimientos de 

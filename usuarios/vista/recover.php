@@ -44,7 +44,7 @@
                 <form action="#" method="POST" class="recover__form">
                     <!--email recover-->
                     <section class="form__recover">
-                        <label class="recover__label" for="correo">Correo Electronico</label>
+                        <label class="recover__label" for="correo">Correo Electrónico</label>
                         <section class="recover__input">
                             <i class="input__icono fa-solid fa-envelope"></i>  
                             <input class="input__correo" type="email" name="correo" id="correo" autocomplete="off" required>

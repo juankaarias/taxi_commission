@@ -1,4 +1,7 @@
-<?php include_once("layout/header.inc.php");?>
+<?php 
+    $titulo="Servicios";
+    include_once("layout/header.inc.php");
+?>
 <main class="main__service">
 
     <section class="service__indicador">
@@ -26,7 +29,7 @@
                             </section>
                             <section class="informacion__parrafo" >
                                 <p class="parrafo__general">
-                                    Desplazate por toda la ciudad de <span>Santa Marta</span> rapido, seguro y confiable con <span class="local__negrita">Taxi Rodadero Bello Horizonte.</span>
+                                    Desplazate por toda la ciudad de <span>Santa Marta</span> rápido, seguro y confiable con <span class="local__negrita">Taxi Rodadero Bello Horizonte.</span>
                                 </p>
                             </section>
                         </section>
@@ -56,7 +59,7 @@
                             </section>
                             <section class="informacion__parrafo" >
                                 <p class="parrafo__general">
-                                    Descrube <span>Colombia</span> entera y disfruta de sus hermosas ciudades de manera segura y confiable con <span class="local__negrita">Taxi Rodadero Bello Horizonte.</span>
+                                    Descubre <span>Colombia</span> entera y disfruta de sus hermosas ciudades de manera segura y confiable con <span class="local__negrita">Taxi Rodadero Bello Horizonte.</span>
                                 </p>
                             </section>
                         </section>
@@ -71,7 +74,7 @@
                             </section>
                             <section class="informacion__parrafo" >
                                 <p class="parrafo__general parrafo__general--recorrido">
-                                    Si requieres de recorridos <span>Taxi Rodadero Bello Horizonte</span> es el indicado pues te ofrecemos un servicio rapido, seguro y confiable
+                                    Si requieres de recorridos <span>Taxi Rodadero Bello Horizonte</span> es el indicado pues te ofrecemos un servicio rápido, seguro y confiable
                                 </p>
                             </section>
                         </section>
@@ -81,8 +84,8 @@
                     <p class="txt__detalle">
                         Cubrimos distintos tipos de servicios para satisfacer todas 
                         tus necesidades de transporte, recuerda que con nosotros es 
-                        de manera segura, confiable y rapida, no dudes en comunicarte 
-                        con nosotros para mayor informacion.
+                        de manera segura, confiable y rápida, no dudes en comunicarte 
+                        con nosotros para mayor información.
                     </p>
                 </section>
                 
@@ -97,12 +100,12 @@
 
                 <section class="contenedor__title">
                     <i class="title__icon fa-solid fa-person-walking-luggage"></i>
-                    <h2 class="title__service">Servicio de Transporte Turistico</h2>
+                    <h2 class="title__service">Servicio de Transporte Turístico</h2>
                 </section>
                 <hr class="contenedor__linea">
                 <section class="contenedor__turismo">
                     <section class="turismo__diagonal">
-                        <p class="diagonal__titulo">Viajes y recorridos a todos los destinos turisticos</p>
+                        <p class="diagonal__titulo">Viajes y recorridos a todos los destinos turísticos</p>
                     </section>
                     <section class="diagonal__contenedor">
                         <section class="contenedor__cuadro contenedor__cuadro--minca">
@@ -145,7 +148,7 @@
                 </section>
                 <section class="general__txt">
                     <p class="txt__detalle">
-                        Disfruta, Recorre todos los sitios turisticos mas visitados, a donde 
+                        Disfruta, Recorre todos los sitios turísticos más visitados, a donde 
                         quieras ir nosotros te acompañamos, te esperamos.
                     </p>
                 </section>
@@ -176,7 +179,7 @@
                         <section class="container__elegido container__elegido--auto">
                             
                             <p class="elegido__detalle">
-                                Contrata a uno de nuestros Conductores Elegidos todos estan 
+                                Contrata a uno de nuestros Conductores Elegidos todos están 
                                 altamente capacitados para que te lleve seguro a tu lugar de destino.
                             </p>
                             <img class="elegido__imagen" src="images/conductor_e.png" alt="llaves" loading="lazy">
@@ -193,8 +196,8 @@
 
                     <section class="empresarial__txt">
                         <p class="txt__detalle">
-                            Siempre contanmos con un alto estándar de calidad, con profesionales al volante, 
-                            los mejores vehiculos para un servicio superior, algunos de nuestros clientes empresariales.
+                            Siempre contamos con un alto estándar de calidad, con profesionales al volante, 
+                            los mejores vehículos para un servicio superior, algunos de nuestros clientes empresariales.
                         </p>
                     </section>
                     <section class="empresarial__logos">
@@ -218,12 +221,12 @@
                 <section class="empresarial__txt">
                     <p class="txt__detalle">
                         Ofrecemos muchos beneficios a las empresas alidas como convenios, crédito de 30 días 
-                        y muchos mas comunicate para saber las informacion.
+                        y muchos más comunicate para saber las información.
                     </p>
                 </section>
                 <section class="general__contacto">
                     <button class="contacto__boton">
-                        <a href="contact_us.php" class="boton__contact">Escribenos</a>
+                        <a href="contact_us.php" class="boton__contact">Escríbenos</a>
                     </button>
                 </section>
 

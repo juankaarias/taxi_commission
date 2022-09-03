@@ -8,6 +8,14 @@
     --gris: #999;
     --gris_medio: #ccc;
     --sombra: #333;
+    --verde_claro: #00C851;
+    --verde_fuerte: #007E33;
+    --rojo_claro: #ff4444;
+    --rojo_fuerte: #CC0000;
+    --azul_claro: #33b5e5;
+    --azul_fuerte: #0099CC;
+    --naranja_claro: #ffbb33;
+    --naranja_fuerte:#FF8800;
 } 
 @font-face{
     font-family: 'robotoregular';
@@ -756,7 +764,6 @@
 .servicios__info, .consejo__info, .servicios__titulo{
     text-shadow: 1px 1px 2px var(--sombra);
     font-size: 20px;
-    word-spacing: 2px;
     line-height: 20px;
 }
 .servicios__info a{
@@ -2766,8 +2773,7 @@
     width: 190px;
     position: absolute;
     bottom: 30%;
-    left: 95px;
-    filter: grayscale(80%);
+    left: 95px;   
     animation: taxi 2s linear infinite alternate;
 }
 .error__contenedor{
@@ -2803,20 +2809,20 @@
 .atras__link{
     display: flex;
     align-items: center;
-    background-color: var(--azul);
-    padding: 14px;
-    border-radius: 20px;
+    background-color: #fcac00;
+    padding: 12px;
+    border-radius: 10px;
     
 }
 .atras__link:hover{
-    background-color: #3fc2da;
+    background-color: #fcac00;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.50);
-    box-shadow: 0px 2px 2px rgb(95, 95, 95);
+    box-shadow: 0px 2px 2px rgb(78, 78, 78);
 }
 .link__atras{
-    color: var(--blanco);
-    font-size: 20px;
-    line-height: 20px;
+    color: var(--negro);
+    font-size: 16px;
+    line-height: 16px;
     padding: 0px 10px;
     font-weight: bold;
     font-family: sans-serif;

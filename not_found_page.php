@@ -18,7 +18,7 @@
         <div class="error__contenedor">
             <div class="contenedor__texto">
                 <h1 class="texto__error">404</h1>
-                <h2 class="texto__tipo">¡Lo sentimos, Pagina no encontrada!</h2>
+                <h2 class="texto__tipo">¡Lo sentimos, Página no encontrada!</h2>
                 <p class="texto__detalle">Es posible que haya escrito mal la dirección o que la página se haya movido</p>
             </div>
             <div class="contenedor__atras">

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/all.min.css">
     <link rel="stylesheet" href="../../css/swiper.min.css">
     <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-    <title>Taxi Rodadero</title>
+    <title><?php echo $titulo;?></title>
 </head>
 <body>
     <header class="header">

@@ -1,4 +1,7 @@
-<?php include_once("layout/header.inc.php");?>
+<?php 
+    $titulo="Inicio";
+    include_once("layout/header.inc.php");
+?>
 
 <main class="main">
 
@@ -16,7 +19,7 @@
 
             <li class="ul__slider ul__slider--2">
                 <section class="slider__difuminado">
-                    <p class="difuminado__texto">¡Taxi Rodadero te acompaña a tu proximo destino!</p>
+                    <p class="difuminado__texto">¡Taxi Rodadero te acompaña a tu próximo destino!</p>
                     <section class="difuminado__btn">
                         <a href="tel:+573178493636" class="btn__general">Llamanos</a>
                     </section>
@@ -119,7 +122,7 @@
                         <h2 class="servicios__info">Transporte de Pasajeros</h2>
                         <h2 class="servicios__info">Rutas Contratadas</h2>
                         <h2 class="servicios__info">Viajes a cualquier ciudad</h2>
-                        <h2 class="servicios__info">Transporte Turistico</h2>
+                        <h2 class="servicios__info">Transporte Turístico</h2>
                         <h2 class="servicios__info"><a href="service.php">Ver más...</a></h2>
                     </section>
                 </section>
@@ -128,9 +131,9 @@
                 <section class="texto__descripcion">
                     <img class="descripcion__imagen" loading="lazy" src="images/247.png" alt="24/7">
                     <section class="descripcion__consejo">
-                        <h2 class="consejo__info">Te ofrecemos nuestros servicios las 24 horas 7 dias de la semana
+                        <h2 class="consejo__info">Te ofrecemos nuestros servicios las 24 horas 7 días de la semana
                         </h2>
-                        <h2 class="consejo__info">¡Sientete confiado con nosotros y con la calidad prestada!</h2>
+                        <h2 class="consejo__info">¡Siéntete confiado con nosotros y con la calidad prestada!</h2>
                     </section>
                     <section class="descripcion__disponibilidad">
                         <section class="disponibilidad__fondo">
@@ -163,8 +166,8 @@
                                 solicite sus servicios desde la comodidad de
                                 su smartphone.
                                 Igualmente puede solicitar su servicio por
-                                WhatsApp a la línea 310 635 03 12 o a la linea 
-                                telefonica 605 422 58 30.
+                                WhatsApp a la línea 310 635 03 12 o a la línea 
+                                telefónica 605 422 58 30.
                             </p>
                         </section>
                         </section>
@@ -179,8 +182,8 @@
                                     de ley y adicionalmente cuenta con cobertura 
                                     por exceso en caso de requerirlo; que le 
                                     garantiza a nuestros usuarios, que estarán 
-                                    cubiertos por un mayor valor al que exige el 
-                                    gobierno por ley y sus decretos reglamentarios.
+                                    cubiertos por un mayor valor al que exige él 
+                                    Gobierno por ley y sus decretos reglamentarios.
                                 </p>
                             </section>
                         </section>
@@ -192,7 +195,7 @@
                                 <img src="images/insignia.png" alt="calidad" class="razon__img" loading="lazy">
                                 <p class="razon__texto">
                                     Porque trabajamos constantemente en el mejoramiento 
-                                    continuo de los servicios que se prestan. nuestros 
+                                    continuo de los servicios que se prestan. Nuestros 
                                     vehículos son nuevos y equipados con tecnología de 
                                     punta; con personal calificado y calidad humana.
                                 </p>
@@ -255,7 +258,7 @@
     
     <section class="main__app">
         <section class="app__title">
-            <h2 class="title__text">NUESTRA APLICACION DISPONIBLE PARA ANDROID & IOS</h2>
+            <h2 class="title__text">NUESTRA APLICACIÓN DISPONIBLE PARA ANDROID & IOS</h2>
         </section>
         <hr class="app__barra">
         <section class="app__anuncio">
@@ -308,7 +311,7 @@
     <section class="main__contenedor">
         <section class="contenedor__pasos">
             <section class="pasos__titulo">
-                <h2 class="titulo__registro">¿TE GUSTARIA SER PARTE DE NUESTROS COMISIONISTAS?</h2>
+                <h2 class="titulo__registro">¿TE GUSTARÍA SER PARTE DE NUESTROS COMISIONISTAS?</h2>
             </section>
             <section class="pasos__container">
                 <section class="container__imagen">
@@ -324,8 +327,8 @@
                             <section class="paso__icono">
                                    <h2 class="icono__numero">1</h2>
                             </section>
-                            <p class="paso__texto">Podran ser comisionistas empresas que soliciten un gran flujo de
-                                servicios al dia ejemplo hoteles, agencias, etc.</p>
+                            <p class="paso__texto">Podrán ser comisionistas empresas que soliciten un gran flujo de
+                                servicios al día ejemplo hoteles, agencias, etc.</p>
                         </section>
                         <section class="contenedor__paso">
                             <section class="paso__imagen">
@@ -344,7 +347,7 @@
                             <section class="paso__icono">
                                 <h2 class="icono__numero">3</h2>
                             </section>
-                            <p class="paso__texto">Una vez sea validado podras realizar servicios e inmediatemante
+                            <p class="paso__texto">Una vez sea validado podrás realizar servicios e inmediatamente
                                 comenzar a comisionar con nosotros.</p>
                         </section>
                     </section>
@@ -377,7 +380,7 @@
                                 </div>
                             </div>
                             <div class="card-content">
-                                <h2 class="name">Ricardo Sanchez</h2>
+                                <h2 class="name">Ricardo Sánchez</h2>
                                 <p class="description">"Gracias Taxi Rodadero tengo la posibilidad de ganar dinero
                                     extra"
                                 </p>
@@ -395,7 +398,7 @@
                             </div>
                             <div class="card-content">
                                 <h2 class="name">David Dell</h2>
-                                <p class="description">"Tengo mas de 2 años comisionando y nunca he tenido
+                                <p class="description">"Tengo más de 2 años comisionando y nunca he tenido
                                     problemas"</p>
                                     <img class="stars" src="images/estrellas.png" alt="estrellas" loading="lazy">
                             </div>
@@ -409,7 +412,7 @@
                             </div>
                             <div class="card-content">
                                 <h2 class="name">Steiner Benitez</h2>
-                                <p class="description">"Estoy feliz por que tengo una entrada extra con la que
+                                <p class="description">"Estoy feliz porque tengo una entrada extra con la que
                                     cuento siempre a fin de mes"</p>
                                     <img class="stars" src="images/estrellas.png" alt="estrellas" loading="lazy">
                             </div>

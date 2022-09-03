@@ -1,6 +1,5 @@
 @import url("main.css");
 
-
 /* Cabecera */
 .main__commission{
     width: 100%;
@@ -91,15 +90,17 @@
 }
 .link__icono--notificacion::after{
     content: "15";
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
     color: white;
     border-radius: 50%;
-    background-color: red;
-    padding: 4px;
+    background-color: #ff4444;
+    text-shadow: 0px 1px 1px var(--sombra);
+    padding: 7px;
     width: 100%;
     height: 100%;
-} 
+}
+
 .lista__submenu{
     display: none;
     min-width: 180px;
@@ -230,24 +231,72 @@
     left: 0px;
     z-index: 1;
     border-radius: 0px 0px 10px 10px;
-    width: 180px;
+    width: 200px;
     box-shadow: 0px 1px 2px var(--sombra)
 }
-.subopcion__item{
+.subopcion__item, .submenu2__lista{
     font-size: 14px;
     line-height: 14px;
     padding: 10px 15px;
     border-bottom: 1px solid #cccccc4a;
+    position: relative;
 }
-.subopcion__item:hover{
-    background-color: rgba(0, 0, 0, 0.144);
+.subopcion__item:last-child, .submenu2__lista:last-child{
+    border: none;
 }
-.subopcion__item:last-child:hover{
+.subopcion__item:hover, .submenu2__lista:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.subopcion__item:last-child:hover, .submenu2__lista:last-child:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.subopcion__item:last-child:hover, .submenu2__lista:last-child:hover{
     border-radius: 0px 0px 10px 10px;
+}
+.subopcion__item--backup:last-child:hover{
+    border-radius: 0px 0px 0px 10px;
+}
+.item__submenu--comision, .item__submenu--backup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 .item__submenu{
     color: var(--negro);
 }
+.comision__menu{
+    width: 100%;
+}
+.item__submenu2{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 201px;
+    top: 0px;
+    background-color: var(--amarillo);
+    box-shadow: 0px 0px 2px black;
+    border-radius: 0 0 10px 10px;
+}
+.lista__subopcion--submenu:hover{
+    border-radius: 0 0 2px 10px;
+}
+.subopcion__item:hover .item__submenu2{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Fin Cabecera */
 
 /* Inicio Footer */
@@ -312,9 +361,7 @@
     font-weight: bold;
 }
 .tablas__datos{
-    padding: 0 10px;
     text-align: center;
-    height: 100%;
 }
 .tablas__entrar{
     width: 70px;
@@ -350,7 +397,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    background-color: var(--sombra);
+    background-color: var(--negro);
     color: var(--blanco);
     font-size: 16px;
     line-height: 16px;
@@ -358,10 +405,10 @@
     margin: 0 20px;
     border-radius: 10px 10px 0 0;
 }
-.add__icono{
+.add__icono, .effective__icono{
     padding: 5px;
 }
-.add__titulo{
+.add__titulo, .effective__titulo{
     padding: 5px;
     font-weight: bold;
 }
@@ -369,9 +416,11 @@
     background-color: var(--blanco_medio);
     width: 100%;
     margin: 0 20px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid #ccc;
 }
 .comision__contenedor{
     width: 100%;
@@ -388,11 +437,12 @@
 }
 .cebecera__titulo{
     font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 .cabecera__linea{
-    width: 100%;
+    width: 90%;
     height: 20px;
     display: flex;
     justify-content: right;
@@ -465,16 +515,21 @@
     padding: 12px 20px ;
     font-weight: bold;
     cursor: pointer;
-    background-color: #3ecc34;
+    background-color: var(--verde_fuerte);
     color: var(--blanco_medio);
     text-shadow: 0px 0px 1px var(--sombra);
     border-radius: 10px;
     box-shadow: 0px 2px 3px var(--sombra);
 }
+.submit__agregar:hover{
+    background-color: var(--verde_claro);
+}
 .comision__espera{
-    width: 90%;
+    width: 95%;
     margin: auto;
     border: 1px solid var(--gris_medio);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
 }
 .espera__titulo{
     width: 100%;
@@ -482,14 +537,60 @@
     display: flex;
     align-items: center;
     border-radius: 10px 10px 0 0;
-    background-color: var(--sombra);
-    color: var(--blanco_medio);
+    background-color: var(--rojo_fuerte);
+    color: var(--blanco);
+    padding: 0 20px;
 }
 .titulo__espera{
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-weight: bold;
 }
+.espera__tabla{
+    padding: 20px;
+}
                     
-
-
 /* Fin agregar comision */
+
+/* Inicio comision efectiva */
+
+.effective__commissions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.commissions__container{
+    width: 97%;
+    min-height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+.container__effective{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--amarillo);
+    color: var(--negro);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 20px;
+    border-radius: 10px 10px 0 0;
+}
+.container__effective--efectivas{
+    background-color: var(--verde_fuerte);
+    color: var(--blanco);
+}
+.container__effective--noefectivas{
+    background-color: var(--rojo_fuerte);
+    color: var(--blanco);
+}
+.container__datos{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--blanco_medio);
+}
+
+/* Fin comision efectiva */

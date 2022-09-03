@@ -20,7 +20,7 @@
         <section class="interserverror__titulo">
             <h1 class="titulo__numero">500</h1>
             <h2 class="titulo__error">Error Interno del Servidor</h2>
-            <p class="titulo__mensaje">Trata de volver a cargar esta pagina o no dudes en contactarnos si el problema persiste.</p>
+            <p class="titulo__mensaje">Trata de volver a cargar esta página o no dudes en contactarnos si el problema persiste.</p>
             <p class="titulo__mensaje">estaciontaxirodadero@hotmail.com</p>
         </section> 
         

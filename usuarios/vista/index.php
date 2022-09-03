@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../../images/taxi-icon.png">
     <link rel="stylesheet" href="../../css/usuarios.css">
     <link rel="stylesheet" href="../../css/all.min.css">
-    <title>Login - Sistema de Comisiones</title>
+    <title>Iniciar Sesión - Sistema de Comisiones</title>
 </head>
 <body>
     <main class="main__login">
@@ -64,7 +64,7 @@
                             <i class="input__icono fa-solid fa-lock"></i>   
                             <input class="input__password" type="password" name="password" id="password"  autocomplete="off" required>
                         </section>
-                        <p class="group__error">La contraseña debe contener letras y numeros.</p>
+                        <p class="group__error">La contraseña debe contener letras y números.</p>
                     </section>
 
                     <section class="form__preguntas">
@@ -94,7 +94,7 @@
                 <h4 class="login__link">¿Deseas ser Comisionista?</h4>
             </section>
             <section class="registro__login">
-                <a href="register.php"  class="login__link--clic">Registrate aqui</a>
+                <a href="register.php"  class="login__link--clic">Registrate aquí</a>
             </section>
         </section>
         <footer class="login__footer">

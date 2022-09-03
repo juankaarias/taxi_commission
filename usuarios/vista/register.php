@@ -1,17 +1,20 @@
-<?php include_once("../../layout/header-usuarios.inc.php");?>
+<?php 
+    $titulo="Registro de Comisionista";
+    include_once("../../layout/header-usuarios.inc.php");    
+?>
 
 <main class="main__register">
     <section class="register__indicador">
         <section class="indicador__contenedor">
             <a href="index.php" class="link__home">Inicio</a>
-            <p class="contenedor__link">Registrate</p>
+            <p class="contenedor__link">Regístrate</p>
         </section>
     </section>
 
     <section class="register__inicio">
         <section class="inicio__register">
             <section class="register__contactanos">
-                <h1 class="contactanos__title">Registrate</h1>
+                <h1 class="contactanos__title">Regístrate</h1>
                 <p class="contactanos__texto">¡Se parte de nuestra familia!</p>
             </section> 
         </section>
@@ -26,11 +29,11 @@
             </section>
             <section class="formulario__condicion">
                 <p class="condicion__formulario">
-                    Podran ser comisionistas quienes soliciten un gran 
-                    flujo de servicios al dia ejemplo hoteles, agencias, 
-                    conjuntos, edificios etc, ingresa tus datos personales y 
-                    del punto de donde se generan los servicios, previa validacion
-                    podras realizar servicios e inmediatemante 
+                    Podrán ser comisionistas quienes soliciten un gran 
+                    flujo de servicios al día ejemplo hoteles, agencias, 
+                    conjuntos, edificios, etc, ingresa tus datos personales y 
+                    del punto de donde se generan los servicios, previa validación
+                    podrás realizar servicios e inmediatamente 
                     comenzar a comisionar con nosotros. 
                 </p>
             </section>
@@ -53,17 +56,17 @@
                     </section>
 
                     <section class="form__input">
-                        <label class="label__text" for="">Telefono</label>
+                        <label class="label__text" for="">Teléfono</label>
                         <input class="input__box" type="text" placeholder="Telefono">
                     </section>
 
                     <section class="form__input">
-                        <label class="label__text" for="input__box">Tipo de Identificacion</label>
+                        <label class="label__text" for="input__box">Tipo de Identificación</label>
                         <input class="input__box" type="text" placeholder="Seleccione"> 
                     </section>
 
                     <section class="form__input">
-                        <label class="label__text" for="input__box">Numero de Identificacion</label>
+                        <label class="label__text" for="input__box">Número de Identificación</label>
                         <input class="input__box" type="text" placeholder="Numero de Id"> 
                     </section>
 
@@ -83,7 +86,7 @@
                     </section>
 
                     <section class="form__input">
-                        <label class="label__text" for="input__box">Direccion del Punto</label>
+                        <label class="label__text" for="input__box">Dirección del Punto</label>
                         <input class="input__box" type="text" placeholder="Direccion"> 
                     </section>   
 

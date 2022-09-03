@@ -1,4 +1,7 @@
-<?php include_once("layout/header.inc.php");?>
+<?php 
+    $titulo="Contactanos";
+    include_once("layout/header.inc.php");
+?>
 
 <main class="main__contacto">
 
@@ -49,7 +52,7 @@
                     </section>
 
                     <section class="form__input">
-                        <label class="label__text" for="input__box">Direccion</label>
+                        <label class="label__text" for="input__box">Dirección</label>
                         <input class="input__box" type="text" placeholder="Direccion"> 
                     </section>
 
@@ -59,7 +62,7 @@
                     </section>
 
                     <section class="form__input form__input--textarea">
-                        <label class="label__text" for="">Observacion</label>
+                        <label class="label__text" for="">Observación</label>
                         <textarea class="input__box input__box--textarea" placeholder="Cuéntanos brevemente tu solicitud" name="" id=""></textarea>
                     </section>
                 </section>
@@ -124,7 +127,7 @@
                     </section>
                 </section>
                 <section class="bloque__texto">
-                    <p class="texto__titulo">Correo Electronico</p>
+                    <p class="texto__titulo">Correo Electrónico</p>
                 </section>
                 <section class="bloque__numeros">
                     <p class="numeros__fijos">estaciontaxirodadero@hotmail.com</p>
