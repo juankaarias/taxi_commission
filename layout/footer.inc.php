@@ -1,16 +1,16 @@
         <section class="main__arriba">
             <section class="arriba__btn">
-                <i class="btn__up fa-solid fa-chevron-up" style="color: #2A2A2A"></i>
+                <i class="btn__up fa-solid fa-chevron-up" style="color: #2A2A2A" title="Ir arriba"></i>
             </section>
         </section>
         <section class="main__ayuda">
-            <a href="https://api.whatsapp.com/send?phone=573017656646" target="__blank" class="ayuda__contenedor"><img src="images/whatsapp.png" class="contenedor__app" alt="WhatsApp" lazy="loading"></a>
+            <a href="https://api.whatsapp.com/send?phone=573017656646" target="__blank" class="ayuda__contenedor"><img src="images/whatsapp.png" class="contenedor__app" alt="WhatsApp" lazy="loading" title="WhatsApp"></a>
         </section> 
     </main>
     <footer class="footer">
         <section class="footer__logo">
             <section class="logo__imagen">
-                <img src="images/logo.png" alt="logo" class="imagen__logo">
+                <img src="images/logo.png" alt="Logo Taxi Rodadero" class="imagen__logo" loading="lazy" title="Taxi Rodadero Bello Horizonte">
             </section>
             <section class="logo__texto">
                 <h2 class="texto__logo">TAXI RODADERO BELLO HORIZONTE S.A.S</h2>
@@ -19,7 +19,7 @@
         <section class="footer__contenedor">
             <section class="contenedor__direccion">
                 <section class="direccion__icons">
-                    <img src="images/arrecife.png" class="icons__logos" alt="logo arrecife" lazy="loading">
+                    <img src="images/arrecife.png" class="icons__logos" alt="Logo Centro Comercial Arrecife" lazy="loading" title="Centro Comercial Arrecife">
                 </section>
                 <section class="direccion__texto">
                     <section class="texto__direccion">
@@ -33,7 +33,7 @@
             </section>
             <section class="contenedor__direccion">
                 <section class="direccion__icons">
-                <img src="images/logo-blanco.png" class="icons__logos" alt="logo arrecife" lazy="loading">
+                <img src="images/logo-blanco.png" class="icons__logos" alt="Logo Zuana" lazy="loading" title="Hotel Zuana">
                 </section>
                 <section class="direccion__texto">
                     <section class="texto__direccion">
@@ -51,16 +51,19 @@
                 <li class="ul__item">
                     <a href="https://www.instagram.com/taxirodaderobello/?hl=es" target="_blank" title="Instagram" class="item__a">
                         <i class="a__redess fa-brands fa-instagram"></i>
+                        <p class="a__descripcion">Instagram</p>
                     </a>
                 </li>
                 <li class="ul__item">
                     <a href="https://www.facebook.com/pages/category/Taxi-Service/Taxi-Rodadero-Bello-Horizonte-122260542504000/" target="_blank" class="item__a" title="Facebook">
                         <i class="a__redess fa-brands fa-facebook-f"></i>
+                        <p class="a__descripcion">Facebook</p>
                     </a>
                 </li>
                 <li class="ul__item">
                     <a href="https://api.whatsapp.com/send?phone=573017656646" target="_blank" class="item__a" title="Whatsapp">
                         <i class="a__redess fa-brands fa-whatsapp"></i>
+                        <p class="a__descripcion">WhatsApp</p>
                     </a>
                 </li>
             </ul>

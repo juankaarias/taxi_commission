@@ -202,19 +202,19 @@
                     </section>
                     <section class="empresarial__logos">
                         <section class="logos__contenedor">
-                            <img class="contenedor__img" src="images/logozuana.png" alt="logo empresa aliada" loading="lazy">
+                            <img class="contenedor__img" src="images/logozuana.png" alt="Logo Zuana" loading="lazy" title="Zuana">
                         </section>
                         <section class="logos__contenedor">
-                            <img class="contenedor__img" src="images/Marriott.png" alt="logo empresa aliada" loading="lazy">
+                            <img class="contenedor__img" src="images/Marriott.png" alt="Logo Marriott" loading="lazy" title="Marriott">
                         </section>
                         <section class="logos__contenedor">
-                            <img class="contenedor__img" src="images/arrecife_c.png" alt="logo empresa aliada" loading="lazy">
+                            <img class="contenedor__img" src="images/arrecife_c.png" alt="Logo Arrecife" loading="lazy" title="Arrecife">
                         </section>
                         <section class="logos__contenedor">
-                            <img class="contenedor__img" src="images/sanha.png" alt="logo empresa aliada" loading="lazy">
+                            <img class="contenedor__img" src="images/sanha.png" alt="Logo Sanha" loading="lazy" title="Sanha">
                         </section>
                         <section class="logos__contenedor">
-                            <img class="contenedor__img" src="images/santorini.png" alt="logo empresa aliada" loading="lazy">
+                            <img class="contenedor__img" src="images/santorini.png" alt="Logo Santorini" loading="lazy" title="Santorini">
                         </section>
                     </section>
                 </section>

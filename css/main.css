@@ -14,8 +14,11 @@
     --rojo_fuerte: #CC0000;
     --azul_claro: #33b5e5;
     --azul_fuerte: #0099CC;
+    --azul_mapa: #3874CD;
+    --azul_oceano: #9CC0F9;
     --naranja_claro: #ffbb33;
     --naranja_fuerte:#FF8800;
+
 } 
 @font-face{
     font-family: 'robotoregular';
@@ -122,6 +125,9 @@
 .icons__ul{
     display: flex;
 }
+.ul__redes:hover{
+    transform: scale(1.2);
+}
 .redes__link{
     font-size: 30px;
     margin: 5px 10px 10px 10px;
@@ -130,9 +136,11 @@
 .link__redes{
     width: 30px;
     height: 30px;
+    margin: auto;
 }
-.link__redes:hover{
-    transform: scale(1.2);
+.link__descripcion{
+    font-size: 12px;
+    line-height: 12px;
 }
 /* HEADER BREAKPOINT 768px */
 @media(max-width:768px){
@@ -482,12 +490,18 @@
 }
 .item__a{
     font-size: 30px;
+    text-align: center;
 }
 .a__redess{
    color: var(--blanco_medio);
 }
-.a__redess:hover{
+.item__a:hover{
     transform: scale(1.2);
+}
+.a__descripcion{
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--blanco);
 }
 .copy__autor{
     text-align: center;
@@ -585,6 +599,9 @@
     background-color: var(--amarillo);
     border: none;
     box-shadow: 2px 2px 2px #0000008c;
+}
+.btn__general:hover{
+    background-color: #ffc400;
 }
 .main__anuncio{
     width: 100%;
@@ -1779,8 +1796,10 @@
   background-color: var(--negro);
 }
 .overlay::after{
-  border-radius: 0 25px 0 0;
+  border-radius: 0 40px 0 0;
   background-color: var(--blanco_medio);
+  width: 44px;
+  right: -1px;
 }
 .card-image{
   position: relative;
@@ -2519,6 +2538,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--blanco_medio);
 }
 .contacto__formulario{
     width: 80%;
@@ -2572,6 +2592,7 @@
     color: var(--azul);
     outline: none;
     border-radius: 10px;
+    box-shadow: 0 2px 2px #ccc, 0 0 2px #ccc;
 }
 .input__box::placeholder{
     color: var(--azul);
@@ -2583,6 +2604,20 @@
 .input__box--textarea{
     height: 150px;
     border-radius: 10px;
+    resize:none;
+}
+.form__aclaracion{
+    width: 80%;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    text-align: left;
+}
+.aclaracion__campo{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--rojo_fuerte);
+    font-weight: bold;
 }
 .form__submit{
     width: 100%;
@@ -2604,49 +2639,13 @@
 }
 .contacto__datos{
     width: 100%;
-    background-color: #f3f3f3;
-}
-.datos__contacto{
+    background-color: #F1F3F4;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: auto;
+    padding: 50px 0;
 }
-.contacto__bloque{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;  
-}
-.icono__numeros{
-    font-size: 20px;
-    color: var(--negro);
-    padding: 5px;
-}
-.texto__titulo{
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-    padding: 5px;
-    color: var(--azul);  
-}
-.numeros__fijos{
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: lighter;
-    padding: 5px;
-    color: var(--negro);
-    font-style: italic;
-}
+
 .contacto__contenedor{
     width: 100%;
-    background-image: url(../images/mapa.png);
-    background-size:contain ;
-    background-repeat: no-repeat;
-    background-position: center;
 }   
 .contenedor__mapa{
     width: 100%;
@@ -2684,9 +2683,6 @@
     }
     .form__submit{
         margin-bottom: 30px;
-    }
-    .datos__contacto{
-        padding: 10px 0;
     }
 }
 /* CONTACTANOS BREAKPOINT 480px */
@@ -2736,15 +2732,6 @@
     .titulo__formulario {
         font-size: 20px;
         line-height: 20px;
-    }
-    .texto__titulo {
-        font-weight: lighter;
-    }
-    .numeros__fijos {
-        font-size: 14px;
-        line-height: 14px;
-        font-weight: bold;
-        padding: 5px 0px;
     }
 }
 /* FIN DE CONTACTANOS */

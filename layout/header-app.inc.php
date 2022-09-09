@@ -20,11 +20,11 @@
             <section class="cabecera__navegacion">
                 <div class="navegacion__logotipo">
                     <div class="logotipo__contenedor">
-                        <img  class="contenedor__logo" src="../../images/logo.png" alt="Logo empresa">
+                        <img class="contenedor__logo" src="../../images/logo.png" alt="Logo empresa" loading="lazy" title="Taxi Rodadero Bello Horizonte">
                     </div>
                     <div class="logotipo__titulos">
-                        <section class="titulos__empresa">TAXI RODADERO</section>
-                        <section class="titulos__sucursal">BELLO HORIZONTE S.A.S</section>
+                        <section class="titulos__empresa">Sistema de Comisiones</section>
+                        <section class="titulos__sucursal">Módulo Administrador</section>
                     </div>
                 </div>
                 <nav class="navegacion__menu">
@@ -83,128 +83,120 @@
                         </li>
                     </ul>
                 </nav>
+            </section>
+            <section class="cabecera__menu">
+                <section class="menu__contenedor">
+                    <section class="contenedor__menu">
+                        <nav class="menu__navegacion">
+                            <ul class="navegacion__item">
+                                <li class="item__lista">
+                                    <a href="index.php" class="lista__opcion">
+                                        <i class="opcion__icono fa-solid fa-house-chimney"></i>
+                                        <p class="opcion__texto">Inicio</p>
+                                    </a>
+                                </li>
+                                <li class="item__lista">
+                                    <a href="#" class="lista__opcion">
+                                        <i class="opcion__icono fa-solid fa-circle-plus"></i>
+                                        <p class="opcion__texto">Comisiones</p>
+                                    </a>
+                                    <ul class="lista__subopcion">
+                                        <li class="subopcion__item">
+                                            <a href="add_commission.php" class="item__submenu">Nueva Comisión</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="commissions_effective.php" class="item__submenu">Comisiones Efectivas</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="commissions_not_effective.php" class="item__submenu">Comisiones No Efectivas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item__lista">
+                                    <div class="lista__opcion">
+                                        <i class="opcion__icono fa-solid fa-wallet"></i>
+                                        <p class="opcion__texto">Cartera</p>
+                                    </div>
+                                    <ul class="lista__subopcion">
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Recaudo</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Pago Comisión</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Estado Cartera</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Cuadre de Caja</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item__lista">
+                                    <div class="lista__opcion">
+                                        <i class="opcion__icono fa-solid fa-file-lines"></i>
+                                        <p class="opcion__texto">Reportes</p>
+                                    </div>
+                                    <ul class="lista__subopcion">
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Comisionista</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Conductor</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item__lista">
+                                    <div class="lista__opcion">
+                                        <i class="opcion__icono fa-solid fa-users"></i>
+                                        <p class="opcion__texto">Usuarios</p>
+                                    </div>
+                                    <ul class="lista__subopcion">
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Crear Usuario</a>
+                                        </li>
+                                        <li class="subopcion__item">
+                                            <a href="#" class="item__submenu">Editar Usuario</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item__lista">
+                                    <div class="lista__opcion">
+                                        <i class="fa-solid fa-gears"></i>
+                                        <p class="opcion__texto">Configuración</p>
+                                    </div>
+                                    <ul class="lista__subopcion lista__subopcion--submenu">
+
+                                        <li class="subopcion__item">
+                                            <div class="item__submenu item__submenu--comision">
+                                                <p class="comision__menu">Tipo de Comisión</p>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+                                            <ul class="item__submenu2">
+                                                <li class="submenu2__lista"><a  class="" href="#">Crear tipo de Comisión</a></li>
+                                                <li class="submenu2__lista"><a  class="" href="#">Editar tipo de Comisión</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="subopcion__item subopcion__item--backup">
+                                            <div class="item__submenu item__submenu--backup">
+                                                <p class="comision__menu">Copia de Seguridad</p>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+                                            <ul class="item__submenu2">
+                                                <li class="submenu2__lista"><a  class="lista__respaldo" href="backup.php">Crear Respaldo</a></li>
+                                                <li class="submenu2__lista"><a  class="lista__respaldo" href="restore.php">Resturar Respaldo</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </section>
             </section>   
         </header>
-        <section class="commission__menu">
-            <section class="menu__contenedor">
-                <section class="contenedor__indicativo">
-                    <div class="indicativo__titulo">
-                        <p class="titulo__modulo">Módulo Administrador</p>
-                    </div>
-                    <div class="indicativo__fecha">
-                        <p class="fecha__ingreso">Su última visita fue: Viernes 19 de agosto 2022 10:39 a.m.</p>
-                    </div>
-                </section>
-                <!--MENU-->
-                <section class="contenedor__menu">
-                    <nav class="menu__navegacion">
-                        <ul class="navegacion__item">
-                            <li class="item__lista">
-                                <a href="index.php" class="lista__opcion">
-                                    <i class="opcion__icono fa-solid fa-house-chimney"></i>
-                                    <p class="opcion__texto">Inicio</p>
-                                </a>
-                            </li>
-                            <li class="item__lista">
-                                <a href="#" class="lista__opcion">
-                                    <i class="opcion__icono fa-solid fa-circle-plus"></i>
-                                    <p class="opcion__texto">Comisiones</p>
-                                </a>
-                                <ul class="lista__subopcion">
-                                    <li class="subopcion__item">
-                                        <a href="add_commission.php" class="item__submenu">Nueva Comisión</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="commissions_effective.php" class="item__submenu">Comisiones Efectivas</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="commissions_not_effective.php" class="item__submenu">Comisiones No Efectivas</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item__lista">
-                                <div class="lista__opcion">
-                                    <i class="opcion__icono fa-solid fa-wallet"></i>
-                                    <p class="opcion__texto">Cartera</p>
-                                </div>
-                                <ul class="lista__subopcion">
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Recaudo</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Pago Comisión</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Estado Cartera</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Cuadre de Caja</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item__lista">
-                                <div class="lista__opcion">
-                                    <i class="opcion__icono fa-solid fa-file-lines"></i>
-                                    <p class="opcion__texto">Reportes</p>
-                                </div>
-                                <ul class="lista__subopcion">
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Comisionista</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Conductor</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item__lista">
-                                <div class="lista__opcion">
-                                    <i class="opcion__icono fa-solid fa-users"></i>
-                                    <p class="opcion__texto">Usuarios</p>
-                                </div>
-                                <ul class="lista__subopcion">
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Crear Usuario</a>
-                                    </li>
-                                    <li class="subopcion__item">
-                                        <a href="#" class="item__submenu">Editar Usuario</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item__lista">
-                                <div class="lista__opcion">
-                                    <i class="fa-solid fa-gears"></i>
-                                    <p class="opcion__texto">Configuración</p>
-                                </div>
-                                <ul class="lista__subopcion lista__subopcion--submenu">
-
-                                    <li class="subopcion__item">
-                                        <div class="item__submenu item__submenu--comision">
-                                            <p class="comision__menu">Tipo de Comisión</p>
-                                            <i class="fa-solid fa-angle-right"></i>
-                                        </div>
-                                        <ul class="item__submenu2">
-                                            <li class="submenu2__lista"><a  class="" href="#">Crear tipo de Comisión</a></li>
-                                            <li class="submenu2__lista"><a  class="" href="#">Editar tipo de Comisión</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="subopcion__item subopcion__item--backup">
-                                        <div class="item__submenu item__submenu--backup">
-                                            <p class="comision__menu">Copia de Seguridad</p>
-                                            <i class="fa-solid fa-angle-right"></i>
-                                        </div>
-                                        <ul class="item__submenu2">
-                                            <li class="submenu2__lista"><a  class="lista__respaldo" href="#">Crear Respaldo</a></li>
-                                            <li class="submenu2__lista"><a  class="lista__respaldo" href="#">Resturar Respaldo</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </section>
-        </section>
+        
 
 
 

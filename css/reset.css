@@ -86,7 +86,7 @@ blockquote:before, blockquote:after, q:before, q:after {
   color: var(--blanco);
 }
 
-form, input, textarea, select, button, label {
+form, input, textarea, button, label {
   font-family: inherit;
   font-size: inherit;
   -webkit-hyphens: auto;

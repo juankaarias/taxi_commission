@@ -26,44 +26,53 @@
                         <tbody>
                             <tr>
                                 <td>02/09/2022</td>
-                                <td>Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                
+                                <td>Rafael Andres</td>
+                                <td>randres@hotmail.com</td>
+                                <td>Edificio Santa Marta</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Garrett</td>
-                                <td>Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Rafael Andres</td>
+                                <td>randres@hotmail.com</td>
+                                <td>Edificio Santa Marta</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Ashton</td>
-                                <td>Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Rafael Andres</td>
+                                <td>randres@hotmail.com</td>
+                                <td>Edificio Santa Marta</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cedric</td>
-                                <td>Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Rafael Andres</td>
+                                <td>randres@hotmail.com</td>
+                                <td>Edificio Santa Marta</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>Airi</td>
-                                <td>Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                
-                            </tr>                            
+                                                      
                         </tbody>
                     </table>
 
@@ -83,55 +92,68 @@
                     <table id="pago" class="display nowrap"  style="width:100%">
                         <thead>
                             <tr>
-                                <th>Fecha</th>
-                                <th>Nombres</th>
-                                <th>Email</th>
-                                <th>Nombre Punto</th>
+                                <th>Fecha y Hora</th>
+                                <th>Nombre</th>
+                                <th>Valor</th>
+                                <th>Destino</th>
+                                <th># Radicado</th>
                                 <th>Acción</th>
-                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>02/09/2022</td>
-                                <td>Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                
+                                <td>02/09/2022 12:25:34 p.m.</td>
+                                <td>Jose Luis</td>
+                                <td>$150.000</td>
+                                <td>Efectivo</td>
+                                <td>4621</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Garrett</td>
-                                <td>Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                
+                                <td>02/09/2022 12:25:34 p.m.</td>
+                                <td>Jose Luis</td>
+                                <td>$150.000</td>
+                                <td>Efectivo</td>
+                                <td>4621</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Ashton</td>
-                                <td>Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                
+                                <td>02/09/2022 12:25:34 p.m.</td>
+                                <td>Jose Luis</td>
+                                <td>$150.000</td>
+                                <td>Efectivo</td>
+                                <td>4621</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cedric</td>
-                                <td>Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                
+                                <td>02/09/2022 12:25:34 p.m.</td>
+                                <td>Jose Luis</td>
+                                <td>$150.000</td>
+                                <td>Efectivo</td>
+                                <td>4621</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>Airi</td>
-                                <td>Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                
-                            </tr>                            
+                                                        
                         </tbody>
                     </table>
                 </section>
@@ -150,53 +172,64 @@
                 <table id="cobrar" class="display nowrap"  style="width:100%">
                         <thead>
                             <tr>
-                                <th>Fecha</th>
-                                <th>Nombres</th>
-                                <th>Email</th>
-                                <th>Nombre Punto</th>
-                                <th>Acción</th>
-                                
+                                <th>Días Transc.</th>
+                                <th>Conductor</th>
+                                <th>Deuda</th>
+                                <th># Comisiones</th>
+                                <th>Notificación</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>02/09/2022</td>
-                                <td>Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
+                                <td>3</td>
+                                <td>Carlos Alberto</td>
+                                <td>$25.000</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                                 
                             </tr>
                             <tr>
-                                <td>Garrett</td>
-                                <td>Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
+                                <td>3</td>
+                                <td>Carlos Alberto</td>
+                                <td>$25.000</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                                 
                             </tr>
                             <tr>
-                                <td>Ashton</td>
-                                <td>Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
+                                <td>3</td>
+                                <td>Carlos Alberto</td>
+                                <td>$25.000</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                                 
                             </tr>
                             <tr>
-                                <td>Cedric</td>
-                                <td>Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Airi</td>
-                                <td>Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
+                                <td>3</td>
+                                <td>Carlos Alberto</td>
+                                <td>$25.000</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                                 
                             </tr>                            
                         </tbody>
@@ -218,53 +251,60 @@
                         <thead>
                             <tr>
                                 <th>Fecha</th>
+                                <th>Tipo Usuario</th>
                                 <th>Nombres</th>
-                                <th>Email</th>
-                                <th>Nombre Punto</th>
+                                <th>Tipo Solicitud</th>
                                 <th>Acción</th>
-                                
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>02/09/2022</td>
-                                <td>Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                
+                                <td>Conductor</td>
+                                <td>Luis Esteban</td>
+                                <td>Petición</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Garrett</td>
-                                <td>Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Conductor</td>
+                                <td>Luis Esteban</td>
+                                <td>Petición</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Ashton</td>
-                                <td>Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Conductor</td>
+                                <td>Luis Esteban</td>
+                                <td>Petición</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Cedric</td>
-                                <td>Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>22</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>Airi</td>
-                                <td>Satou</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                
+                                <td>02/09/2022</td>
+                                <td>Conductor</td>
+                                <td>Luis Esteban</td>
+                                <td>Petición</td>
+                                <td>
+                                    <a class="tabla__btn" href="#">
+                                        <p>Ver</p>
+                                        <i class="opcion__icono fa-solid fa-right-to-bracket"></i> 
+                                    </a>
+                                </td>
                             </tr>                            
                         </tbody>
                     </table>

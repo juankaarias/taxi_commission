@@ -19,7 +19,7 @@
         <section class="header__section">
             <section class="section__container">
                 <section class="container__logo">
-                    <img src="images/logo.png" alt="logo" class="logo__header">
+                    <img src="images/logo.png" alt="logo" class="logo__header" title="Logo Taxi Rodadero">
                 </section>
                 <section class="container__title">    
                     <h1 class="title__h1">TAXI RODADERO</h1>
@@ -34,17 +34,20 @@
                     <ul class="icons__ul">
                         <li class="ul__redes">
                             <a href="https://www.instagram.com/taxirodaderobello/?hl=es" target="_blank" class="redes__link">
-                                <img src="images/instagram_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="images/instagram_icon.png" alt="icono red social instagram" title="Instagram" class="link__redes" loading="lazy" title="">
+                                <p class="link__descripcion">Instagram</p>
                             </a>
                         </li>
                         <li class="ul__redes">
                             <a href="https://www.facebook.com/pages/category/Taxi-Service/Taxi-Rodadero-Bello-Horizonte-122260542504000/" target="_blank" class="redes__link">
-                                <img src="images/facebook_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="images/facebook_icon.png" alt="icono red social facebook" title="Facebook" class="link__redes" loading="lazy">
+                                <p class="link__descripcion">Facebook</p>
                             </a>
                         </li>
                         <li class="ul__redes">
                             <a href="https://api.whatsapp.com/send?phone=573017656646" target="_blank" class="redes__link">
-                                <img src="images/whatsapp_icon.png" alt="icono red social" class="link__redes" loading="lazy">
+                                <img src="images/whatsapp_icon.png" alt="icono red social whatsapp" title="Whatsapp" class="link__redes" loading="lazy">
+                                <p class="link__descripcion">Whatsapp</p>
                             </a>
                         </li>
                     </ul>

@@ -11,11 +11,14 @@
 }
 .commission__cabecera{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: var(--amarillo);
-    box-shadow: 0 2px 2px #ccc;
+    box-shadow: 0 2px 3px #000;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
 }
 .cabecera__navegacion{
     width: 98%;
@@ -46,8 +49,8 @@
     line-height: 14px;
 }
 .titulos__sucursal{
-    font-size: 9px;
-    line-height: 9px;
+    font-size: 12px;
+    line-height: 12px;
     margin-top: 3px;
 }
 .navegacion__menu{
@@ -135,45 +138,16 @@
     font-weight: bold;
     display: block;
 }
-.commission__menu{
+.cabecera__menu{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .menu__contenedor{
-    width: 97%;
-    margin: 7px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-.contenedor__indicativo{
-    display: flex;
-    justify-content: space-between;
-}
-.indicativo__titulo{
-    background-color: var(--blanco);
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 1px 0px 2px var(--sombra);
-}
-.titulo__modulo{
-    font-size: 15px;
-    line-height: 15px;
-    font-weight: bold;
-}
-.indicativo__fecha{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 12px;
-    font-style: italic;
-    font-weight: lighter;
-}
-.fecha__ingreso{
-    padding: 0 10px;
 }
 .contenedor__menu{
     width: 100%;
@@ -232,7 +206,7 @@
     z-index: 1;
     border-radius: 0px 0px 10px 10px;
     width: 200px;
-    box-shadow: 0px 1px 2px var(--sombra)
+    box-shadow: 0px 1px 2px var(--sombra);
 }
 .subopcion__item, .submenu2__lista{
     font-size: 14px;
@@ -316,12 +290,12 @@
 /* Fin Footer */
 
 /* Pagina Inicial */
-.commission__body, .commission__add{
+.commission__body, .commission__add, .add__finish{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.body__contenedor, .add__contenedor{
+.body__contenedor, .add__contenedor, .finish__contenedor{
     width: 100%;
     border-radius: 10px;
     display: flex;
@@ -364,19 +338,18 @@
     text-align: center;
 }
 .tablas__entrar{
-    width: 70px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 10px 0;
+    padding-bottom: 10px;
     cursor: pointer;
 }
 .entrar__mas{
-    font-size: 12px;
+    font-size: 15px;
     line-height: 12px;
     padding: 2px;
+    font-weight: bold;
 }
 .entrar__icono{
     font-size: 14px;
@@ -412,15 +385,74 @@
     padding: 5px;
     font-weight: bold;
 }
+.container__fecha{
+    width: 100%;
+    background-color: var(--blanco_medio);
+}
+.fecha__busqueda{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.busqueda__titulo, .fecha__label{
+    font-size: 15px;
+    line-height: 15px;
+    display: block;
+    cursor: pointer;  
+}
+.busqueda__titulo{
+    font-weight: bold;
+}
+.fecha__label{
+    font-style: italic;
+}
+.busqueda__fecha{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.fecha__input{
+    background-color: var(--blanco);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px;
+    outline: none;
+    box-shadow: 1px 1px 1px #ccc;
+    font-size: 14px;
+    line-height: 14px;
+}
+.fecha__submit, .fecha__reset{
+    width: 118px;
+    border: none;
+    background-color: var(--amarillo);
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 15px;
+    box-shadow: 0px 2px 2px #ccc;
+    cursor: pointer;
+}
+.fecha__submit:hover, .fecha__reset:hover{
+    background-color: #ffc400;
+}
+.fecha__reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contenedor__comision{
     background-color: var(--blanco_medio);
     width: 100%;
-    margin: 0 20px;
-    padding-bottom: 40px;
+    margin: 0  20px 20px 20px;
+    border-radius: 0 0 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
 }
 .comision__contenedor{
     width: 100%;
@@ -428,9 +460,13 @@
     flex-direction: column;
     padding: 20px;
 }
-.contenedor__comisionista{
+.contenedor__comisionista, .contenedor__conductor, .comision__finalizar{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.comision__finalizar{
+    padding: 0 20px 40px 20px;
 }
 .comisionista__cabecera{
     display: flex;
@@ -465,9 +501,10 @@
     display: flex;
     align-items: center;
     margin: 5px;
+    position: relative;
 }
 .inputs__group--destino{
-    width: 100%;
+    width: 60%;
 }
 .group__label{
     width: 30%;
@@ -476,7 +513,7 @@
     padding-right: 10px;
     color: var(--negro);
 }
-.group__input{
+.group__input, .group__select{
     width: 60%;
     border: 1px solid #d1d3d4;
     height: 30px;
@@ -486,13 +523,20 @@
     background-color: var(--blanco);
     color: var(--negro);
     outline: none;
-    border-radius: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #ccc;
+}
+.group__search{
+    position: absolute;
+    top: 6px;
+    right: 55px;
 }
 .group__label--destino{
-    width: 9%;
+    width: 15%;
 }
 .group__input--destino{
-   width: 49.3%;
+   width: 81%;
 }
 .contenedor__submit{
     display: flex;
@@ -511,8 +555,10 @@
     width: 100%;
     border-bottom: 1px solid var(--gris_medio);
 }
-.submit__agregar{
-    padding: 12px 20px ;
+.submit__agregar, .submit__cancelar{
+    padding: 10px 30px;
+    font-size: 15px;
+    line-height: 15px;
     font-weight: bold;
     cursor: pointer;
     background-color: var(--verde_fuerte);
@@ -524,8 +570,15 @@
 .submit__agregar:hover{
     background-color: var(--verde_claro);
 }
+.submit__cancelar{
+    background-color: var(--rojo_fuerte);
+    margin-left: 20px;
+}
+.submit__cancelar:hover{
+    background-color: var(--rojo_claro);
+}
 .comision__espera{
-    width: 95%;
+    width: 100%;
     margin: auto;
     border: 1px solid var(--gris_medio);
     border-radius: 10px;
@@ -537,7 +590,7 @@
     display: flex;
     align-items: center;
     border-radius: 10px 10px 0 0;
-    background-color: var(--rojo_fuerte);
+    background-color: var(--negro);
     color: var(--blanco);
     padding: 0 20px;
 }
@@ -548,7 +601,36 @@
 .espera__tabla{
     padding: 20px;
 }
-                    
+.tabla__btn{
+    display: flex;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: var(--amarillo);
+    color: var(--negro);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 2px 3px #ccc;
+}
+.btn__tabla{
+    padding: 5px;
+}
+.tabla__btn--finalizar{
+    color: var(--blanco);
+    background-color: var(--rojo_fuerte);
+}
+.tabla__btn--editar{
+    color: var(--blanco);
+    background-color: var(--azul_fuerte);
+}
+.tabla__btn--editar:hover{
+    background-color: var(--azul_claro);
+}
+.tabla__btn--finalizar:hover{
+    background-color: var(--rojo_claro);
+}
 /* Fin agregar comision */
 
 /* Inicio comision efectiva */
@@ -594,3 +676,31 @@
 }
 
 /* Fin comision efectiva */
+
+
+/* Inicio Backup */
+
+.configuracion__respaldo{
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+.respaldo__contenedor{
+    width: 97%;
+    height: 200px;
+    background-color: #ff4444;
+
+}
+
+
+/* Fin Backup */
+
+/* INICIO FINALIZAR COMISION */
+.contenedor__add--fin{
+    margin: 0;
+}
+
+
+/* FIN FINALIZAR COMISION */
