@@ -5,82 +5,141 @@
 
     <section class="add__finish">
         <section class="finish__contenedor">
-            <section class="contenedor__add">
-                <i class="add__icono fa-solid fa-circle-plus"></i>
-                <p class="add__titulo">Comisión Pendiente</p>
+
+            <section class="contenedor__finish">
+                <i class="add__icono fa-regular fa-floppy-disk"></i>
+                <p class="finish__titulo">Finalizar Comisión</p>
             </section>
             <section class="contenedor__comision">
-                <section class="comision__contenedor">
+                <form action="#" method="post">
+                    <div class="comision__contenedor">
+                        <div class="contenedor__comisionista">
+                            <div class="comisionista__cabecera">
+                                <h2 class="cabecera__titulo">Asentar Comisión</h2>
+                            </div>
+                            <div class="comisionista__inputs">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-address-card"></i>
+                                    <label class="user-label">Número Identificación</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Nombres Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Apellidos Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-building"></i>
+                                    <label class="user-label">Nombre Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Dirección Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input input__large">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Posible destino del pasajero</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
 
-                    <section class="contenedor__comisionista">
-                        <section class="comisionista__cabecera">
-                            <h2 class="cebecera__titulo">Comisionista</h2>
-                            <section class="cabecera__linea">
-                                <hr class="linea__cabecera">
-                            </section>
-                        </section>
-                        <section class="comisionista__inputs">
-                            <section class="inputs__group">
-                                <label class="group__label" for="idcomisionista">Id. Comisionista</label>
-                                <input class="group__input" type="text" id="idcomisionista" name="idcomisionista" required placeholder="12345112" readonly>
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="nombrescomisionista">Nombres</label>
-                                <input class="group__input" type="text" id="nombrescomisionista" name="nombrescomisionista" readonly placeholder="Juan Carlos">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="apellidoscomisionista">Apellidos</label>
-                                <input class="group__input" type="text" name="apellidoscomisionista" id="apellidoscomisionista" readonly placeholder="Arias Vélez">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="puntocomision">Nombre Punto</label>
-                                <input class="group__input" type="text" name="puntocomision" id="puntocomision" readonly placeholder="Hotel las vegas">
-                            </section>
-                            <section class="inputs__group inputs__group--destino">
-                                <label class="group__label group__label--destino" for="destinop">Posible Destino</label>
-                                <input class="group__input group__input--destino" type="text" name="destinop" id="destinop" placeholder="Areopuerto" readonly>
-                            </section>
-                        </section>
+            </section>
+            <section class="contenedor__comision">
+                <section class="comision__espera">
+                    <section class="espera__titulo espera__titulo--comision">
+                        <i class="opcion__icono fa-regular fa-clock"></i>
+                        <h2 class="titulo__espera">Comisión Pendiente</h2>
                     </section>
-                    <section class="contenedor__conductor">
-                        <section class="comisionista__cabecera">
-                            <h2 class="cebecera__titulo">Conductor</h2>
-                            <section class="cabecera__linea">
-                                <hr class="linea__cabecera">
-                            </section>
-                        </section>
-                        <section class="comisionista__inputs">
-                            <section class="inputs__group">
-                                <label class="group__label" for="codvehiculo">Cod. Vehículo</label>
-                                <input class="group__input" type="text" id="codvehiculo" name="codvehiculo" placeholder="77" required autocomplete="off" readonly>
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="nombreconductor">Nombres</label>
-                                <input class="group__input" type="text" placeholder="Alexander Bustamante" readonly id="nombreconductor" name="nombreconductor">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="idconductor">Id Conductor</label>
-                                <input class="group__input" type="text" placeholder="3265224" readonly id="idconductor" name="idconductor">
-                            </section>
-                            
-                            <section class="inputs__group">
-                                <label class="group__label" for="vehiculoconductor">Placa Vehículo</label>
-                                <input class="group__input" type="text" id="vehiculoconductor" name="vehiculoconductor" readonly placeholder="HQM543">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="turnoconductor">Turno</label>
-                                <input class="group__input" type="text" readonly placeholder="CN" id="turnoconductor" name="turnoconductor">
-                            </section>
-                        </section>
-                    </section>
-
-                </section>
-                <form action="" method="post" class="comision__finalizar">
-                    <section class="contenedor__add contenedor__add--fin">
-                        <i class="add__icono fa-regular fa-floppy-disk"></i>
-                        <p class="add__titulo">Finalizar Comisión</p>
-                    </section>
-                    <section class="comisionista__inputs">
+                    <div class="comision__contenedor">
+                        <div class="contenedor__comisionista">
+                            <div class="comisionista__cabecera">
+                                <h2 class="cabecera__titulo">Datos Comisionista</h2>
+                            </div>
+                            <div class="comisionista__inputs">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-address-card"></i>
+                                    <label class="user-label">Número Identificación</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Nombres Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Apellidos Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-building"></i>
+                                    <label class="user-label">Nombre Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Dirección Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input input__large">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Posible destino del pasajero</label>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="comision__contenedor">
+                        <div class="contenedor__comisionista">
+                            <div class="comisionista__cabecera">
+                                <h2 class="cabecera__titulo">Datos Conductor</h2>
+                            </div>
+                            <div class="comisionista__inputs">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-address-card"></i>
+                                    <label class="user-label">Número Identificación</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Nombres Conductor</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Apellidos Conductor</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-id-card-clip"></i> 
+                                    <label class="user-label">Código Vehículo</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-taxi"></i> 
+                                    <label class="user-label">Placa Vehículo</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-clock"></i> 
+                                    <label class="user-label">Turno Conductor</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- <section class="comisionista__inputs">
                         <section class="inputs__group">
                             <label class="group__label" for="nombreconductor">Estado Comisión</label>
                             <select name="conductor" id="conductor" class="group__select">
@@ -121,8 +180,8 @@
                         <section class="submit__linea">
                             <hr class="linea__submit">
                         </section>
-                    </section>   
-                </form> 
+                    </section> -->   
+                </section>
             </section>
         </section>
     </section>

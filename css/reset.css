@@ -95,9 +95,9 @@ form, input, textarea, button, label {
   background-color: transparent;
   color: inherit;
   display: block;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none;
+          appearance: none; */
 }
 
 table, tr, td {

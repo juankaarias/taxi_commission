@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/all.min.css">
     <title>Recuperar Contraseña</title>
 </head>
-<body>
+<body class="body">
     <main class="main__recover">
         <nav class="header__navegacion">
             <a href="#" class="navegacion__opcion" title="Ayuda">
@@ -57,9 +57,10 @@
                 </form>
             </section>
         </section>       
-        <footer class="recover__footer">
-            <p class="footer__recover">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
-        </footer>
+        
     </main>
+    <footer class="recover__footer">
+        <p class="footer__recover">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>

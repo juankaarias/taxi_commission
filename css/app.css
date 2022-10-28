@@ -15,8 +15,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--amarillo);
-    box-shadow: 0 2px 3px #000;
+    background: rgb(241,174,0);
+    background: linear-gradient(0deg, rgba(241,174,0,1) 4%, rgba(255,216,0,1) 80%);
     margin-bottom: 20px;
     border-radius: 0 0 20px 20px;
 }
@@ -92,21 +92,16 @@
     padding: 0 5px;
 }
 .link__icono--notificacion::after{
-    content: "15";
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
+    content: "";
     border-radius: 50%;
     background-color: #ff4444;
-    text-shadow: 0px 1px 1px var(--sombra);
-    padding: 7px;
-    width: 100%;
-    height: 100%;
+    box-shadow: 1px 0px 1px var(--gris);
+    padding: 1px 8px;
 }
 
 .lista__submenu{
     display: none;
-    min-width: 180px;
+    min-width: 220px;
     background-color: var(--negro);
     position: absolute;
     z-index: 2;
@@ -117,7 +112,6 @@
 .submenu__link{
     font-size: 14px;
     line-height: 14px;
-    padding: 8px 20px;
     text-align: end;
     color: var(--blanco);
     font-weight: bold;
@@ -130,6 +124,7 @@
 }
 .link__ayuda{
     display: block;
+    padding: 8px 20px;
 }
 .link__texto{
     padding: 0 5px;
@@ -152,7 +147,13 @@
 .contenedor__menu{
     width: 100%;
     height: 40px;
-    background-color: var(--sombra);
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
+    background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
+    background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111 100%);
+    background: linear-gradient(to bottom, #585858 0%, #111 100%);
     display: flex;
     align-items: center;
     border-radius: 0px 0px 20px 20px;
@@ -192,6 +193,9 @@
 .opcion__icono{
     padding: 5px;
 }
+.opcion__iconomenu{
+    padding: 0 5px;
+}
 .opcion__texto{
     padding: 5px;
     font-weight: bold;
@@ -203,15 +207,14 @@
     background-color: var(--amarillo);
     top: 40px;
     left: 0px;
-    z-index: 1;
+    z-index: 2;
     border-radius: 0px 0px 10px 10px;
-    width: 200px;
+    width: 220px;
     box-shadow: 0px 1px 2px var(--sombra);
 }
 .subopcion__item, .submenu2__lista{
     font-size: 14px;
     line-height: 14px;
-    padding: 10px 15px;
     border-bottom: 1px solid #cccccc4a;
     position: relative;
 }
@@ -219,10 +222,12 @@
     border: none;
 }
 .subopcion__item:hover, .submenu2__lista:hover{
-    background-color: rgba(0, 0, 0, 0.068);
+    background: rgb(241,174,0);
+    background: linear-gradient(0deg, rgba(241,174,0,1) 4%, rgba(255,216,0,1) 80%);
 }
 .subopcion__item:last-child:hover, .submenu2__lista:last-child:hover{
-    background-color: rgba(0, 0, 0, 0.068);
+    background: rgb(241,174,0);
+    background: linear-gradient(0deg, rgba(241,174,0,1) 4%, rgba(255,216,0,1) 80%);
 }
 .subopcion__item:last-child:hover, .submenu2__lista:last-child:hover{
     border-radius: 0px 0px 10px 10px;
@@ -239,6 +244,7 @@
 }
 .item__submenu{
     color: var(--negro);
+    padding: 10px 15px;
 }
 .comision__menu{
     width: 100%;
@@ -247,7 +253,7 @@
     display: none;
     width: 100%;
     position: absolute;
-    left: 201px;
+    left: 221px;
     top: 0px;
     background-color: var(--amarillo);
     box-shadow: 0px 0px 2px black;
@@ -258,6 +264,9 @@
 }
 .subopcion__item:hover .item__submenu2{
     display: block;
+}
+.lista__respaldo, .lista__comision{
+    padding: 10px 15px;
 }
 
 
@@ -277,7 +286,14 @@
 .recover__footer{
     width: 100%;
     min-height: 30px;
-    background-color: var(--sombra);
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
+    background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
+    background: -moz-linear-gradient(top, #585858 0%, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111 100%);
+    background: linear-gradient(to bottom, #3e3e3e 0%, #111 100%);
+    border-top: 3px solid var(--amarillo);
 }
 .footer__recover{
     color: white;
@@ -289,13 +305,47 @@
 }
 /* Fin Footer */
 
-/* Pagina Inicial */
-.commission__body, .commission__add, .add__finish{
+/* Pagina inicial y varias*/
+
+.contenedor__grafica{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.commission__body,
+.commission__add, 
+.edit__efectiva, 
+.edit__noefectiva, 
+.commission__editcomisionpendiente, 
+.create__user, 
+.list__user,
+.list__edituser,
+.add__finish,
+.effective__commissions,
+.contenedor__recaudo,
+.nuevo__tipocomision{
     width: 100%;
     display: flex;
     justify-content: center;
+    max-width: 1368px;
+    margin: auto;
 }
-.body__contenedor, .add__contenedor, .finish__contenedor{
+.body__contenedor, 
+.add__contenedor, 
+.efectiva__contenedor, 
+.noefectiva__contenedor, 
+.editcomisionpendiente__contenedor, 
+.user__create, 
+.user__list,
+.edituser__lista,
+.finish__contenedor,
+.commissions__container,
+.recaudo__contenedor,
+.tipocomision__nuevo{
     width: 100%;
     border-radius: 10px;
     display: flex;
@@ -365,7 +415,17 @@
 
 /* Inicio agregar comision */
 
-.contenedor__add{
+.contenedor__add, 
+.contenedor__editcomisionpendiente, 
+.contenedor__finish, 
+.contenedor__efectiva,
+.create__indicador,
+.list__indicador,
+.lista__indicador,
+.container__effective,
+.contenedor__collection,
+.contenedor__recaudar,
+.nuevo__indicador{
     width: 100%;
     height: 40px;
     display: flex;
@@ -377,39 +437,54 @@
     padding: 0 20px;
     margin: 0 20px;
     border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid var(--amarillo);
 }
-.add__icono, .effective__icono{
+.add__icono, 
+.effective__icono, 
+.editcomisionpendiente__icono, 
+.finish__icono, 
+.efectiva__icono, 
+.indicador__icono,
+.collection__icono,
+.recaudar__icono{
     padding: 5px;
 }
-.add__titulo, .effective__titulo{
+.add__titulo, 
+.effective__titulo, 
+.editcomisionpendiente__titulo, 
+.finish__titulo, 
+.efectiva__titulo, 
+.indicador__titulo,
+.collection__titulo,
+.recaudar__titulo,
+.indicador__tipocomision{
     padding: 5px;
     font-weight: bold;
 }
 .container__fecha{
-    width: 100%;
     background-color: var(--blanco_medio);
 }
 .fecha__busqueda{
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
-.busqueda__titulo, .fecha__label{
+.fecha__label{
     font-size: 15px;
     line-height: 15px;
     display: block;
-    cursor: pointer;  
+    cursor: pointer; 
+    font-weight: bold; 
 }
-.busqueda__titulo{
-    font-weight: bold;
-}
+
 .fecha__label{
     font-style: italic;
 }
 .busqueda__fecha{
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding-right: 20px;
     font-size: 14px;
     line-height: 14px;
 }
@@ -417,8 +492,9 @@
     background-color: var(--blanco);
     border: 1px solid #aaa;
     border-radius: 3px;
-    padding: 5px;
-    margin: 0 5px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    height: 35px;
     outline: none;
     box-shadow: 1px 1px 1px #ccc;
     font-size: 14px;
@@ -443,7 +519,12 @@
     justify-content: center;
     align-items: center;
 }
-.contenedor__comision{
+.contenedor__comision, 
+.create__formuser,
+.lista__usuarios,
+.edit__formuser,
+.container__datos,
+.nuevo__tipo{
     background-color: var(--blanco_medio);
     width: 100%;
     margin: 0  20px 20px 20px;
@@ -454,28 +535,53 @@
     border: 1px solid #ccc;
     box-shadow: 0px 2px 2px #ccc;
 }
-.comision__contenedor{
+.comision__contenedor,
+.container__datos,
+.tipo__formulario{
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.contenedor__comisionista, .contenedor__conductor, .comision__finalizar{
+.contenedor__comisionista, 
+.contenedor__conductor, 
+.comision__finalizar, 
+.comision__editefectiva,
+.formulario__subcontainer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #ccc, inset 0px 0px 4px #ccc;
+    background-color: var(--blanco);
+    position: relative;
 }
-.comision__finalizar{
+.comision__editefectiva{
     padding: 0 20px 40px 20px;
 }
-.comisionista__cabecera{
-    display: flex;
+.comision__finalizar{
+    padding-bottom: 40px;
 }
-.cebecera__titulo{
+.comisionista__cabecera, 
+.editefectiva__cabecera,
+.subcontainer__cabecera{
+    display: flex;
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    padding: 0 10px;
+    background: rgb(249,249,249);
+    background: linear-gradient(180deg, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 50%);
+}
+.cabecera__titulo{
     font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
     letter-spacing: 1px;
+    text-shadow: 0px 2px 2px #ccc;
+    font-style: italic;
 }
 .cabecera__linea{
     width: 90%;
@@ -488,15 +594,20 @@
 .linea__cabecera{
     width: 100%;
     border-bottom: 1px solid var(--gris_medio);
+    box-shadow: 0px 1px 1px #ccc;
 }
-.comisionista__inputs{
-    padding: 10px 20px;
+.comisionista__inputs, 
+.editefectiva__inputs, 
+.inputs__generales{
+    padding: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-
 }
-.inputs__group{
+.inputs__generales{
+    padding: 0px;
+}
+.inputs__group, .generales__inputs{
     width: 30%;
     display: flex;
     align-items: center;
@@ -506,14 +617,14 @@
 .inputs__group--destino{
     width: 60%;
 }
-.group__label{
+.group__label, .inputs__label{
     width: 30%;
     font-size: 14px;
     line-height: 14px;
     padding-right: 10px;
     color: var(--negro);
 }
-.group__input, .group__select{
+.group__input, .group__select, .inputs__input{
     width: 60%;
     border: 1px solid #d1d3d4;
     height: 30px;
@@ -538,11 +649,18 @@
 .group__input--destino{
    width: 81%;
 }
-.contenedor__submit{
+.contenedor__submit, 
+.editefectiva__submit{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    background-color: #F9F9F9;
     padding: 10px;
+    box-shadow: 0px -1px 3px #ccc;
+    border-radius: 0 0 10px 10px;
+}
+.contenedor__submit--modal{
+    box-shadow: 0px 0px 3px #ccc;
 }
 .submit__linea{
     width: 50%;
@@ -572,17 +690,16 @@
 }
 .submit__cancelar{
     background-color: var(--rojo_fuerte);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .submit__cancelar:hover{
     background-color: var(--rojo_claro);
 }
-.comision__espera{
+.comision__espera,
+.tipo__listacomision{
     width: 100%;
     margin: auto;
-    border: 1px solid var(--gris_medio);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #ccc;
 }
 .espera__titulo{
     width: 100%;
@@ -594,113 +711,821 @@
     color: var(--blanco);
     padding: 0 20px;
 }
+.espera__titulo--comisionista{
+    justify-content: space-between;
+}
+.titulo__cabecera{
+    display: flex;
+    align-items: center;
+}
 .titulo__espera{
-    padding: 10px 0px;
+    padding: 5px;
     font-weight: bold;
 }
 .espera__tabla{
-    padding: 20px;
+    padding: 10px 20px;
+}
+.espera__tabla--modal {
+    background-color: #F9F9F9;
+    box-shadow: 0px 0px 3px #ccc;
+}
+.botones__tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tabla__btn{
     display: flex;
-    width: 100px;
-    margin: auto;
+    height: 35px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     background-color: var(--amarillo);
     color: var(--negro);
-    border-radius: 5px;
     padding: 5px;
     box-shadow: 0px 2px 3px #ccc;
+    border-radius: 5px;
 }
 .btn__tabla{
     padding: 5px;
 }
-.tabla__btn--finalizar{
+.tabla__btn--finalizar,
+.tabla__btn--tipocomisiondelete{
     color: var(--blanco);
+    background-color: var(--verde_fuerte);
+    margin: 0 5px;
+}
+.tabla__btn--tipocomisiondelete{
     background-color: var(--rojo_fuerte);
 }
-.tabla__btn--editar{
+.tabla__btn--editar,
+.tabla__btn--tipocomisionedit{
     color: var(--blanco);
     background-color: var(--azul_fuerte);
+    margin: 0 5px;
 }
 .tabla__btn--editar:hover{
     background-color: var(--azul_claro);
 }
 .tabla__btn--finalizar:hover{
-    background-color: var(--rojo_claro);
+    background-color: var(--verde_claro);
 }
 /* Fin agregar comision */
 
-/* Inicio comision efectiva */
-
-.effective__commissions{
+/* INICIO BACKUP Y RESTORE */
+.configuracion__respaldo, .restaurar__respaldo{
     width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+.respaldo__contenedor, .respaldo__restaurar{
+    width: 600px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 2px 3px var(--gris);
     flex-direction: column;
     justify-content: center;
 }
-.commissions__container{
-    width: 97%;
-    min-height: 500px;
-    border: 1px solid #ccc;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-}
-.container__effective{
-    width: 100%;
+.contenedor__copia, .restaurar__copia{
+    background-color: var(--negro);
+    border-radius: 10px 10px 0 0 ;
     height: 40px;
     display: flex;
     align-items: center;
-    background-color: var(--amarillo);
-    color: var(--negro);
-    font-size: 16px;
-    line-height: 16px;
     padding: 0 20px;
-    border-radius: 10px 10px 0 0;
 }
-.container__effective--efectivas{
-    background-color: var(--verde_fuerte);
+.copia__icono{
+    padding: 5px;
     color: var(--blanco);
 }
-.container__effective--noefectivas{
-    background-color: var(--rojo_fuerte);
+.copia__titulo{
     color: var(--blanco);
+    font-weight: bold;
+    padding: 5px; 
 }
-.container__datos{
-    width: 100%;
+.contenedor__respaldo, .contenedor__restaurar{
     padding: 20px;
     background-color: var(--blanco_medio);
-}
-
-/* Fin comision efectiva */
-
-
-/* Inicio Backup */
-
-.configuracion__respaldo{
-    width: 100%;
-    height: 500px;
-    background-color: aquamarine;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.respaldo__contenedor{
-    width: 97%;
-    height: 200px;
-    background-color: #ff4444;
-
+.respaldo__imagen, .restaurar__imagen{
+    width: 90px;
 }
-
-
-/* Fin Backup */
+.respaldo__pregunta, .restaurar__pregunta{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.respaldo__indicacion, .restaurar__indicacion{
+    font-style: italic;
+    font-size: 15px;
+    line-height: 15px;
+}
+.restaurar__indicacion{
+    margin-bottom: 15px;
+}
+.respaldo__botones, .restaurar__botones{
+    display: flex;
+    margin: 20px 0;
+}
+.respaldo__info{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px;
+    font-style: italic;
+}
+.info__observacion{
+    font-weight: bold;
+}
+/* FIN BACKUP */
 
 /* INICIO FINALIZAR COMISION */
 .contenedor__add--fin{
     margin: 0;
+    background-color: var(--rojo_fuerte);
+}
+/* FIN FINALIZAR COMISION */
+
+/* INICIO PERFIL ADMINISTRADOR */
+.perfil__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container__perfil{
+    width: 70%;
+    max-width: 960px;
+    background-color: var(--blanco_medio);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #7e7e7e;
+    margin-bottom: 20px;
+}
+.perfil__general, .form__general{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+.form__general{
+    padding: 20px; 
+}
+.indicador__actual{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Helvetica, sans-serif;
+    color: var(--negro);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.indicador__ingreso{
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 5px;
+}
+.editar__btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+}
+.btn__icono{
+    padding: 5px;
+}
+.btn__editar{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: bold;
+}
+.perfil__datos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datos__nombre{
+    padding: 10px;
+    font-family: Helvetica, sans-serif;
+}
+.nombre__usuario{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nombre__cargo{
+    font-size: 15px;
+    line-height: 15px;
+    margin: 5px 0;
+}
+.datos__avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--sombra);
+    box-shadow: 2px 2px 3px var(--negro);
+    overflow: hidden;
+}
+.avatar__user{
+    width: 100%;
+}
+.perfil__informacion{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+    box-shadow: 0px -2px 1px #ccc;
+}
+.informacion__titulo{
+    background-color: var(--negro);
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px;
+    color: var(--blanco);
+    
+}
+.informacion__formulario{
+    padding: 20px;
+}
+/* FIN PERFIL ADMINISTRADOR */
+
+/* INICIO EDITAR PERFIL ADMINISTRADOR */
+.general__editar--botones{
+    display: flex;
+}
+.editar__btn--cancelar{
+    background-color: var(--rojo_fuerte);
+}
+.btn__editar--cancelar{
+    color: var(--blanco);
+}
+.editar__guardar{
+    background-color: var(--verde_fuerte);
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    box-shadow: 0px 2px 3px #ccc;
+    cursor: pointer;
+}
+.informacion__titulo--editar{
+    background-color: var(--rojo_fuerte);
+}
+/* FIN EDITAR PERFIL ADMINISTRADOR */
+
+
+/* INICIO CAMBIO DE CONTRASEÑA */
+
+.editar__contrasena{
+    display: flex;
+    justify-content: center;
+}
+.contrasena__contenedor{
+    width: 97%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor__contrasena{
+    background-color: var(--negro);
+    background-image: url(../images/patron_anuncio.png);
+    max-width: 760px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px var(--sombra);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.contrasena__indicador{
+    display: flex;
+    justify-content: space-between;
+}
+.indicador__titulobtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.titulobtn__titulo{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: var(--blanco);
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    text-shadow: 0px 2px 3px #000;
+    margin-bottom: 10px;
+}
+.contrasena__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.form__user{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user__fotouser{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #000;
+}
+.fotouser__img{
+    width: 100%;
+}
+.user__password{
+    font-size: 120px;
+}
+.fotouser__nombre{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: var(--blanco);
+}
+.fotouser__tipo{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+.form__datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.datos__input{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.input__texto{
+    width: 200px;
+    margin-right: 10px;
+    color: var(--blanco);
+}
+.inputs__caja{
+    border: 1px solid #ccc;
+    background-color: var(--blanco);
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 2px 3px #000;
+    
+}
+.indicador__botones{
+    display: flex;
+    margin-top: 20px;
+}
+.botones__cambiopassword{
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: var(--verde_fuerte);
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 3px #000;
+}
+.botones__cancelarpassword{
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: var(--rojo_fuerte);
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px #000;
+}
+.botones__cancelarpassword:hover{
+    background-color: var(--rojo_claro);
+} 
+.botones__cambiopassword:hover{
+    background-color: var(--verde_claro);
+}
+.cancelarpassword__btn{
+    font-size: 15px;
+}
+
+/* FIN CAMBIO DE CONTRASEÑA */
+
+/* INICIO AGREGAR TIPO DE COMISION */
+
+.indicador__icon{
+    padding: 5px;
+}
+.nuevo__listado{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 3px #ccc;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.listado__listatipocomision{
+    width: 70%;
+    background-color: var(--blanco_medio);
+    padding: 0 20px;
+    
 }
 
 
-/* FIN FINALIZAR COMISION */
+/* FIN AGREGAR TIPO DE COMISION */
+
+/* INICIO EDITAR COMISION  NO EFECTIVA*/
+
+.contenedor__efectiva--noefectiva{
+    background-color: var(--rojo_fuerte);
+}
+
+/* FIN EDITAR COMISION  NO EFECTIVA*/
+
+/* INICIO AGREGAR USUARIO*/
+
+.create__formuser,
+.edit__formuser{
+    padding: 20px;
+}
+.formuser__indicador,
+.conductor__indicador,
+.comisionista__indicador{
+    margin-bottom: 20px;
+}
+.indicador__cabecera{
+    display: flex;
+}
+.indicador__observacion{
+    font-size: 15px;
+    line-height: 15px;
+    font-style: italic;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.observacion__asterisco{
+    color: var(--rojo_fuerte);
+    font-weight: bold;
+}
+.formuser__datos{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.datos__basicos,
+.datos__contenedor{
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 5px var(--gris_medio), 0px 2px 6px var(--gris_medio);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 20px 40px;
+}
+.basicos__inputs{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+}
+.inputs__labelbasico{
+    min-width: 160px;
+    font-size: 14px;
+    line-height: 14px;
+    padding-right: 10px;
+    color: var(--negro);
+}
+.inputs__inputbasico{
+    min-width: 200px;
+    border: 1px solid #d1d3d4;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: var(--blanco);
+    color: var(--negro);
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #ccc;
+}
+.formuser__comisionista{
+    display: none;
+}
+.formuser__conductor{
+    display: none;
+}
+.comisionista__datos,
+.conductor__datos{
+    background-color: var(--blanco_medio);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;    
+}
+.datos__contenedor{
+    margin: 0 10px;
+
+}
+
+/* FIN AGREGAR USUARIO */
+
+
+/* INICIO CONSULTAR USUARIO */
+.lista__usuarios{
+    padding: 20px;
+}
+/* FIN CONSULTAR USUARIO */
+
+/* INICIO EDITAR USUARIO */
+
+.lista__indicador{
+    background-color: var(--rojo_fuerte);
+}
+
+/* FIN EDITAR USUARIO */
+
+/* ----------------- INICIO RECAUDO ----------------- */
+
+.espera__tabla--recaudo{
+    padding: 0 20px 20px 20px;
+}
+@media (min-width: 576px) {
+    .jumbotron {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .tdaction {
+    width: 15%;
+  }
+
+  .tdSr {
+    width: 7%;
+  }
+
+  strong {
+  font-size: 24px !important;
+}
+
+input.largerCheckbox {
+    width: 20px;
+    height: 20px;
+}
+
+.contenedor__btngeneral{
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.btngeneral__cantvalor{
+    display: flex;
+    margin-right: 10px;
+}
+.btngeneral{
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: var(--blanco);
+  padding: 0.7em 1.1em;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  border-radius: 0.5em;
+  background: var(--azul_fuerte);
+  border: 1px solid var(--azul_fuerte);
+  box-shadow: 0px 2px 4px #c5c5c5,
+   -3px -6px 12px #ffffff;
+   cursor: pointer;
+}
+.btngeneral:active {
+    color: #666;
+    box-shadow: inset 2px 2px 6px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+}
+  
+.btngeneral:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.btngeneral:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: var(--sombra);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.btngeneral:hover {
+    color: #ffffff;
+    border: 1px solid var(--sombra);
+}
+  
+.btngeneral:hover:before {
+    top: -35%;
+    background-color: var(--sombra);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+  
+.btngeneral:hover:after {
+    top: -45%;
+    background-color: var(--sombra);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.icono__btn{
+    padding-right: 5px;
+}
+.btngeneral--buscar{
+    background: var(--verde_fuerte);
+    border: 1px solid var(--verde_fuerte);
+}
+.btngeneral--cancelar{
+    margin-left: 10px;
+    background: var(--rojo_fuerte);
+    border: 1px solid var(--rojo_fuerte);
+}
+/* inputs generales */
+
+.input-group {
+    position: relative;
+    margin: 10px;
+}
+.input {
+    position: relative;
+    border: solid 1.5px #ccc;
+    border-radius: 10px;
+    background: var(--blanco_medio);
+    box-shadow: inset 0px 1px 1px rgb(167, 167, 167);
+    padding: 10px 10px 10px 40px;
+    font-size: 15px;
+    color: var(--sombra);
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    min-width: 220px;
+}
+.input__large{
+    min-width: 495px;
+}
+.color__activo{
+    background-color: var(--verde_claro);
+    color: var(--blanco);
+}
+.input__search{
+    padding: 10px 45px 10px 40px;
+    border: solid 1.5px #ccc;
+    overflow: hidden;
+}
+.btn__asignarcomisionista, 
+.btn__asignarconductor, 
+.btn__recaudoconductor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241,174,0);
+    background: linear-gradient(0deg, rgba(241,174,0,1) 4%, rgba(255,216,0,1) 80%);
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: inset 1px 1px 1px rgb(167, 167, 167);
+    border: solid 1.5px #ccc;
+    border-left: 0px solid transparent;
+    outline: none;
+    border: 1.5px solid var(--gris);
+    box-shadow: 0px 0px 3px #ccc;
+    background-color: var(--blanco);
+} 
+.btn__asignarcomisionista:active, 
+.btn__asignarconductor:active, 
+.btn__recaudoconductor:active{
+    background: var(--amarillo);
+}
+.user-label {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    color: var(--sombra);
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus, .input:valid{
+    outline: none;
+    border: 1.5px solid var(--gris);
+    box-shadow: 0px 0px 3px #ccc;
+    background-color: var(--blanco);
+    margin: auto;
+}
+.input__efectivas:focus, .input__efectivas:valid {
+    text-align: end;
+}
+.input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 .2em;
+    color: #000;
+}
+.icono__input{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+.espera__titulo--comision{
+    border-radius: 0px;
+    border-bottom: 2px solid var(--amarillo);
+}
+.user-label--comisionesefectivas{
+    font-weight: bold;
+    font-size: 15px;
+}
+.thead__black, .tfoot__black{
+    background-color: var(--sombra);
+    color: var(--blanco);
+}
+.tfoot__black{
+    font-size: 16px;
+}
+
+.asignarcomisionista__modal, 
+.asignarconductor__modal, 
+.recaudoconductor__modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s .4s;
+    --transform: translateY(-100vh); 
+    --transition: transform .8s;
+    z-index: 2;
+
+}
+.modal__contenedor{
+    width: 90%;
+    max-width: 1024px;
+    background-color: var(--blanco);
+    margin: auto;
+    border-radius: 11px;
+    padding: 10px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+.asignarcomisionista__cerrar, .asignarconductor__cerrar{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.asignarcomisionista__cerrar:active, .asignarconductor__cerrar:active{
+    background-color: var(--rojo_claro);
+}
+.modal__show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .6s .4s; 
+}
+
+/* FIN RECUADO */

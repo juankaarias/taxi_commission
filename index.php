@@ -225,7 +225,7 @@
                         <figure class="contenedor__item">
                             <a href="https://www.mintransporte.gov.co" target="_blank" title="MinTransporte">
                                 <img class="sitio__img"
-                                    src="https://www.mintransporte.gov.co/info/mintransporte/media/bloque1887.jpeg"
+                                    src="https://www.mintransporte.gov.co/info/mintransporte/media/bloque1887.jpg"
                                     alt="mintransporte" loading="lazy">
                             </a>
                         </figure>
@@ -315,7 +315,7 @@
             </section>
             <section class="pasos__container">
                 <section class="container__imagen">
-                    <img class="imagen__grupo" loading="lazy" src="images/modelo.png" alt="Equipo de trabajo">
+                    <img class="imagen__grupo" loading="lazy" src="images/modelo2.png" alt="Equipo de trabajo">
                 </section>
                 <section class="container__contenedor">
                     
@@ -360,8 +360,12 @@
             </section>
         </section>
     </section>
-
+    
     <section class="main__experience">
+        <section class="experience__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,106.7C640,128,800,192,960,181.3C1120,171,1280,85,1360,42.7L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        </section>
+    
         <section class="experience__titulo">
             <p class="titulo__experience">¡Experiencia de nuestros comisionistas y clientes en Taxi Rodadero Bello
                 Horizonte!

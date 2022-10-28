@@ -1,330 +1,96 @@
-$(document).ready(function() {
-    $('#aprobacion').DataTable( {
-        responsive: true,
-        "bSort" : false,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: '',       	  
-    } );
-} );
-$(document).ready(function() {
-    $('#pago').DataTable( {
-        responsive: true,
-        "bSort" : false,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: '',       	  
-    } );
-} );
-$(document).ready(function() {
-    $('#cobrar').DataTable( {
-        responsive: true,
-        "bSort" : false,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: '',       	  
-    } );
-} );
-$(document).ready(function() {
-    $('#queja').DataTable( {
-        responsive: true,
-        "bSort" : false,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar :",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: '',       	  
-    } );
-} );
+const openModal = document.querySelector('.btn__asignarcomisionista');
+const modal = document.querySelector('.asignarcomisionista__modal');
+const cerrarModal = document.querySelector('.asignarcomisionista__cerrar');
 
-$(document).ready(function() {
-    $('#pendientes').DataTable( {
-        responsive: true,
-        "bSort" : true,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: 'Bfrtlp',       
-        buttons:[ 
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'excelHtml5',
-                text:      '<i class="export__btn fas fa-file-excel"><p class="btn__export">Excel</p></i> ',
-                titleAttr: 'Exportar a Excel',
-                className: 'btn btn-success' 
-            },
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'pdfHtml5',
-                text:      '<i class="export__btn fas fa-file-pdf"><p class="btn__export">Pdf</p></i> ',
-                titleAttr: 'Exportar a PDF',
-                className: 'btn btn-danger',
-                orientation: 'landscape',
-                pageSize: 'A4',
-                customize:function(doc) {
-                    doc.styles.title = {
-                        color: 'black',
-                        fontSize: '15',
-                        alignment: 'left',
-                        bold: true
-                    }
-                    doc.styles.message = {
-                        color: 'black',
-                        fontSize: '15',
+openModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.add('modal__show');
+});
+cerrarModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('modal__show');
+}); 
 
-                        alignment: 'center',
-                        margin: [ 0, 0, 100, 0]
-                    }
-                    doc.styles['td:nth-child(2)'] = { 
-                        width: '100px',
-                        'max-width': '100px'
-                    }
-                    doc.styles.tableHeader = {
-                        fillColor:'#FFD800',
-                        color:'black',
-                        alignment: 'center',
-                        bold: true
-                    }
-                    doc.styles.table = {
-                        alignment: 'center'
-                    }
-                } 
-            },
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'print',
-                text:      '<i class="export__btn fa fa-print"> <p class="btn__export">Imprimir</p></i> ',
-                titleAttr: 'Imprimir',
-                className: 'btn btn-info',
+
+const openModalconductor = document.querySelector('.btn__asignarconductor');
+const modalconductor = document.querySelector('.asignarconductor__modal');
+const cerrarModalconductor = document.querySelector('.asignarconductor__cerrar');
+
+openModalconductor.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalconductor.classList.add('modal__show');
+});
+cerrarModalconductor.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalconductor.classList.remove('modal__show');
+});  
+
+
+const openModalrecaudoconductor = document.querySelector('.btn__recaudoconductor');
+const modalrecaudoconductor = document.querySelector('.recaudoconductor__modal');
+const cerrarrecaudoModalconductor = document.querySelector('.recaudoconductor__cerrar');
+
+openModalrecaudoconductor.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalrecaudoconductor.classList.add('modal__show');
+});
+cerrarrecaudoModalconductor.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalrecaudoconductor.classList.remove('modal__show');
+});  
+
+
+/* 
+    Función mostrar formulario según opción
+*/
+function mostrar(id) {
+    if ((id != "conductor") & (id != "comisionista")) {
+        $("#comisionista").hide();
+        $("#conductor").hide();
+    }
+    if (id == "conductor") {
+        $("#comisionista").hide();
+        $("#conductor").show();
+    }
+    if (id == "comisionista") {
+        $("#comisionista").show();
+        $("#conductor").hide();
+    }
+}
+
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
             }
-        ]	  
-    } );
-} );
-$(document).ready(function() {
-    $('#efectivas').DataTable( {
-        responsive: true,
-        "bSort" : true,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: 'Bfrtlp',       
-        buttons:[ 
-            {
-                title:     'Reporte de Comisiones Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'excelHtml5',
-                text:      '<i class="export__btn fas fa-file-excel"><p class="btn__export">Excel</p></i> ',
-                titleAttr: 'Exportar a Excel',
-                className: 'btn btn-success' 
-            },
-            {
-                title:     'Reporte de Comisiones Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'pdfHtml5',
-                text:      '<i class="export__btn fas fa-file-pdf"><p class="btn__export">Pdf</p></i> ',
-                titleAttr: 'Exportar a PDF',
-                className: 'btn btn-danger',
-                orientation: 'landscape',
-                pageSize: 'A4',
-                customize:function(doc) {
-                    doc.styles.title = {
-                        color: 'black',
-                        fontSize: '15',
-                        alignment: 'left',
-                        bold: true
-                    }
-                    doc.styles.message = {
-                        color: 'black',
-                        fontSize: '15',
+        }
+    }
+});
 
-                        alignment: 'center',
-                        margin: [ 0, 0, 100, 0]
-                    }
-                    doc.styles['td:nth-child(2)'] = { 
-                        width: '100px',
-                        'max-width': '100px'
-                    }
-                    doc.styles.tableHeader = {
-                        fillColor:'#FFD800',
-                        color:'black',
-                        alignment: 'center',
-                        bold: true
-                    }
-                    doc.styles.table = {
-                        alignment: 'center'
-                    }
-                } 
-            },
-            {
-                title:     'Reporte de Comisiones Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'print',
-                text:      '<i class="export__btn fa fa-print"> <p class="btn__export">Imprimir</p></i> ',
-                titleAttr: 'Imprimir',
-                className: 'btn btn-info',
-            }
-        ]	  
-    } );
-} );
-$(document).ready(function() {
-    $('#noefectivas').DataTable( {
-        responsive: true,
-        "bSort" : true,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: 'Bfrtlp',       
-        buttons:[ 
-            {
-                title:     'Reporte de Comisiones No Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'excelHtml5',
-                text:      '<i class="export__btn fas fa-file-excel"><p class="btn__export">Excel</p></i> ',
-                titleAttr: 'Exportar a Excel',
-                className: 'btn btn-success' 
-            },
-            {
-                title:     'Reporte de Comisiones No Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'pdfHtml5',
-                text:      '<i class="export__btn fas fa-file-pdf"><p class="btn__export">Pdf</p></i> ',
-                titleAttr: 'Exportar a PDF',
-                className: 'btn btn-danger',
-                orientation: 'landscape',
-                pageSize: 'A4',
-                customize:function(doc) {
-                    doc.styles.title = {
-                        color: 'black',
-                        fontSize: '15',
-                        alignment: 'left',
-                        bold: true
-                    }
-                    doc.styles.message = {
-                        color: 'black',
-                        fontSize: '15',
-
-                        alignment: 'center',
-                        margin: [ 0, 0, 100, 0]
-                    }
-                    doc.styles['td:nth-child(2)'] = { 
-                        width: '100px',
-                        'max-width': '100px'
-                    }
-                    doc.styles.tableHeader = {
-                        fillColor:'#FFD800',
-                        color:'black',
-                        alignment: 'center',
-                        bold: true
-                    }
-                    doc.styles.table = {
-                        alignment: 'center'
-                    }
-                } 
-            },
-            {
-                title:     'Reporte de Comisiones No Efectivas',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'print',
-                text:      '<i class="export__btn fa fa-print"> <p class="btn__export">Imprimir</p></i> ',
-                titleAttr: 'Imprimir',
-                className: 'btn btn-info',
-            }
-        ]	  
-    } );
-} );

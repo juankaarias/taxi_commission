@@ -1,13 +1,13 @@
 <?php 
-    $titulo="Editar Comision Efectiva";
+    $titulo="Editar Comision No Efectiva";
     include_once("../../layout/header-app.inc.php");
 ?>
 
-    <section class="edit__efectiva">
-        <section class="efectiva__contenedor">
-            <section class="contenedor__efectiva">
-                <i class="efectiva__icono fa-regular fa-pen-to-square"></i>
-                <p class="aefectiva__titulo">Editar Comision Efectiva</p>
+    <section class="edit__noefectiva">
+        <section class="noefectiva__contenedor">
+            <section class="contenedor__efectiva contenedor__efectiva--noefectiva">
+                <i class="efectiva__icono  fa-regular fa-pen-to-square"></i>
+                <p class="aefectiva__titulo">Editar Comision No Efectiva</p>
             </section>
             <section class="contenedor__comision">
                 <section class="comision__contenedor">

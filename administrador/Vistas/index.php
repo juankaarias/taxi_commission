@@ -4,7 +4,17 @@
 ?>
     <section class="commission__body">
         <section class="body__contenedor">
-
+            <div class="contenedor__grafica">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div class="contenedor__grafica">
+                <canvas id="myCharts" width="400" height="400"></canvas>
+            </div>
+            <div class="contenedor__grafica">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            
+            <!--
             <section class="contenedor__tablas">
                 <section class="tablas__titulo">
                     <i class="titulo__icono fa-solid fa-check-double"></i>
@@ -313,7 +323,7 @@
                     <p class="entrar__mas">Ver Más</p>
                     <i class="entrar__icono fa-solid fa-circle-chevron-down"></i>
                 </section>
-            </section>
+            </section>-->
 
         </section>
     </section>

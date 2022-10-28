@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/all.min.css">
     <title>Iniciar Sesión - Sistema de Comisiones</title>
 </head>
-<body>
+<body class="body">
     <main class="main__login">
 
         <header class="login__header">
@@ -36,7 +36,6 @@
                 </section>
             </section> 
         </header> 
-
         <section class="login__formulario">
 
             <section class="formulario__login">
@@ -97,10 +96,10 @@
                 <a href="register.php"  class="login__link--clic">Registrate aquí</a>
             </section>
         </section>
-        <footer class="login__footer">
-            <p class="footer__login">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
-        </footer>
         
     </main>
+    <footer class="login__footer">
+        <p class="footer__login">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>

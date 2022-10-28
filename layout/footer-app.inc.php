@@ -1,24 +1,24 @@
-        <footer class="recover__footer">
+<footer class="recover__footer">
             <p class="footer__recover">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-        <!--ENLACE A ARCHIVO DE EXPORT -->
-        <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>       
-        <!--ENLACE A ARCHIVO DE EXPORT EXCEL -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>       
-        <!--ENLACE A ARCHIVO DE EXPORT PDF -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>   
-        <!--ENLACE A ARCHIVO DE EXPORT PRINT -->
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>      
-        <!--ENLACE A ARCHIVO DE EXPORT PRINT -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.1/js/dataTables.dateTime.min.js"></script>
-        <script src="../../js/app.js"></script>
+        <script type="text/javascript" src="../../js/jquery.js"></script>
+        <script type="text/javascript" src="../../js/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="../../js/1.11.5.js.jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../js/ajax.libs.jquery.1.11.0.jquery.min.jss"></script>
+        <script type="text/javascript" src="../../js/v.dt.dt-1.10.12.se-1.2.0.datatables.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-datatables-checkboxes.1.2.12.js.dataTables.checkboxes.min.js"></script>
+        <script type="text/javascript" src="../../js/responsive.2.2.9.js.dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="../../js/buttons.2.2.2.js.dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="../../js/buttons.2.2.2.js.buttons.html5.min.js"></script>       
+        <script type="text/javascript" src="../../js/ajax.libs.jszip.3.1.3.jszip.min.js"></script>       
+        <script type="text/javascript" src="../../js/ajax.libs.pdfmake.0.1.53.pdfmake.min.js"></script>
+        <script type="text/javascript" src="../../js/ajax.libs.pdfmake.0.1.53.vfs_fonts.js"></script>   
+        <script type="text/javascript" src="../../js/buttons.2.2.2.js.buttons.print.min.js"></script>      
+        <script type="text/javascript" src="../../js/ajax.libs.moment.js.2.18.1.moment.min.js"></script>
+        <script type="text/javascript" src="../../js/datetime.1.1.1.js.dataTables.dateTime.min.js"></script>
+        <script type="text/javascript" src="../../js/app.js"></script>
+        <script type="text/javascript" src="../../js/tables.js"></script>
+        <script type="text/javascript" src="../../js/plug-ins.1.10.20.api.sum().js"></script>
     </main>
 </body>
 </html>

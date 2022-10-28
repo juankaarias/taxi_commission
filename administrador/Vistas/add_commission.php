@@ -2,107 +2,285 @@
     $titulo="Nueva Comisión";
     include_once("../../layout/header-app.inc.php");
 ?>
-
     <section class="commission__add">
         <section class="add__contenedor">
+
             <section class="contenedor__add">
                 <i class="add__icono fa-solid fa-circle-plus"></i>
-                <p class="add__titulo">Nueva Comisión</p>
+                <p class="add__titulo">Asignar Comisión</p>
             </section>
+            
             <section class="contenedor__comision">
-                <form action="" method="POST" class="comision__contenedor">
+                <form action="#" method="post">
+                    <div class="comision__contenedor">
+                        <div class="contenedor__comisionista">
+                            <div class="comisionista__cabecera">
+                                <h2 class="cabecera__titulo">Seleccionar Comisionista</h2>
+                            </div>
+                            <div class="comisionista__inputs">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input input__search">
+                                    <a href="#" class="btn__asignarcomisionista">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </a>
+                                    <i class="icono__input fa-solid fa-address-card"></i>
+                                    <label class="user-label">Número Identificación</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Nombres Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Apellidos Comisionista</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-building"></i>
+                                    <label class="user-label">Nombre Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Dirección Punto</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" class="input input__large">
+                                    <i class="icono__input fa-solid fa-street-view"></i>
+                                    <label class="user-label">Posible destino del pasajero</label>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="asignarcomisionista__modal">
+                            <div class="modal__contenedor">
+                                <section class="comision__espera">
+                                    <section class="espera__titulo espera__titulo--comisionista">
+                                        <div class="titulo__cabecera">
+                                            <i class="opcion__icono fa-solid fa-person-dots-from-line"></i>
+                                            <h2 class="titulo__espera">Seleccionar Comisionista</h2>
+                                        </div>
+                                        <a href="#" class="asignarcomisionista__cerrar" title="Cerrar Ventana">
+                                            <i class="fa-regular fa-circle-xmark"></i>
+                                        </a>
+                                    </section>
+                                    <form action="#" method="post">
+                                        <section class="espera__tabla espera__tabla--modal ">
+                                            <table id="modalasignarcomisionista" class="display nowrap"  style="width:100%">
+                                                <thead class="thead__black">
+                                                    <tr>
+                                                        <th>Identificación</th>
+                                                        <th>Nombres</th>
+                                                        <th>Apellidos</th>
+                                                        <th>Nombre Punto</th>
+                                                        <th>Dirección Punto</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>Sol Hotel Inn</td>
+                                                        <td>Cra. 1c #20-23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Maryoris Paola</td>
+                                                        <td>Rodriguez Polo</td>
+                                                        <td>Park Hotel</td>
+                                                        <td>Cra. 1 # 18 - 67</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Maryoris Paola</td>
+                                                        <td>Rodriguez Polo</td>
+                                                        <td>Park Hotel</td>
+                                                        <td>Cra. 1 # 18 - 67</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Maryoris Paola</td>
+                                                        <td>Rodriguez Polo</td>
+                                                        <td>Park Hotel</td>
+                                                        <td>Cra. 1 # 18 - 67</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Maryoris Paola</td>
+                                                        <td>Rodriguez Polo</td>
+                                                        <td>Park Hotel</td>
+                                                        <td>Cra. 1 # 18 - 67</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829786675</td>
+                                                        <td>Maryoris Paola</td>
+                                                        <td>Rodriguez Polo</td>
+                                                        <td>Park Hotel</td>
+                                                        <td>Cra. 1 # 18 - 67</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </section>
+                                        <div class="contenedor__submit contenedor__submit--modal">                          
+                                            <button type="submit" class="btngeneral btngeneral--buscar"><i class="icono__btn fa-solid fa-plus"></i> Agregar</button>
+                                            <a href="add_commission.php" class="btngeneral btngeneral--cancelar">
+                                                <p class="cancelar__btn"><i class="icono__btn fa-solid fa-ban"></i> Cancelar</p>     
+                                            </a>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </section>
+                    </div> 
+                    <div class="comision__contenedor">
+                        <div class="contenedor__comisionista">
+                            <div class="comisionista__cabecera">
+                                <h2 class="cabecera__titulo">Seleccionar Conductor</h2>
+                            </div>
+                            <div class="comisionista__inputs">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input input__search">
+                                    <a href="#" class="btn__asignarconductor">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </a>
+                                    <i class="icono__input fa-solid fa-address-card"></i>
+                                    <label class="user-label">Número Identificación</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Nombres Conductor</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-user-tie"></i>
+                                    <label class="user-label">Apellidos Conductor</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-id-card-clip"></i> 
+                                    <label class="user-label">Código Vehículo</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-taxi"></i> 
+                                    <label class="user-label">Placa Vehículo</label>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" disabled class="input">
+                                    <i class="icono__input fa-solid fa-clock"></i> 
+                                    <label class="user-label">Turno Conductor</label>
+                                </div>
+                            </div>
+                            <div class="contenedor__submit">                          
+                                <button type="submit" class="btngeneral btngeneral--buscar"><i class="icono__btn fa-solid fa-plus"></i> Agregar</button>
+                                <a href="add_commission.php" class="btngeneral btngeneral--cancelar">
+                                    <p class="cancelar__btn"><i class="icono__btn fa-solid fa-trash"></i> Limpiar</p>   
+                                </a>
+                            </div>
+                        </div>
+                        <section class="asignarconductor__modal">
+                            <div class="modal__contenedor">
+                                <section class="comision__espera">
+                                    <section class="espera__titulo espera__titulo--comisionista">
+                                        <div class="titulo__cabecera">
+                                            <i class="opcion__icono fa-solid fa-taxi"></i>
+                                            <h2 class="titulo__espera">Seleccionar Conductor</h2>
+                                        </div>
+                                        <a href="#" class="asignarconductor__cerrar" title="Cerrar Ventana">
+                                            <i class="fa-regular fa-circle-xmark"></i>
+                                        </a>
+                                    </section>
+                                    <form action="#" method="post">
+                                        <section class="espera__tabla espera__tabla--modal">
+                                            <table id="modal__asignarconductor" class="display nowrap"  style="width:100%">
+                                                <thead class="thead__black">
+                                                    <tr>
+                                                        <th>Identificación</th>
+                                                        <th>Nombres</th>
+                                                        <th>Apellidos</th>
+                                                        <th>Código Vehículo</th>
+                                                        <th>Placa Vehículo</th>
+                                                        <th>Turno Conductor</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>10829123675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>77</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829780975</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>78</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10829886675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>77</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10800786675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>78</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10824486675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>79</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10845786675</td>
+                                                        <td>Francisco Javier</td>
+                                                        <td>Miranda Lopéz</td>
+                                                        <td>75</td>
+                                                        <td>TZT 232</td>
+                                                        <td>Conductor Diurno</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
-                    <section class="contenedor__comisionista">
-                        <section class="comisionista__cabecera">
-                            <h2 class="cebecera__titulo">Comisionista</h2>
-                            <section class="cabecera__linea">
-                                <hr class="linea__cabecera">
-                            </section>
+                                        </section>
+                                        <div class="contenedor__submit contenedor__submit--modal">                          
+                                            <button type="submit" class="btngeneral btngeneral--buscar"><i class="icono__btn fa-solid fa-plus"></i> Agregar</button>
+                                            <a href="add_commission.php" class="btngeneral btngeneral--cancelar">
+                                                <p class="cancelar__btn"><i class="icono__btn fa-solid fa-ban"></i> Cancelar</p>   
+                                            </a>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
                         </section>
-                        <section class="comisionista__inputs">
-                            <section class="inputs__group">
-                                <label class="group__label" for="idcomisionista">Id. Comisionista</label>
-                                <input class="group__input" type="text" id="idcomisionista" name="idcomisionista" required placeholder="12345112">
-                                <i class="group__search fa-solid fa-magnifying-glass" title="Buscar"></i>
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="nombrescomisionista">Nombres</label>
-                                <input class="group__input" type="text" id="nombrescomisionista" name="nombrescomisionista" readonly placeholder="Juan Carlos">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="apellidoscomisionista">Apellidos</label>
-                                <input class="group__input" type="text" name="apellidoscomisionista" id="apellidoscomisionista" readonly placeholder="Arias Vélez">
-                            </section>
-                            <section class="inputs__group">
-                            <label class="group__label" for="puntocomision">Nombre Punto</label>
-                                <input class="group__input" type="text" name="puntocomision" id="puntocomision" readonly placeholder="Hotel las vegas">
-                            </section>
-                            <section class="inputs__group inputs__group--destino">
-                                <label class="group__label group__label--destino" for="destinop">Posible Destino</label>
-                                <input class="group__input group__input--destino" type="text" name="destinop" id="destinop" placeholder="Areopuerto" >
-                            </section>
-                        </section>
-                    </section>
-                    <section class="contenedor__comisionista">
-                        <section class="comisionista__cabecera">
-                            <h2 class="cebecera__titulo">Conductor</h2>
-                            <section class="cabecera__linea">
-                                <hr class="linea__cabecera">
-                            </section>
-                        </section>
-                        <section class="comisionista__inputs">
-                            <section class="inputs__group">
-                                <label class="group__label" for="codvehiculo">Cod. Vehículo</label>
-                                <input class="group__input" type="text" id="codvehiculo" name="codvehiculo" placeholder="77" required autocomplete="off">
-                                <i class="group__search fa-solid fa-magnifying-glass" title="Buscar"></i>
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="nombreconductor">Nombres</label>
-                                <select name="conductor" id="conductor" class="group__select">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                    <option >Seleccionar</option>
-                                    <option value="Luis Fernando">Luis Fernando</option>
-                                    <option value="Alexander Bustamante">Alexander Bustamante</option>
-                                </select>
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="idconductor">Id Conductor</label>
-                                <input class="group__input" type="text" placeholder="3265224" readonly id="idconductor" name="idconductor">
-                            </section>
-                            
-                            <section class="inputs__group">
-                                <label class="group__label" for="placaconductor">Placa Vehículo</label>
-                                <input class="group__input" type="text" id="placaconductor" name="placaconductor" readonly placeholder="HQL543">
-                            </section>
-                            <section class="inputs__group">
-                                <label class="group__label" for="turnoconductor">Turno</label>
-                                <input class="group__input" type="text" readonly placeholder="CN" id="turnoconductor" name="turnoconductor">
-                            </section>
-                        </section>
-                    </section>
+                    </div>
+                </form>
 
-                    <section class="contenedor__submit">
-                        <section class="submit__linea">
-                            <hr class="linea__submit">
-                        </section>                           
-                        <input class="submit__agregar" type="submit" value="Agregar">
-                        <a href="add_commission.php" class="submit__cancelar">
-                            <p class="cancelar__btn">Cancelar</p>   
-                        </a>
-                        <section class="submit__linea">
-                            <hr class="linea__submit">
-                        </section>
-                    </section>
-                </form> 
                 <section class="comision__espera">
-                    <section class="espera__titulo">
+                    <section class="espera__titulo espera__titulo--comision">
                         <i class="opcion__icono fa-regular fa-clock"></i>
                         <h2 class="titulo__espera">Comisiones Pendientes</h2>
                     </section>
 
                     <section class="espera__tabla">
                         <table id="pendientes" class="display nowrap"  style="width:100%">
-                            <thead>
+                            <thead class="thead__black">
                                 <tr>
                                     <th>Fecha y Hora</th>
                                     <th># Comisión</th>
@@ -112,299 +290,141 @@
                                     <th>Destino Posible</th>
                                     <th>Estado</th>
                                     <th>Acción</th>
-                                    <th>Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>2021/12/10 02:58:11 p.m.</td>
                                     <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
                                     <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>2021/12/11 03:58:11 p.m.</td>
+                                    <td>1</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
+                                    <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2021/12/10 02:58:11 p.m.</td>
                                     <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
                                     <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2021/12/10 02:58:11 p.m.</td>
                                     <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
                                     <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2021/12/10 02:58:11 p.m.</td>
                                     <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
                                     <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2021/12/10 02:58:11 p.m.</td>
                                     <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
+                                    <td>Maryoris Paola</td>
+                                    <td>Francisco Javier</td>
+                                    <td>Luis Alexander</td>
+                                    <td>Parque de los novios</td>
                                     <td>Pendiente</td>
                                     <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2021/12/10 02:58:11 p.m.</td>
-                                    <td>1</td>
-                                    <td>Maryoris </td>
-                                    <td>Francisco</td>
-                                    <td>Alexander</td>
-                                    <td>Centro</td>
-                                    <td>Pendiente</td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--editar" href="edit_commission_pendiente.php">
-                                            <i class="opcion__icono fa-solid fa-pen-clip"></i>
-                                            <p class="btn__tabla">Editar</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="tabla__btn tabla__btn--finalizar" href="add_finish_commission.php">
-                                            <i class="opcion__icono fa-solid fa-up-right-from-square"></i>
-                                            <p class="btn__tabla">Finalizar</p>
-                                        </a>
+                                        <div class="botones__tabla">
+                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="edit_commission_pendiente.php">
+                                                <p class="btn__tabla">Editar</p>
+                                                
+                                            </a>
+                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Finalizar" href="add_finish_commission.php">
+                                                <p class="btn__tabla">Finalizar</p>    
+                                                
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </section>
                 </section>
             </section>
         </section>
     </section>
-
+   
 <?php include_once("../../layout/footer-app.inc.php");?>
