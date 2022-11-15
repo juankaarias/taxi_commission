@@ -1,8 +1,13 @@
-<?php 
+<?php
     $titulo="Tipo de Comisión";
     include_once("../../layout/header-app.inc.php");
 ?>
-
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Comisiones / Tipo de Comisión</p>
+        </div>
+    </section>
     <section class="nuevo__tipocomision">
         <section class="tipocomision__nuevo">
             <section class="nuevo__indicador">

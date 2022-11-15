@@ -1,3 +1,16 @@
+const bloque = document.querySelectorAll('.bloque');
+const p = document.querySelectorAll('.p');
+
+p.forEach((cadap, i)=>{
+    p[i].addEventListener('click',()=>{
+        bloque.forEach((cadaBloque, i)=>{
+            bloque[i].classList.remove('activo');
+        })
+        bloque[i].classList.add('activo');
+    });
+    
+});
+
 const openModal = document.querySelector('.btn__asignarcomisionista');
 const modal = document.querySelector('.asignarcomisionista__modal');
 const cerrarModal = document.querySelector('.asignarcomisionista__cerrar');
@@ -58,7 +71,22 @@ function mostrar(id) {
     }
 }
 
-const ctx = document.getElementById('myChart').getContext('2d');
+function mostrarestado(id) {
+    if ((id != "anulada") & (id != "exitosa")) {
+        $("#estadoanulada").hide();
+        $("#estadoexitosa").hide();
+    }
+    if (id == "anulada") {
+        $("#estadoexitosa").hide();
+        $("#estadoanulada").show();
+    }
+    if (id == "exitosa") {
+        $("#estadoexitosa").show();
+        $("#estadoanulada").hide();
+    }
+}
+
+/* const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -92,5 +120,5 @@ const myChart = new Chart(ctx, {
             }
         }
     }
-});
+}); */
 

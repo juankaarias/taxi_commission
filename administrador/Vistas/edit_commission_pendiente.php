@@ -1,8 +1,15 @@
-<?php 
+<?php
     $titulo="Editar Comision";
     include_once("../../layout/header-app.inc.php");
 ?>
-
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Comisiones /  </p>
+            <a href="add_commission.php" class="main__link">Asignar Comisión</a>
+            <p class="link__general">/ Editar Comisiones Pendientes</p>
+        </div>
+    </section>
     <section class="commission__editcomisionpendiente">
         <section class="editcomisionpendiente__contenedor">
 

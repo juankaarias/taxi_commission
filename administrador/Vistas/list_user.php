@@ -1,7 +1,13 @@
-<?php 
+<?php
     $titulo="Consultar Usuario";
     include_once("../../layout/header-app.inc.php");
 ?>
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Usuarios / Consultar Usuario</p>
+        </div>
+    </section>
     <section class="list__user">
         <section class="user__list">
             <div class="list__indicador">

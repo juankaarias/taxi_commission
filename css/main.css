@@ -381,6 +381,118 @@
         height: 50px;
     }
 }
+
+/* Accesibilidad */
+
+.main__accesibilidad{
+    width: 170px;
+    height: 200px;
+    background-color: var(--blanco);
+    position: fixed;
+    bottom: 50px;
+    right: 1px;
+    padding: 10px 15px;
+    border: 1px solid #0781C4;
+    box-shadow: 0px 0px 4px var(--gris), 0px 0px 1px var(--gris);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.accesibilidad__head{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+}
+.accesibilidad__botones{
+    padding: 10px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: o 20px;
+}
+
+
+
+.contenedor__accesibilidad{
+    position: relative;
+    bottom: 51px;
+    right: 62px;
+    z-index: 2;
+    box-shadow: 1px 1px 4px var(--sombra);
+    background-color: #0781C4;
+    width: 45px;
+    height: 45px;
+}
+
+
+/* .main__accesibilidad{
+    position: fixed;
+    bottom: 11px;
+    right: 171px;
+    width: 45px;
+    height: 45px;
+    z-index: 2;
+    
+}
+.accesibilidad__contenedor{
+    width: 170px;
+    height: 200px;
+    background-color: var(--blanco);
+    position: fixed;
+    bottom: 11px;
+    right: 1px;
+    padding: 10px 15px;
+    border: 1px solid #0781C4;
+    box-shadow: 0px 0px 4px var(--gris), 0px 0px 1px var(--gris);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.head__size{
+    
+}
+.size__btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.btns__btn{
+    padding: 0 10px;
+    display: inline-flex;
+    background: #ddd;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+.btns__btn.active{
+    background: #444;
+
+}
+
+.contenedor__menu{
+    
+}
+.menu__lista{
+    padding: 5px 0px;
+}
+.ayuda__accesibilidad{
+    border-radius: 50%;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+ */
+
+
 /* whatsapp */
 .main__ayuda{
     position: fixed;

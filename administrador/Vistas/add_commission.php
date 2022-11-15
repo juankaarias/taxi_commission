@@ -1,8 +1,14 @@
-<?php 
+<?php
     $titulo="Nueva Comisión";
     include_once("../../layout/header-app.inc.php");
 ?>
-    <section class="commission__add">
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Comisiones / Asignar Comisión</p>
+        </div>
+    </section>
+    <section class="commission__add"> 
         <section class="add__contenedor">
 
             <section class="contenedor__add">
@@ -134,7 +140,7 @@
                             </div>
                         </section>
                     </div> 
-                    <div class="comision__contenedor">
+                    <div class="comision__contenedor comision__contenedor--debajo">
                         <div class="contenedor__comisionista">
                             <div class="comisionista__cabecera">
                                 <h2 class="cabecera__titulo">Seleccionar Conductor</h2>

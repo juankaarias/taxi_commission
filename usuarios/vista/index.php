@@ -1,3 +1,10 @@
+<?php
+    require_once('../modelo/usuarios.php');
+    $modeloUsuarios = new Usuarios();
+    if(isset($_SESSION['messageErrors'])){
+        $errors = $_SESSION['messageErrors'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -40,63 +47,73 @@
 
             <section class="formulario__login">
 
-                <form action="#" method="POST" class="login__form">
+                <form action="../controlador/login.php" method="POST" class="login__form">
                     <section class="form__icono">
-                        <p class="icono__text">¡BIENVENIDO AL</p>
-                        <p class="icono__text">SISTEMA DE COMISIONES!</p>
+                        <p class="icono__text">SISTEMA DE COMISIONES</p>
+                        <p class="icono__text">INICIAR SESIÓN</p>
+                        <?php if (isset($errors)): ?>
+                            <div class="alert alert-status">
+                                <?php echo $modeloUsuarios->showError($errors, 'status_error');?>
+                            </div>
+                        <?php endif;?>
                     </section>
-
-                    <!--nombre usuario-->
                     <section class="form__group">
-                        <label class="group__label" for="usuario">Usuario</label>
+                        <label class="group__label" for="email">Correo Electrónico</label>
                         <section class="group__input">
-                            <i class="input__icono fa-solid fa-user"></i>   
-                            <input class="input__usuario" type="text" name="usuario" id="usuario"  autocomplete="off" required>
+                            <i class="input__icono fa-solid fa-envelope"></i>   
+                            <input class="input__general" type="email" name="email" id="email"  autocomplete="off" value="">
                         </section>
-                        <p class="group__error">El nombre de usuario debe ser texto.</p>
+                        <?php 
+                            if(isset($errors)){ 
+                        ?>
+                            <?php echo $modeloUsuarios->showError($errors, 'email');?>
+                        <?php    
+                            }
+                        ?>
                     </section>
-
-                    <!--nombre usuario-->
                     <section class="form__group">
                         <label class="group__label" for="password">Contraseña</label>
                         <section class="group__input">
                             <i class="input__icono fa-solid fa-lock"></i>   
-                            <input class="input__password" type="password" name="password" id="password"  autocomplete="off" required>
+                            <input class="input__general" type="password" name="password" id="password"  autocomplete="off">
                         </section>
-                        <p class="group__error">La contraseña debe contener letras y números.</p>
+                        <?php 
+                            if(isset($errors)){ 
+                        ?>
+                            <?php echo $modeloUsuarios->showError($errors, 'password');?>
+                        <?php    
+                            }
+                        ?>
                     </section>
 
                     <section class="form__preguntas">
 
                         <section class="preguntas__checkbox">
                             <input  class="checkbox__recordar" type="checkbox" name="recordarUsuario" value="recordarUsuario" id="recordarUsuario">
-                            <label  class="checkbox__texto"  for="recordarUsuario">Recuérdame</label>
+                            <label  class="checkbox__texto"  for="recordarUsuario">Recordar usuario</label>
                         </section>               
                         <section class="preguntas__olvido">
                             <a href="recover.php" class="olvido__password">¿Olvido su contraseña?</a>
                         </section>
-
                     </section>
-
                     <section class="form__submit">
-                        <input type="submit" value="Iniciar Sesion" class="btn__general">
+                        <input type="submit" value="Iniciar Sesión" class="btn__general">
                     </section>
-                    
                 </form>
-
+                <?php
+                    $modeloUsuarios->clearErrors();
+                ?>
             </section>
-           
         </section>
-
         <section class="login__registro">
             <section class="registro__login">
+
                 <h4 class="login__link">¿Deseas ser Comisionista?</h4>
             </section>
             <section class="registro__login">
                 <a href="register.php"  class="login__link--clic">Registrate aquí</a>
             </section>
         </section>
-        
     </main>
     <footer class="login__footer">
         <p class="footer__login">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>

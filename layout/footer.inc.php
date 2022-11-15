@@ -1,3 +1,39 @@
+        <!-- <section class="main__accesibilidad">
+            <p class="accesibilidad__head">Herramientas de accesibilidad</p>
+            
+            <div class="accesibilidad__botones">
+                
+                <div class="botones__container">
+                    <span class="btns__btn active">A</span>
+                    <span class="btns__btn">A</span>
+                    <span class="btns__btn">A</span>
+                </div>
+
+            </div>
+            <button class="ayuda__accesibilidad">
+                <img src="images/accessibility.png" class="contenedor__accesibilidad" alt="Accesibilidad" lazy="loading" title="Herramientas de Accesibilidad">
+            </butt>
+        </section> -->
+        
+        <!-- <section class="main__accesibilidad">
+            <div class="accesibilidad__contenedor">
+                
+                <div class="head__size">
+                    <div class="size__btns">
+                        <span class="btns__btn active">A</span>
+                        <span class="btns__btn">A</span>
+                        <span class="btns__btn">A</span>
+                    </div>
+                </div>
+                <ul class="contenedor__menu">
+                    <li class="menu__lista">A</li>
+                    <li class="menu__lista">contraste</li>
+                    <li class="menu__lista">restablecer</li>
+                </ul> 
+            </div>
+            
+        </section>  -->
+
         <section class="main__arriba">
             <section class="arriba__btn">
                 <i class="btn__up fa-solid fa-chevron-up" style="color: #2A2A2A" title="Ir arriba"></i>

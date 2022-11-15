@@ -1,8 +1,13 @@
-<?php 
+<?php
     $titulo="Recaudo - Sistema de Comisiones";
     include_once("../../layout/header-app.inc.php");
-?>
-
+?>  
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Cartera / Recaudo</p>
+        </div>
+    </section>    
         <section class="contenedor__recaudo">
             <section class="recaudo__contenedor">
                 

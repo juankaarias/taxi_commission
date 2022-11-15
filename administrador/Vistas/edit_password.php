@@ -1,4 +1,4 @@
-<?php 
+<?php
     $titulo="Cambio de Contraseña";
     include_once("../../layout/header-app.inc.php");
 ?>

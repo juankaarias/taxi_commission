@@ -1,4 +1,4 @@
-<?php 
+<?php
     $titulo="Perfil de Usuario";
     include_once("../../layout/header-app.inc.php");
 ?>

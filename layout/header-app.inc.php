@@ -1,3 +1,8 @@
+<?php
+    require_once("../../usuarios/modelo/usuarios.php");
+    $modeloUsuarios = new Usuarios();
+    $modeloUsuarios->validarSesionAdministrador();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,7 +38,7 @@
                 </div>
                 <nav class="navegacion__menu">
                     <ul class="menu__unordered">
-                        <li class="unordered__lista">
+                        <!-- <li class="unordered__lista">
                             <section href="#" class="lista__link">
                                 <i class="link__icono link__icono--notificacion fa-solid fa-bell"></i>
                                 <p class="link__texto">Notificaciones</p>
@@ -53,7 +58,7 @@
                                     <a  class="link__ayuda" href="#">Plazo de Pago</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="unordered__lista">
                             <section class="lista__link">
                                 <p class="link__texto">Ayuda&#63;</p>
@@ -61,16 +66,16 @@
                             </section>
                             <ul class="lista__submenu">
                                 <li class="submenu__link">
-                                    <a  class="link__ayuda" href="#"><i class="opcion__iconomenu fa-regular fa-circle-question"></i> Centro de ayuda</a>
+                                    <a  class="link__ayuda" href="help_comisiones.php"><i class="opcion__iconomenu fa-regular fa-circle-question"></i> Centro de ayuda</a>
                                 </li>
                                 <li class="submenu__link">
-                                    <a  class="link__ayuda" href="#"><i class="opcion__iconomenu fa-solid fa-book"></i> Manual de Usuario</a>
+                                    <a  class="link__ayuda" href="user_manual.php" target="_blank"><i class="opcion__iconomenu fa-solid fa-book"></i> Manual de Usuario</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="unordered__lista">
                             <section class="lista__link">
-                                <p class="link__texto">usuario</p>
+                                <p class="link__texto"><?php echo $modeloUsuarios->getNombre();?></p>
                                 <i class="link__icono fa-solid fa-angles-down"></i>
                             </section>
                             <ul class="lista__submenu">
@@ -81,7 +86,7 @@
                                     <a  class="link__ayuda" href="edit_password.php"><i class="opcion__iconomenu fa-solid fa-key"></i> Cambiar Contraseña</a>
                                 </li>
                                 <li class="submenu__link">
-                                    <a  class="link__ayuda" href="#"><i class="opcion__iconomenu fa-solid fa-power-off"></i> Cerrar Sesión</a>
+                                    <a  class="link__ayuda" href="../../usuarios/controlador/logout.php"><i class="opcion__iconomenu fa-solid fa-power-off"></i> Cerrar Sesión</a>
                                 </li>
                             </ul>
                         </li>
@@ -171,7 +176,7 @@
                                     </div>
                                     <ul class="lista__subopcion lista__subopcion--submenu">
 
-                                        <li class="subopcion__item">
+                                        <!-- <li class="subopcion__item">
                                             <div class="item__submenu item__submenu--comision">
                                                 <p class="comision__menu">otros</p>
                                                 <i class="fa-solid fa-angle-right"></i>
@@ -180,7 +185,7 @@
                                                 <li class="submenu2__lista"><a  class="lista__comision" href="#">otros</a></li>
                                                 <li class="submenu2__lista"><a  class="lista__comision" href="#">otros</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
 
                                         <li class="subopcion__item subopcion__item--backup">
                                             <div class="item__submenu item__submenu--backup">
@@ -198,7 +203,8 @@
                         </nav>
                     </section>
                 </section>
-            </section>   
+            </section> 
+             
         </header>
         
 

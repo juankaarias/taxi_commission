@@ -1,8 +1,13 @@
-<?php 
+<?php
     $titulo="Comisiones Efectivas";
     include_once("../../layout/header-app.inc.php");
 ?>
-    
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Comisiones / Comisiones Efectivas</p>
+        </div>
+    </section>
     <section class="effective__commissions">
 
         <section class="commissions__container">

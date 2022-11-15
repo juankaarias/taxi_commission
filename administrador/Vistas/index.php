@@ -1,7 +1,8 @@
-<?php 
+<?php
     $titulo="Inicio - Sistema de Comisiones";
     include_once("../../layout/header-app.inc.php");
 ?>
+    <section class="commission__indicador"></section>
     <section class="commission__body">
         <section class="body__contenedor">
             <div class="contenedor__grafica">

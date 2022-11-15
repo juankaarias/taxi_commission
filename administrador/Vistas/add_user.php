@@ -1,7 +1,13 @@
-<?php 
+<?php
     $titulo="Crear Usuario";
     include_once("../../layout/header-app.inc.php");
 ?>
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Usuarios / Crear Usuario</p>
+        </div>
+    </section>
     <section class="create__user">
         <section class="user__create">
             <div class="create__indicador">
@@ -32,7 +38,7 @@
                         <section class="basicos__inputs">
                             <label class="inputs__labelbasico" for="tipousuario">Tipo Usuario <span class="observacion__asterisco" >*</span> </label>
                             <select name="tipousuario" id="tipousuario" class="inputs__inputbasico" onChange="mostrar(this.value);">
-                                <option>Seleccionar</option>
+                                <option selected="true" disabled="disabled">Seleccionar</option>
                                 <option value="administrador">Administrador</option>
                                 <option value="operador">Operador</option>
                                 <option value="comisionista">Comisionista</option>
@@ -42,7 +48,7 @@
                         <section class="basicos__inputs">
                             <label class="inputs__labelbasico" for="estadousuario">Estado Usuario <span class="observacion__asterisco" >*</span> </label>
                             <select name="estadousuario" id="estadousuario" class="inputs__inputbasico">
-                                <option >Seleccionar</option>
+                                <option selected="true" disabled="disabled">Seleccionar</option>
                                 <option value="urbana">Activo</option>
                                 <option value="areopuerto">Inactivo</option>
                             </select>
@@ -50,7 +56,7 @@
                         <section class="basicos__inputs">
                             <label class="inputs__labelbasico" for="tipoid">Tipo de Identificación <span class="observacion__asterisco" >*</span> </label>
                             <select name="tipoid" id="tipoid" class="inputs__inputbasico">
-                                <option >Seleccionar</option>
+                                <option selected="true" disabled="disabled">Seleccionar</option>
                                 <option value="urbana">CC</option>
                                 <option value="areopuerto">CE</option>
                                 <option value="areopuerto">NIT</option>

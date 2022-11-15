@@ -1,4 +1,4 @@
-<?php 
+<?php
     $titulo="Editar perfil de usuario";
     include_once("../../layout/header-app.inc.php");
 ?>

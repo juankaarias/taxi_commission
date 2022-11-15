@@ -1,8 +1,15 @@
-<?php 
+<?php
     $titulo="Editar Comision No Efectiva";
     include_once("../../layout/header-app.inc.php");
 ?>
-
+    <section class="commission__indicador">
+        <div class="indicador__main">
+            <a href="index.php" class="main__link">Inicio</a>
+            <p class="link__general">/ Comisiones /  </p>
+            <a href="commissions_not_effective.php" class="main__link">Comisiones No Efectivas</a>
+            <p class="link__general">/ Editar Comisión No Efectiva</p>
+        </div>
+    </section>
     <section class="edit__noefectiva">
         <section class="noefectiva__contenedor">
             <section class="contenedor__efectiva contenedor__efectiva--noefectiva">

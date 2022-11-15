@@ -60,9 +60,10 @@
             <section class="menu__list">
                 <ul class="list__ul">
                     <li class="ul__menu"><a href="index.php" class="menu__a">INICIO</a></li>
-                    <li class="ul__menu"><a href="about_us.php" class="menu__a">QUIENES SOMOS</a></li>
+                    <li class="ul__menu"><a href="about_us.php" class="menu__a">QUIÉNES SOMOS</a></li>
                     <li class="ul__menu"><a href="service.php" class="menu__a">SERVICIOS</a></li>
-                    <li class="ul__menu"><a href="contact_us.php" class="menu__a">CONTACTANOS</a></li>
+                    <li class="ul__menu"><a href="contact_us.php" class="menu__a">CONTÁCTANOS</a></li>
+                    <li class="ul__menu"><a href="usuarios/vista/register.php" class="menu__a">REGÍSTRATE</a></li>
                 </ul>
             </section>
             <section class="menu__login">

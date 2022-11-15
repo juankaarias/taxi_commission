@@ -60,6 +60,7 @@
                     <li class="ul__menu"><a href="../../about_us.php" class="menu__a">QUIENES SOMOS</a></li>
                     <li class="ul__menu"><a href="../../service.php" class="menu__a">SERVICIOS</a></li>
                     <li class="ul__menu"><a href="../../contact_us.php" class="menu__a">CONTACTANOS</a></li>
+                    <li class="ul__menu"><a href="register.php" class="menu__a">REGÍSTRATE</a></li>
                 </ul>
             </section>
             <section class="menu__login">
