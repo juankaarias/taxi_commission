@@ -161,99 +161,7 @@ $(document).ready(function() {
    
 });
 
-/* ############################## TABLA DE COMISIONES PENDIENTES ############################## */
-$(document).ready(function() {
-    $('#pendientes').DataTable( {
-        responsive: true,
-        "bSort" : true,        
-        language: {
-                "lengthMenu": "Mostrar _MENU_ registros",
-                "zeroRecords": "No se encontraron resultados",
-                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sSearch": "Buscar Comisión: ",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast":"Último",
-                    "sNext":"Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "sProcessing":"Procesando...",
-            },
-        //para usar los botones   
-        dom: 'fBrtlp',     
-        buttons:[ 
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'excelHtml5',
-                text:      '<i class="export__btn fas fa-file-excel"><p class="btn__export">Excel</p></i> ',
-                titleAttr: 'Exportar a Excel',
-                className: 'btn btn-success',
-                exportOptions: {
-                    columns: [ 0,1,2,3,4,5,6]
-                } 
-            },
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'pdfHtml5',
-                text:      '<i class="export__btn fas fa-file-pdf"><p class="btn__export">Pdf</p></i> ',
-                titleAttr: 'Exportar a PDF',
-                className: 'btn btn-danger',
-                exportOptions: {
-                    columns: [ 0,1,2,3,4,5,6]
-                },
-                orientation: 'landscape',
-                pageSize: 'A4',
-                customize:function(doc) {
-                    doc.styles.title = {
-                        color: 'black',
-                        fontSize: '15',
-                        alignment: 'left',
-                        bold: true
-                    }
-                    doc.styles.message = {
-                        color: 'black',
-                        fontSize: '15',
-
-                        alignment: 'center',
-                        margin: [ 0, 0, 100, 0]
-                    }
-                    doc.styles['td:nth-child(2)'] = { 
-                        width: '100px',
-                        'max-width': '100px'
-                    }
-                    doc.styles.tableHeader = {
-                        fillColor:'#FFD800',
-                        color:'black',
-                        alignment: 'center',
-                        bold: true
-                    }
-                    doc.styles.table = {
-                        alignment: 'center'
-                    }
-                } 
-            },
-            {
-                title:     'Reporte de Comisiones Pendientes',
-                message:   'Taxi Rodadero Bello Horizonte S.A.S',
-                extend:    'print',
-                text:      '<i class="export__btn fa fa-print"> <p class="btn__export">Imprimir</p></i> ',
-                titleAttr: 'Imprimir',
-                className: 'btn btn-info',
-                exportOptions: {
-                    columns: [ 0,1,2,3,4,5,6]
-                }
-            }
-        ],
-        'order': [[0, 'desc']]	  
-    } );
-    
-    
-} );
-/* ############################## TIPO DE COMISIONES ############################## */
+/* TABLA TIPO DE COMISIONES */
 $(document).ready(function() {
     $('#tipocomisiones').DataTable( {
         responsive: true,
@@ -347,7 +255,7 @@ $(document).ready(function() {
 } );
 
 
-/* ############################## MODAL COMISIONISTAS ############################## */
+/* MODAL COMISIONISTAS */
 $(document).ready(function() {
     var table = $('#modalasignarcomisionista').DataTable({
         language:{
@@ -366,7 +274,7 @@ $(document).ready(function() {
                 "sPrevious": "Anterior",
                 "sProcessing":"Procesando...",
             }
-        },
+        },       
         dom: 'ftp',
        /* 'columnDefs': [
           {
@@ -375,23 +283,23 @@ $(document).ready(function() {
                 'selectRow': true
              }
           }
-       ], */
+       ], 
        'select': {
           'style': 'single'
-       },
+       },*/
        'order': [[0, 'desc']],
        
-    });
+    });/* 
     table.on('select', function () {
         table.draw(false);
     })
     table.on('deselect', function () {
         table.draw(false);
-    })  
+    })   */
    
 });
 
-
+/* MODAL CONDUCTOR */
 $(document).ready(function() {
     var table = $('#modal__asignarconductor').DataTable({
         language:{
@@ -412,27 +320,8 @@ $(document).ready(function() {
             }
         },
         dom: 'ftp',
-       /* 'columnDefs': [
-          {
-             'targets': 0,
-             'checkboxes': {
-                'selectRow': true
-             }
-          }
-       ], */
-       'select': {
-          'style': 'single'
-       },
        'order': [[0, 'desc']],
-       
-    });
-    table.on('select', function () {
-        table.draw(false);
-    })
-    table.on('deselect', function () {
-        table.draw(false);
-    })  
-   
+    });  
 });
 
 
@@ -591,7 +480,7 @@ $(document).ready(function() {
                 "sProcessing":"Procesando...",
             },
         //para usar los botones   
-        dom: 'Bfrtlp',       
+        dom: 'fBrtlp',        
         buttons:[ 
             {
                 title:     'Lista de Usuarios',
@@ -599,7 +488,10 @@ $(document).ready(function() {
                 extend:    'excelHtml5',
                 text:      '<i class="export__btn fas fa-file-excel"><p class="btn__export">Excel</p></i> ',
                 titleAttr: 'Exportar a Excel',
-                className: 'btn btn-success' 
+                className: 'btn btn-success',
+                exportOptions: {
+                    columns: [ 0,1,2,3,4,5,6,7]
+                }  
             },
             {
                 title:     'Lista de Usuarios',
@@ -609,6 +501,10 @@ $(document).ready(function() {
                 titleAttr: 'Exportar a PDF',
                 className: 'btn btn-danger',
                 orientation: 'landscape',
+                exportOptions: {
+                    columns: [ 0,1,2,3,4,5,6,7]
+                },
+                orientation: 'Portrait',
                 pageSize: 'A4',
                 customize:function(doc) {
                     doc.styles.title = {
@@ -646,6 +542,9 @@ $(document).ready(function() {
                 text:      '<i class="export__btn fa fa-print"> <p class="btn__export">Imprimir</p></i> ',
                 titleAttr: 'Imprimir',
                 className: 'btn btn-info',
+                exportOptions: {
+                    columns: [ 0,1,2,3,4,5,6,7]
+                }
             }
         ],
         'order': [[0, 'desc']]		  

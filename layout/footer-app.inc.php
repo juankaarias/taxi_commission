@@ -17,8 +17,11 @@
         <script type="text/javascript" src="../../js/ajax.libs.moment.js.2.18.1.moment.min.js"></script>
         <script type="text/javascript" src="../../js/datetime.1.1.1.js.dataTables.dateTime.min.js"></script>
         <script type="text/javascript" src="../../js/app.js"></script>
+        <script type="text/javascript" src="../../js/add_commission.js"></script>
         <script type="text/javascript" src="../../js/tables.js"></script>
         <script type="text/javascript" src="../../js/plug-ins.1.10.20.api.sum().js"></script>
+        <script type="text/javascript" src="../../js/sweetalert2@11.js"></script>
+        
     </main>
 </body>
 </html>

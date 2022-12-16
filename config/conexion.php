@@ -2,6 +2,8 @@
     class Conexion{
         protected $db;
         private $dsn = "mysql:dbname=sistema_comisiones;host=localhost";
+        private $host = "localhost";
+        private $dbname = "sistema_comisiones";
         private $user = "root";
         private $pass = "";
         
@@ -19,7 +21,28 @@
                 die();
             }
         }
+
+        
+        public function getServidor():string{
+            return $this->host;
+        }
+
+        public function getdb():string{
+            return $this->dbname;
+        }
+
+        public function getUsuario():string{
+            return $this->user;
+        }
+
+        public function getContrasena():string{
+            return $this->pass;
+        }
+
+
     }
+
+    
     
 ?> 
 

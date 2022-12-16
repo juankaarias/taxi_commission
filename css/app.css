@@ -271,7 +271,16 @@
 .commission__indicador{
     width: 100%;
     margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    
 }
+.main__titulo{
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .indicador__main{
     padding: 0px 40px;
     display: flex;
@@ -311,6 +320,56 @@
 }
 /* Fin Footer */
 
+
+/* INICIO ALERTAS BACKEND */
+.alert {
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    hyphens: none;
+    word-wrap: break-word;
+}
+.alert-error{
+    color: #a10101;
+}
+.alert-success{
+    background: green;
+}
+.alert-status{
+    background-color: var(--negro);
+    box-shadow: 2px 2px 2px #0000008c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.icono__alert{
+    font-size: 18px;
+    text-align: center;
+    color: #FAB005;
+    animation: shake .1s ease-in-out .1s infinite alternate;
+}
+@keyframes shake{
+    from{
+        -webkit-transform: rotate(5deg);
+    }
+    to{
+        -webkit-transform: rotate(-5deg);
+        -webkit-transform-origin: center center;
+    }
+}
+
+.text__alert{
+    font-size: 12px;
+    color: #ff0000;
+    
+    font-style: italic;
+}
+/* FIN ALERTAS BACKEND */
+
 /* Pagina inicial y varias*/
 
 .contenedor__grafica{
@@ -320,6 +379,41 @@
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
+}
+.contenedor__inicio{
+    display: flex;
+    flex-direction: column;
+}
+.inicio__pagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto__bienvenida{
+    font-size: 25px;
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 0px 0px 2px #ccc;
+}
+.bienvenida__negrita{
+    font-weight: bold;
+}
+.pagina__logo{
+    width: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+.pagina__subtexto{
+    padding: 10px;
+    text-align: center;
+}
+.subtexto__nombre{
+    font-weight: bold;
+    font-size: 25px;
+}
+.subtexto__modulo{
+    font-size: 18px;
 }
 
 .commission__body,
@@ -422,7 +516,14 @@
 /* Fin Pagina Inicial */
 
 /* Inicio agregar comision */
-
+.text-center{
+    text-align: center;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
 .contenedor__add, 
 .contenedor__editcomisionpendiente, 
 .contenedor__finish, 
@@ -552,7 +653,7 @@
     flex-direction: column;
     padding: 20px;
 }
-.comision__contenedor--debajo{
+.comision__contenedor--conductor{
     padding: 0px 20px 20px 20px;
 }
 .contenedor__comisionista, 
@@ -664,7 +765,7 @@
 .contenedor__submit, 
 .editefectiva__submit{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: #F9F9F9;
     padding: 10px;
@@ -735,7 +836,7 @@
     font-weight: bold;
 }
 .espera__tabla{
-    padding: 10px 20px;
+    padding: 10px 20px 20px 20px;
 }
 .espera__tabla--modal {
     background-color: #F9F9F9;
@@ -746,17 +847,18 @@
     justify-content: center;
     align-items: center;
 }
-.tabla__btn{
+.tabla__btn, 
+.btn__seleccionar{
     display: flex;
-    height: 35px;
+    height: 25px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     background-color: var(--amarillo);
     color: var(--negro);
-    padding: 5px;
+    padding: 0px 10px;
     box-shadow: 0px 2px 3px #ccc;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .btn__tabla{
     padding: 5px;
@@ -771,16 +873,21 @@
     background-color: var(--rojo_fuerte);
 }
 .tabla__btn--editar,
-.tabla__btn--tipocomisionedit{
+.tabla__btn--tipocomisionedit,
+.btn__seleccionar{
     color: var(--blanco);
     background-color: var(--azul_fuerte);
-    margin: 0 5px;
+    /* margin: 0 auto; */
 }
-.tabla__btn--editar:hover{
+.tabla__btn--editar:hover,
+.btn__seleccionar:hover{
     background-color: var(--azul_claro);
 }
 .tabla__btn--finalizar:hover{
     background-color: var(--verde_claro);
+}
+.tabla__btn--tipocomisiondelete:hover{
+    background-color: var(--rojo_claro);
 }
 /* Fin agregar comision */
 
@@ -852,6 +959,10 @@
 }
 .info__observacion{
     font-weight: bold;
+}
+.botones__container{
+    display: flex;
+    flex-direction: row;
 }
 /* FIN BACKUP */
 
@@ -1267,6 +1378,7 @@
 .lista__usuarios{
     padding: 20px;
 }
+
 /* FIN CONSULTAR USUARIO */
 
 /* INICIO EDITAR USUARIO */
@@ -1409,12 +1521,13 @@ input.largerCheckbox {
     border-radius: 10px;
     background: var(--blanco_medio);
     box-shadow: inset 0px 1px 1px rgb(167, 167, 167);
-    padding: 10px 10px 10px 40px;
-    font-size: 15px;
+    padding: 15px 15px 10px 40px;
+    font-size: 14px;
     color: var(--sombra);
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
-    min-width: 220px;
+    min-width: 280px;
     max-height: 40px;
+    font-weight: 600;
 }
 .input__large{
     min-width: 460px;
@@ -1424,7 +1537,7 @@ input.largerCheckbox {
     color: var(--blanco);
 }
 .input__search{
-    padding: 10px 45px 10px 40px;
+    padding: 15px 45px 10px 40px;
     border: solid 1.5px #ccc;
     overflow: hidden;
 }
@@ -1458,7 +1571,7 @@ input.largerCheckbox {
 }
 .user-label {
     position: absolute;
-    left: 40px;
+    left: 0px;
     top: 0px;
     color: var(--sombra);
     pointer-events: none;
@@ -1489,7 +1602,7 @@ input.largerCheckbox {
 }
 .icono__input{
     position: absolute;
-    top: 13px;
+    top: 15px;
     left: 15px;
 }
 .espera__titulo--comision{
@@ -1508,7 +1621,7 @@ input.largerCheckbox {
     font-size: 16px;
 }
 
-.asignarcomisionista__modal, 
+.comisionista__modal, 
 .asignarconductor__modal, 
 .recaudoconductor__modal{
     position: fixed;

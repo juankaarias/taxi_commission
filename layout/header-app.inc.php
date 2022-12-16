@@ -1,6 +1,8 @@
 <?php
     require_once("../../usuarios/modelo/usuarios.php");
+    require_once("../modelo/administrador.php");
     $modeloUsuarios = new Usuarios();
+    $modeloAdmin = new Admnistrador();
     $modeloUsuarios->validarSesionAdministrador();
 ?>
 <!DOCTYPE html>

@@ -1,19 +1,34 @@
 <?php
+    require_once('../../usuarios/modelo/usuarios.php');
+    $modeloUsuarios = new Usuarios();
     $titulo="Inicio - Sistema de Comisiones";
     include_once("../../layout/header-app.inc.php");
 ?>
     <section class="commission__indicador"></section>
     <section class="commission__body">
         <section class="body__contenedor">
-            <div class="contenedor__grafica">
-                <canvas id="myChart" width="400" height="400"></canvas>
+
+            <div class="contenedor__inicio">
+                <div class="inicio__pagina">
+                    <div class="pagina__texto">
+                        <h1 class="texto__bienvenida">Bienvenido(a) <span class="bienvenida__negrita"><?=$modeloUsuarios->getNombre();?></span> al Sistema de Comisiones</h1>
+                    </div>
+                </div>
+                <div class="inicio__pagina">
+                    <img src="../../images/logo.png" alt="Logo" class="pagina__logo">
+                    <div class="pagina__subtexto">
+                        <h2 class="subtexto__nombre">Sistema de Comisiones</h2>
+                        <h3 class="subtexto__modulo">Módulo Administrador</h3>
+                    </div>
+                </div>
             </div>
-            <div class="contenedor__grafica">
+            
+            <!-- <div class="contenedor__grafica">
                 <canvas id="myCharts" width="400" height="400"></canvas>
             </div>
             <div class="contenedor__grafica">
                 <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
+            </div> -->
             
             <!--
             <section class="contenedor__tablas">

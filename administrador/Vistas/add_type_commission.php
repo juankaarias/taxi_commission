@@ -7,6 +7,9 @@
             <a href="index.php" class="main__link">Inicio</a>
             <p class="link__general">/ Comisiones / Tipo de Comisión</p>
         </div>
+        <div class="indicador__main">
+            <p class="main__titulo">Tipo de Comisión</p>
+        </div>
     </section>
     <section class="nuevo__tipocomision">
         <section class="tipocomision__nuevo">
@@ -68,47 +71,44 @@
                                     <th>Nombre Comisión</th>
                                     <th>Detalle</th>
                                     <th>Valor Comisión</th>
-                                    <th>Ultima Modificación</th> 
-                                    <th>Acción</th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                
+                                <?php
+                                    $listaTipoComisiones = $modeloAdmin->getListTypeCommission();
+                                    if($listaTipoComisiones != null){
+                                        foreach ($listaTipoComisiones as $listaTipoComision) {
+                                ?>
                                 <tr>
-                                    <td>1</td>
-                                    <td>Areopuerto</td>
-                                    <td>Comprende de bombazuca areopuerto</td>
-                                    <td>5000</td>
-                                    <td>2022/10/18</td>
+                                    <td><?=$listaTipoComision['Id']?></td>
+                                    <td><?=$listaTipoComision['Nombre']?></td>
+                                    <td><?=$listaTipoComision['Detalle']?></td>
+                                    <td>&#36;<?=number_format($listaTipoComision['ValorComisión'], 2)?></td>
                                     <td>
                                         <div class="botones__tabla">
-                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="#">
-                                                <p class="btn__tabla">Editar</p>
-                                            </a>
                                             <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Eliminar" href="#">
                                                 <p class="btn__tabla">Eliminar</p>    
                                             </a>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Urbana</td>
-                                    <td>Comprende Rodadero y Santa Marta</td>
-                                    <td>3000</td>
-                                    <td>2022/05/28</td>
-                                    <td>
-                                        <div class="botones__tabla">
-                                            <a class="tabla__btn tabla__btn--editar" title="Editar" href="#">
-                                                <p class="btn__tabla">Editar</p>
-                                                
-                                            </a>
-                                            <a class="tabla__btn tabla__btn--tipocomisiondelete" title="Eliminar" href="#">
-                                                <p class="btn__tabla">Eliminar</p>    
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <?php
+                                        }
+                                    }
+                                ?>
+                                                               
                             </tbody>
+                            <tfoot class="thead__black">
+                                <tr>
+                                    <th>Id Comisión</th>
+                                    <th>Nombre Comisión</th>
+                                    <th>Detalle</th>
+                                    <th>Valor Comisión</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </tfoot>
                         </table>
                     </section>
                 </section>

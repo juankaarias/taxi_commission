@@ -66,7 +66,7 @@
                         <?php 
                             if(isset($errors)){ 
                         ?>
-                            <?php echo $modeloUsuarios->showError($errors, 'email');?>
+                            <?php echo "<i class='text__alert fa-solid fa-circle-xmark'></i> ".$modeloUsuarios->showError($errors, 'email');?>
                         <?php    
                             }
                         ?>
@@ -80,7 +80,7 @@
                         <?php 
                             if(isset($errors)){ 
                         ?>
-                            <?php echo $modeloUsuarios->showError($errors, 'password');?>
+                            <?php echo "<i class='text__alert fa-solid fa-circle-xmark'></i> ".$modeloUsuarios->showError($errors, 'password');?>
                         <?php    
                             }
                         ?>
@@ -88,10 +88,10 @@
 
                     <section class="form__preguntas">
 
-                        <section class="preguntas__checkbox">
+                        <!-- <section class="preguntas__checkbox">
                             <input  class="checkbox__recordar" type="checkbox" name="recordarUsuario" value="recordarUsuario" id="recordarUsuario">
                             <label  class="checkbox__texto"  for="recordarUsuario">Recordar usuario</label>
-                        </section>               
+                        </section>   -->             
                         <section class="preguntas__olvido">
                             <a href="recover.php" class="olvido__password">¿Olvido su contraseña?</a>
                         </section>

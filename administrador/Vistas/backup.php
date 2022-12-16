@@ -1,6 +1,7 @@
 <?php
+                             
     $titulo="Copia de Seguridad";
-    include_once("../../layout/header-app.inc.php");
+    require_once("../../layout/header-app.inc.php");
 ?>
     <section class="commission__indicador">
         <div class="indicador__main">
@@ -19,10 +20,20 @@
                 <h1 class="respaldo__pregunta">¡Recuerde realizar constantemente copia de seguridad!</h1>
                 <p class="respaldo__indicacion">¿Desea generar copia de seguridad?</p>
                 <div class="respaldo__botones">
-                    <input class="botones__cambiopassword" type="submit" value="Generar">
+                    
+                    <form method="post" action="../controlador/controlador_backup.php">
+                        <input type="hidden" value="true" name="backup">
+                        <div class="botones__container">
+                            <input type="submit" value="Si, generar" class="botones__cambiopassword">
+                            <a class="botones__cancelarpassword" href="index.php">
+                                <p class="cancelarpassword__btn">Cancelar</p>
+                            </a> 
+                        </div>
+                    </form>
+                    <!-- <a class="botones__cambiopassword" value="Generar" href="#">Generar</a>
                     <a class="botones__cancelarpassword" href="index.php">
                         <p class="cancelarpassword__btn">Cancelar</p>
-                    </a>
+                    </a> -->
                 </div>
                 <p class="respaldo__info"><span class="info__observacion">Observación:</span> Este respaldo solo funciona para local, para realizar las copias desde un hosting debe configurar las copias desde el Cpanel.</p>
             </div>

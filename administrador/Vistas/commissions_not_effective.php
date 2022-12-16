@@ -7,6 +7,9 @@
             <a href="index.php" class="main__link">Inicio</a>
             <p class="link__general">/ Comisiones / Comisiones No Efectivas</p>
         </div>
+        <div class="indicador__main">
+            <p class="main__titulo">Comisiones no efectivas</p>
+        </div>
     </section>    
     <section class="effective__commissions">
         <section class="commissions__container">
@@ -37,270 +40,36 @@
                             <th>Operador</th>
                             <th>Comisionista</th>
                             <th>Conductor</th>
-                            <th>Turno</th>
                             <th>Destino Posible</th>
-                            <th>Estado Comisión</th>
                             <th>Observacion</th>
                             <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody>
+
+                         <?php
+                            $comisNoEfect = $modeloAdmin->getComisionesNoEfectivas();
+                            if($comisNoEfect != null){
+                                foreach ($comisNoEfect as $comNoEfectiva) {                           
+                        ?>
                         <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
+                            <td><?php echo $comNoEfectiva['FechaHora']?></td>
+                            <td><?php echo $comNoEfectiva['Comisión']?></td>
+                            <td><?php echo $comNoEfectiva['Operador']?></td>
+                            <td><?php echo $comNoEfectiva['Comisionista']?></td>
+                            <td><?php echo $comNoEfectiva['Conductor']?></td>
+                            <td><?php echo $comNoEfectiva['DestinoPosible']?></td>
+                            <td><?php echo $comNoEfectiva['Observación']?></td>
                             <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
+                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_effective.php">
                                     <p class="btn__tabla">Editar</p>
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2021/12/10 02:58:11 p.m.</td>
-                            <td>1</td>
-                            <td>Maryoris </td>
-                            <td>Francisco</td>
-                            <td>Alexander</td>
-                            <td>CN</td>
-                            <td>Centro</td>
-                            <td>Anulada</td>
-                            <td>No espero el servicio</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_commission_not_effective.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>   
+                        <?php
+                                }
+                            }
+                        ?>
                     </tbody>
                 </table>
 

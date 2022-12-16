@@ -30,6 +30,8 @@
             header('Location: ../../administrador/vistas/index.php'); 
         }else{
             $messageErrors['status_error'] = '<i class="icono__alert fa-solid fa-bell"></i><br>¡Se ha producido un problema al iniciar sesión!';
+            $messageErrors['email'] = '<span class="text__alert">Verifique el correo electrónico y/o la contraseña.</span>';
+            $messageErrors['password'] = '<span class="text__alert">Verifique el correo electrónico y/o la contraseña.</span>';
             $_SESSION['messageErrors'] = $messageErrors;
             header("Location: ../vista/index.php");
         }

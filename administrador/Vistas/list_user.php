@@ -1,4 +1,6 @@
 <?php
+    require_once('../modelo/administrador.php');
+    $modeloAdmin = new Admnistrador();
     $titulo="Consultar Usuario";
     include_once("../../layout/header-app.inc.php");
 ?>
@@ -7,6 +9,10 @@
             <a href="index.php" class="main__link">Inicio</a>
             <p class="link__general">/ Usuarios / Consultar Usuario</p>
         </div>
+        <div class="indicador__main">
+            <p class="main__titulo">Consultar Usuario</p>
+        </div>
+        
     </section>
     <section class="list__user">
         <section class="user__list">
@@ -16,8 +22,9 @@
             </div>
             <div class="lista__usuarios">
                 <table id="usuarios" class="display nowrap"  style="width:100%">
-                    <thead>
+                    <thead class="thead__black">
                         <tr>
+                            <th>Id</th>
                             <th>Identificación</th>
                             <th>Nombres</th>
                             <th>Apellidos</th>
@@ -25,141 +32,48 @@
                             <th>Estado</th>
                             <th>Email</th>
                             <th>Teléfono</th>
-                            <th>Usuario</th>
-                            <th>Contraseña</th>
                             <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                            $listaUsuarios = $modeloAdmin->getListUser();
+                            if($listaUsuarios != null){
+                                foreach ($listaUsuarios as $listaUsuario) {
+                        ?>
                         <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Comisionista</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
+                            <td><?=$listaUsuario['Id']?></td>
+                            <td><?=$listaUsuario['Identificación']?></td>
+                            <td><?=$listaUsuario['Nombres']?></td>
+                            <td><?=$listaUsuario['Apellidos']?></td>
+                            <td><?=$listaUsuario['TipoUsuario']?></td>
+                            <td><?=$listaUsuario['Estado']?></td>
+                            <td><?=$listaUsuario['Email']?></td>
+                            <td><?=$listaUsuario['Teléfono']?></td>
                             <td>
                                 <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
                                     <p class="btn__tabla">Editar</p>
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Comisionista</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Operador</td>
-                            <td>Inactivo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Comisionista</td>
-                            <td>Activo</td>
-                            <td>juancamilorobles@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Conductor</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Comisionista</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Conductor</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1098244543</td>
-                            <td>Juan Camilo</td>
-                            <td>Robles Meza</td>
-                            <td>Comisionista</td>
-                            <td>Activo</td>
-                            <td>juanca@vorreo.com</td>
-                            <td>3014432123</td>
-                            <td>juanka11</td>
-                            <td>******</td>
-                            <td>
-                                <a class="tabla__btn tabla__btn--editar" href="edit_user.php">
-                                    <p class="btn__tabla">Editar</p>
-                                </a>
-                            </td>
-                        </tr> 
+                        <?php
+                                }
+                            }
+                        ?>
                     </tbody>
+                    <tfoot class="thead__black">
+                        <tr>
+                            <th>Id</th>
+                            <th>Identificación</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Tipo Usuario</th>
+                            <th>Estado</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Acción</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </section>

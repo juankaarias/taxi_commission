@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <!-- Modal -->
-                        <section class="asignarcomisionista__modal">
+                        <!-- <section class="asignarcomisionista__modal">
                             <div class="modal__contenedor">
                                 <section class="comision__espera">
                                     <section class="espera__titulo espera__titulo--comisionista">
@@ -142,7 +142,7 @@
                                 </section>
                             </div>
                         </section>
-                    </div> 
+                    </div>  -->
                     <div class="comision__contenedor">
                         <div class="contenedor__comisionista">
                             <div class="comisionista__cabecera">

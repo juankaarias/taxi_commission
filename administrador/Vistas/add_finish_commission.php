@@ -4,6 +4,9 @@
 ?>
     <section class="commission__indicador">
         <div class="indicador__main">
+            <p class="main__link">Asignar Comisión</p>
+        </div>
+        <div class="indicador__main">
             <a href="index.php" class="main__link">Inicio</a>
             <p class="link__general">/ Comisiones /  </p>
             <a href="add_commission.php" class="main__link">Asignar Comisión</a>

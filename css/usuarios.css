@@ -144,6 +144,11 @@
     outline:none;
     height: 35px;
     padding: 0 10px 0 40px;
+    
+}
+.recover__input{
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 .input__icono{
     position: absolute;
@@ -201,6 +206,8 @@
 .olvido__password{
     font-style: italic;
     font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }
 .olvido__password:hover{
     text-decoration: underline;
@@ -400,6 +407,13 @@
     justify-content: center;
     flex-direction: column;
 }
+.err__message{
+    color:  #a10101;
+    font-style: italic;
+    font-size: 12px;
+    hyphens: none;
+    word-wrap: break-word;
+}
 .recover__titulo{
     width: 100%;
     display: flex;
@@ -425,8 +439,10 @@
 .form__recover{
     color: var(--negro);
 }
-.recover__label{
-    padding-bottom: 10px;
+.form__recover--btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .input__correo{
     border-color: var(--gris);

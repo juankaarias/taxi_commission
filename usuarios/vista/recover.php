@@ -19,7 +19,7 @@
                 <p class="opcion__texto">Ayuda</p>
                 <i class="opcion__icono fa-solid fa-circle-question"></i>
             </a> 
-            <a href="../../index.php" class="navegacion__opcion" title="Salir">
+            <a href="index.php" class="navegacion__opcion" title="Salir">
                 <p class="opcion__texto ">Salir</p>
                 <i class="opcion__icono opcion__icono--salir fa-solid fa-circle-xmark"></i>
             </a>  
@@ -41,17 +41,18 @@
                     <p class="titulo__recover">¡Recuperación de la contraseña!</p>
                     <p class="titulo__recover titulo__recover--subtitulo">Ingresa tu email para recuperar la contraseña.</p>
                 </section>
-                <form action="#" method="POST" class="recover__form">
-                    <!--email recover-->
+                <div id="message"></div>
+                <form id="frm__recover" class="recover__form">
                     <section class="form__recover">
                         <label class="recover__label" for="correo">Correo Electrónico</label>
                         <section class="recover__input">
                             <i class="input__icono fa-solid fa-envelope"></i>  
                             <input class="input__correo" type="email" name="correo" id="correo" autocomplete="off" required>
                         </section>
-                        <p class="group__error">El nombre de usuario debe ser texto.</p>
+                        <div id="err__email" class="err__message"></div>
                     </section>
-                    <section class="form__recover">
+                    <section class="form__recover--btn">
+                        <a href="index.php" value="regresar" class=""><i class="fa-solid fa-arrow-left-long"></i> Regresar</a>
                         <input type="submit" value="Recuperar" class="btn__general">
                     </section>
                 </form>
@@ -62,5 +63,10 @@
     <footer class="recover__footer">
         <p class="footer__recover">&copy; 2022 Taxi Rodadero Bello Horizonte S.A.S - Todos los derechos reservados</p>
     </footer>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/sweetalert2@11.js"></script>
+    <script src="../../js/recover_password.js"></script>
+    
 </body>
 </html>
