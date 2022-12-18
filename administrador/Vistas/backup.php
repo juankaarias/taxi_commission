@@ -1,5 +1,5 @@
 <?php
-                             
+                           
     $titulo="Copia de Seguridad";
     require_once("../../layout/header-app.inc.php");
 ?>
@@ -21,15 +21,15 @@
                 <p class="respaldo__indicacion">¿Desea generar copia de seguridad?</p>
                 <div class="respaldo__botones">
                     
-                    <form method="post" action="../controlador/controlador_backup.php">
-                        <input type="hidden" value="true" name="backup">
+                    <form id="frm__backup">
+                        <input type="hidden" value="1" name="backup">
                         <div class="botones__container">
-                            <input type="submit" value="Si, generar" class="botones__cambiopassword">
-                            <a class="botones__cancelarpassword" href="index.php">
-                                <p class="cancelarpassword__btn">Cancelar</p>
-                            </a> 
+                            <button type ="submit" class = "botones__cambiopassword">Si, generar</button>
+                            <button id="btn__cancelbackup" class = "botones__cancelarpassword">Regresar</button> 
+
                         </div>
                     </form>
+
                     <!-- <a class="botones__cambiopassword" value="Generar" href="#">Generar</a>
                     <a class="botones__cancelarpassword" href="index.php">
                         <p class="cancelarpassword__btn">Cancelar</p>

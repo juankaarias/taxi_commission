@@ -23,7 +23,8 @@
                     unlink($ruta);
                 }
                 else{
-                    $comando = "mysqldump -u {$this->getUsuario()} -p'{$this->getContrasena()}' {$this->getdb()} > {$this->ruta}";
+
+                    $comando = "mysqldump -u {$this->getUsuario()} -p'{$this->getContrasena()}' {$this->getdb()}> {$this->ruta}"; 
                     return system($comando);
                 }
             }
